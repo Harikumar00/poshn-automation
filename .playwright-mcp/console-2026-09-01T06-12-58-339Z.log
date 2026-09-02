@@ -1,0 +1,7 @@
+[     232ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[     414ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[    1939ms] [INFO] [Twilio] Client initialized successfully for poshn @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[    2765ms] [INFO] [Twilio] Client initialized successfully for user @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   92767ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5

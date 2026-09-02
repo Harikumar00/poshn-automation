@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+auth/*.json
+reports/
+test-results/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.playwright/
+

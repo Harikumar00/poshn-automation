@@ -1,0 +1,457 @@
+- generic [active] [ref=f2e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f2e2] [cursor=pointer]
+      - link "Accessibility help" [ref=f2e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=f2e8]:
+    - search [ref=f2e9]:
+      - generic [ref=f2e11]:
+        - link "Go to Google Home" [ref=f2e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQPAgI
+        - generic [ref=f2e21]:
+          - generic [ref=f2e22]:
+            - combobox "Search" [ref=f2e25]: weather in Gurgaon weather in Gurgaon
+            - generic [ref=f2e26]:
+              - button "Clear" [ref=f2e28] [cursor=pointer]
+              - generic [ref=f2e33]:
+                - button "Search by voice" [ref=f2e34] [cursor=pointer]
+                - button "Search by image" [ref=f2e37] [cursor=pointer]
+          - button "Search" [ref=f2e40] [cursor=pointer]
+    - generic [ref=f2e45]:
+      - button "Settings" [ref=f2e47] [cursor=pointer]
+      - button "Share" [ref=f2e53] [cursor=pointer]
+      - generic [ref=f2e59]:
+        - button "Google apps" [ref=f2e61] [cursor=pointer]
+        - link "Sign in" [ref=f2e66] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dweather%2Bin%2BGurgaon%26sei%3D8AeQaqn4LszP0PEPrZ67gAg&ec=futura_srp_og_si_72236_p
+  - generic [ref=f2e68]:
+    - navigation [ref=f2e74]:
+      - generic [ref=f2e80]:
+        - list [ref=f2e81]:
+          - listitem [ref=f2e82]:
+            - link "AI Mode" [ref=f2e85] [cursor=pointer]:
+              - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctqxRVunOAV79WWbaV5NEUQh3_k22728wUUSPm4Obd8HCE99RsJOwwnGYBSXLL2T00cgqjpsYFer_Oh94EsVDYiKmLvWg8CIiVHXKvuOUYmzJSK5M2g&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ2J8OegQIERAD
+          - listitem [ref=f2e89]:
+            - link "All" [disabled] [ref=f2e90]
+          - listitem [ref=f2e93]:
+            - link "News" [ref=f2e94] [cursor=pointer]:
+              - /url: /search?sca_esv=a4ac375be92b09b0&q=weather+in+Gurgaon&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctqxRVunOAV79WWbaV5NEUQh3_k22728wUUSPm4Obd8HCE99RsJOwwnGYBSXLL2T00cgqjpsYFer_Oh94EsVDYiKmLvWg8CIiVHXKvuOUYmzJSK5M2g&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ0pQJegQIFxAB
+          - listitem [ref=f2e97]:
+            - link "Images" [ref=f2e98] [cursor=pointer]:
+              - /url: /search?sca_esv=a4ac375be92b09b0&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctqxRVunOAV79WWbaV5NEUQh3_k22728wUUSPm4Obd8HCE99RsJOwwnGYBSXLL2T00cgqjpsYFer_Oh94EsVDYiKmLvWg8CIiVHXKvuOUYmzJSK5M2g&q=weather+in+Gurgaon&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQtKgLegQIFhAB
+          - listitem [ref=f2e101]:
+            - link "Forums" [ref=f2e102] [cursor=pointer]:
+              - /url: /search?sca_esv=a4ac375be92b09b0&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctqxRVunOAV79WWbaV5NEUQh3_k22728wUUSPm4Obd8HCE99RsJOwwnGYBSXLL2T00cgqjpsYFer_Oh94EsVDYiKmLvWg8CIiVHXKvuOUYmzJSK5M2g&q=weather+in+Gurgaon&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQs6gLegQIFRAB
+          - listitem [ref=f2e105]:
+            - link "Videos" [ref=f2e106] [cursor=pointer]:
+              - /url: /search?sca_esv=a4ac375be92b09b0&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctqxRVunOAV79WWbaV5NEUQh3_k22728wUUSPm4Obd8HCE99RsJOwwnGYBSXLL2T00cgqjpsYFer_Oh94EsVDYiKmLvWg8CIiVHXKvuOUYmzJSK5M2g&q=weather+in+Gurgaon&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQtKgLegQIExAB
+          - listitem [ref=f2e109]:
+            - link "Shopping" [ref=f2e110] [cursor=pointer]:
+              - /url: /search?sca_esv=a4ac375be92b09b0&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctqxRVunOAV79WWbaV5NEUQh3_k22728wUUSPm4Obd8HCE99RsJOwwnGYBSXLL2T00cgqjpsYFer_Oh94EsVDYiKmLvWg8CIiVHXKvuOUYmzJSK5M2g&q=weather+in+Gurgaon&ved=1t:220175&ictx=111
+          - listitem [ref=f2e113]:
+            - button [ref=f2e114] [cursor=pointer]:
+              - generic "More filters" [ref=f2e115]: More
+        - button "Tools" [ref=f2e122] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=f2e129]
+    - main [ref=f2e135]:
+      - generic [ref=f2e141]:
+        - heading "Gurugram, Haryana" [level=2] [ref=f2e142]
+        - generic [ref=f2e151]:
+          - text: ∙
+          - button "Choose area" [ref=f2e152] [cursor=pointer]
+        - button "How location is used" [ref=f2e155] [cursor=pointer]
+      - generic [ref=f2e162]:
+        - generic [ref=f2e167]:
+          - heading "Weather result" [level=2] [ref=f2e168]
+          - generic [ref=f2e169]:
+            - generic [ref=f2e170]:
+              - img "Mostly cloudy" [ref=f2e172]
+              - heading "34 °Celsius °Fahrenheit" [level=3] [ref=f2e173]:
+                - generic [ref=f2e174]:
+                  - generic [ref=f2e175]: "34"
+                  - generic [ref=f2e176]:
+                    - button "°Celsius" [disabled] [ref=f2e177]: °C
+                    - button "°Fahrenheit" [ref=f2e179] [cursor=pointer]: °F
+              - generic [ref=f2e180]:
+                - generic [ref=f2e181]: "Precipitation: 10%"
+                - generic [ref=f2e182]: "Humidity: 60%"
+                - generic [ref=f2e183]:
+                  - text: "Wind:"
+                  - generic [ref=f2e184]: 10 km/h
+            - heading "Weather Thursday, 3:00 pm Mostly cloudy" [level=3] [ref=f2e186]:
+              - generic [ref=f2e187]: Weather
+              - generic [ref=f2e188]: Thursday, 3:00 pm
+              - generic [ref=f2e189]: Mostly cloudy
+            - generic [ref=f2e190]:
+              - tablist [ref=f2e191]:
+                - tab "Temperature" [selected] [ref=f2e192]
+                - tab "Precipitation" [ref=f2e194] [cursor=pointer]
+                - tab "Wind" [ref=f2e196] [cursor=pointer]
+              - generic [ref=f2e198]:
+                - img [ref=f2e199] [cursor=pointer]
+                - generic [ref=f2e200]:
+                  - generic [ref=f2e201]: 4 pm
+                  - generic [ref=f2e202]: 7 pm
+                  - generic [ref=f2e203]: 10 pm
+                  - generic [ref=f2e204]: 1 am
+                  - generic [ref=f2e205]: 4 am
+                  - generic [ref=f2e206]: 7 am
+                  - generic [ref=f2e207]: 10 am
+                  - generic [ref=f2e208]: 1 pm
+                  - generic [ref=f2e209]: 4 pm
+                  - generic [ref=f2e210]: 7 pm
+                  - generic [ref=f2e211]: 10 pm
+                  - generic [ref=f2e212]: 1 am
+                  - generic [ref=f2e213]: 4 am
+                  - generic [ref=f2e214]: 7 am
+                  - generic [ref=f2e215]: 10 am
+                  - generic [ref=f2e216]: 1 pm
+                  - generic [ref=f2e217]: 4 pm
+                  - generic [ref=f2e218]: 7 pm
+                  - generic [ref=f2e219]: 10 pm
+                  - generic [ref=f2e220]: 1 am
+                  - generic [ref=f2e221]: 4 am
+                  - generic [ref=f2e222]: 7 am
+                  - generic [ref=f2e223]: 10 am
+                  - generic [ref=f2e224]: 1 pm
+                  - generic [ref=f2e225]: 4 pm
+                  - generic [ref=f2e226]: 7 pm
+                  - generic [ref=f2e227]: 10 pm
+                  - generic [ref=f2e228]: 1 am
+                  - generic [ref=f2e229]: 4 am
+                  - generic [ref=f2e230]: 7 am
+                  - generic [ref=f2e231]: 10 am
+                  - generic [ref=f2e232]: 1 pm
+                  - generic [ref=f2e233]: 4 pm
+                  - generic [ref=f2e234]: 7 pm
+                  - generic [ref=f2e235]: 10 pm
+                  - generic [ref=f2e236]: 1 am
+                  - generic [ref=f2e237]: 4 am
+                  - generic [ref=f2e238]: 7 am
+                  - generic [ref=f2e239]: 10 am
+                  - generic [ref=f2e240]: 1 pm
+                  - generic [ref=f2e241]: 4 pm
+                  - generic [ref=f2e242]: 7 pm
+                  - generic [ref=f2e243]: 10 pm
+                  - generic [ref=f2e244]: 1 am
+                  - generic [ref=f2e245]: 4 am
+                  - generic [ref=f2e246]: 7 am
+                  - generic [ref=f2e247]: 10 am
+                  - generic [ref=f2e248]: 1 pm
+                  - generic [ref=f2e249]: 4 pm
+                  - generic [ref=f2e250]: 7 pm
+                  - generic [ref=f2e251]: 10 pm
+                  - generic [ref=f2e252]: 1 am
+                  - generic [ref=f2e253]: 4 am
+                  - generic [ref=f2e254]: 7 am
+                  - generic [ref=f2e255]: 10 am
+                  - generic [ref=f2e256]: 1 pm
+                  - generic [ref=f2e257]: 4 pm
+                  - generic [ref=f2e258]: 7 pm
+                  - generic [ref=f2e259]: 10 pm
+                  - generic [ref=f2e260]: 1 am
+                  - generic [ref=f2e261]: 4 am
+                  - generic [ref=f2e262]: 7 am
+                  - generic [ref=f2e263]: 10 am
+                  - generic [ref=f2e264]: 1 pm
+                  - generic [ref=f2e265]: 4 pm
+                  - generic [ref=f2e266]: 7 pm
+                  - generic [ref=f2e267]: 10 pm
+                  - generic [ref=f2e268]: 1 am
+                  - generic [ref=f2e269]: 4 am
+                  - generic [ref=f2e270]: 7 am
+                  - generic [ref=f2e271]: 10 am
+                  - generic [ref=f2e272]: 1 pm
+                  - generic [ref=f2e273]: 4 pm
+                  - generic [ref=f2e274]: 7 pm
+                  - generic [ref=f2e275]: 10 pm
+                  - generic [ref=f2e276]: 1 am
+                  - generic [ref=f2e277]: 4 am
+                  - generic [ref=f2e278]: 7 am
+                  - generic [ref=f2e279]: 10 am
+                  - generic [ref=f2e280]: 1 pm
+                  - generic [ref=f2e281]: 4 pm
+                  - generic [ref=f2e282]: 7 pm
+                  - generic [ref=f2e283]: 10 pm
+              - generic [ref=f2e285] [cursor=pointer]:
+                - button "Thursday Mostly cloudy 35 ° 29 °" [ref=f2e286]:
+                  - generic "Thursday" [ref=f2e287]: Thu
+                  - img "Mostly cloudy" [ref=f2e290]
+                  - generic [ref=f2e291]:
+                    - generic [ref=f2e292]: 35 °
+                    - generic [ref=f2e293]: 29 °
+                - button "Friday Mostly cloudy 36 ° 29 °" [ref=f2e294]:
+                  - generic "Friday" [ref=f2e295]: Fri
+                  - img "Mostly cloudy" [ref=f2e298]
+                  - generic [ref=f2e299]:
+                    - generic [ref=f2e300]: 36 °
+                    - generic [ref=f2e301]: 29 °
+                - button "Saturday Cloudy 36 ° 29 °" [ref=f2e302]:
+                  - generic "Saturday" [ref=f2e303]: Sat
+                  - img "Cloudy" [ref=f2e306]
+                  - generic [ref=f2e307]:
+                    - generic [ref=f2e308]: 36 °
+                    - generic [ref=f2e309]: 29 °
+                - button "Sunday Mostly cloudy 36 ° 29 °" [ref=f2e310]:
+                  - generic "Sunday" [ref=f2e311]: Sun
+                  - img "Mostly cloudy" [ref=f2e314]
+                  - generic [ref=f2e315]:
+                    - generic [ref=f2e316]: 36 °
+                    - generic [ref=f2e317]: 29 °
+                - button "Monday Partly sunny 36 ° 29 °" [ref=f2e318]:
+                  - generic "Monday" [ref=f2e319]: Mon
+                  - img "Partly sunny" [ref=f2e322]
+                  - generic [ref=f2e323]:
+                    - generic [ref=f2e324]: 36 °
+                    - generic [ref=f2e325]: 29 °
+                - button "Tuesday Partly sunny 35 ° 28 °" [ref=f2e326]:
+                  - generic "Tuesday" [ref=f2e327]: Tue
+                  - img "Partly sunny" [ref=f2e330]
+                  - generic [ref=f2e331]:
+                    - generic [ref=f2e332]: 35 °
+                    - generic [ref=f2e333]: 28 °
+                - button "Wednesday Scattered thunderstorms 34 ° 27 °" [ref=f2e334]:
+                  - generic "Wednesday" [ref=f2e335]: Wed
+                  - img "Scattered thunderstorms" [ref=f2e338]
+                  - generic [ref=f2e339]:
+                    - generic [ref=f2e340]: 34 °
+                    - generic [ref=f2e341]: 27 °
+                - button "Thursday Scattered thunderstorms 34 ° 27 °" [ref=f2e342]:
+                  - generic "Thursday" [ref=f2e343]: Thu
+                  - img "Scattered thunderstorms" [ref=f2e346]
+                  - generic [ref=f2e347]:
+                    - generic [ref=f2e348]: 34 °
+                    - generic [ref=f2e349]: 27 °
+            - generic [ref=f2e350]:
+              - generic [ref=f2e351]: Excessive heat
+              - generic [ref=f2e352]: Gurugram, Haryana
+              - generic [ref=f2e353]: 45 mins ago
+              - paragraph [ref=f2e354]: Severe heat is expected in this area.
+              - link "More info" [ref=f2e356] [cursor=pointer]:
+                - /url: https://www.google.com/search?q=Excessive%20heat&hl=en-GB&stick=H4sIAAAAAAAAAONQUeLVT9c3NKxKrigoq0ixfMSYxy3w8sc9YanUXWcbqxO4NLhQFSiJc4nqJ-fn5KQml2Tm5-mnZBYnFpekFhULMEpxc3Hq5-obGKdV5qYvYlQJd3UM8XANivf28w_3cXVxd40Pdg0K83R2jU8vL9YtTk0sSs7gWcTK51qRnFpcnFmWqpCRmlgCAIOLszCTAAAA
+          - generic [ref=f2e360]:
+            - link "Google Weather" [ref=f2e361] [cursor=pointer]:
+              - /url: https://support.google.com/websearch/answer/13687874
+            - generic [ref=f2e362]: •
+            - group [ref=f2e363]:
+              - button "Feedback" [ref=f2e364] [cursor=pointer]
+        - generic [ref=f2e369]:
+          - heading "Web results" [level=2] [ref=f2e370]
+          - generic [ref=f2e371]:
+            - generic [ref=f2e374]:
+              - link "Gurgaon, Haryana, India Weather Forecast AccuWeather https://www.accuweather.com › gurgaon › weather-fore..." [ref=f2e376] [cursor=pointer]:
+                - /url: /goto?url=CAESgAEB6zswFf3bG6_vVHOaK6X2IpMMEUfWwZDLbktrLAsIwXWaAHWaxe9X9XpShXZW3kyOl5rcKOG6JqcomXckOrL7_peVGv-99Azqjeu7VeaJKpx62TNFycHYU-PUe8jNWviGUGhULv5PI7Tb9TPXP6xlA5OAtE4WSpyq1rod7yGBNQ
+                - heading "Gurgaon, Haryana, India Weather Forecast" [level=3] [ref=f2e377]
+                - generic [ref=f2e383]:
+                  - generic [ref=f2e384]: AccuWeather
+                  - generic [ref=f2e386]: https://www.accuweather.com › gurgaon › weather-fore...
+              - button "About this result" [ref=f2e392] [cursor=pointer]
+            - generic [ref=f2e399]:
+              - emphasis [ref=f2e400]: Gurgaon, Haryana 87°F ・ 80°
+              - text: Current Weather 10:37 AM ® 102°. Weather 11 AM 89° rain drop 54% 12 PM 90° rain drop 55% 1 PM 91° rain ・ 9 PM 84° 10-Day
+        - generic [ref=f2e405]:
+          - heading "People also ask" [level=2] [ref=f2e407]
+          - generic [ref=f2e408]:
+            - button "When can we expect rain in Gurgaon?" [ref=f2e414] [cursor=pointer]
+            - button "What is the expected temperature in Gurgaon for the next 30 days?" [ref=f2e428] [cursor=pointer]
+            - button "Is there rain in Gurgaon?" [ref=f2e442] [cursor=pointer]
+            - button "Is there a high alert in Gurgaon today?" [ref=f2e456] [cursor=pointer]
+        - generic [ref=f2e466]:
+          - heading "Web results" [level=2] [ref=f2e467]
+          - generic [ref=f2e468]:
+            - generic [ref=f2e471]:
+              - link "Gurgaon, Haryana, India 14 day weather forecast Time and Date https://www.timeanddate.com › ... › India › Gurgaon" [ref=f2e473] [cursor=pointer]:
+                - /url: /goto?url=CAESbQHrOzAVgayjigujlvpS81P8ECCErPli3LCQnV8bgnBKWnmhSE33VhE-UKty6_kz7Qz0XdG8uOT79OYmtgxDlaUPqBa8rkue1M9qt8tJILaMf0YsBssFuaGI0Oiy5prcDukSoiCEQUDblSi7rtk
+                - heading "Gurgaon, Haryana, India 14 day weather forecast" [level=3] [ref=f2e474]
+                - generic [ref=f2e480]:
+                  - generic [ref=f2e481]: Time and Date
+                  - generic [ref=f2e483]: https://www.timeanddate.com › ... › India › Gurgaon
+              - button "About this result" [ref=f2e489] [cursor=pointer]
+            - generic [ref=f2e496]:
+              - emphasis [ref=f2e497]: "Climate Currently: 91 ° Gurgaon"
+              - text: ". Feels Like: 107 °F Humidity: 55% Precipitation: Rain: 0 Snow: 0 Precipitation Chance Mostly cloudy."
+        - generic [ref=f2e501]:
+          - generic [ref=f2e504]:
+            - link "Gurgaon - BBC Weather BBC https://www.bbc.com › weather" [ref=f2e506] [cursor=pointer]:
+              - /url: /goto?url=CAESWwHrOzAVkAV8mR783GQLG0odeaLFGRjdRqK30GDGyBh00aFWpNahe_awaCBREKjTWs-KFOjKpDPoQEVrwh28HJgb7VslDOpo3BcCbQpIPkyBJvyluPr9tG8QS0s
+              - heading "Gurgaon - BBC Weather" [level=3] [ref=f2e507]
+              - generic [ref=f2e513]:
+                - generic [ref=f2e514]: BBC
+                - generic [ref=f2e516]: https://www.bbc.com › weather
+            - button "About this result" [ref=f2e522] [cursor=pointer]
+          - generic [ref=f2e529]:
+            - text: Gurgaon - Weather warnings issued Today ,
+            - emphasis [ref=f2e530]: Sunny and light winds Thursday 27th August
+            - text: Thu. Sunny and light winds Friday. Sunny and a gentle breeze Saturday 29th. ...
+        - generic [ref=f2e534]:
+          - generic [ref=f2e537]:
+            - 'link "Gurgaon Weather Conditions: Temperature | 30 Days ... AQI.in https://www.aqi.in › Home › Weather › India › Haryana" [ref=f2e539] [cursor=pointer]':
+              - /url: /goto?url=CAESawHrOzAVLIAJp0WXlipDIe09of2IiI2C81tRmYT53VoU_Sh1HoANRlEZpE3oZc2d0w9By7Y4fbpv14LQ9jz5cYFj92cB94COuaR6pCWfyHqE6MEB-pPU93hcomz9N4UWzkZe0GSKTVdNyEeD
+              - 'heading "Gurgaon Weather Conditions: Temperature | 30 Days ..." [level=3] [ref=f2e540]'
+              - generic [ref=f2e546]:
+                - generic [ref=f2e547]: AQI.in
+                - generic [ref=f2e549]: https://www.aqi.in › Home › Weather › India › Haryana
+            - button "About this result" [ref=f2e555] [cursor=pointer]
+          - generic [ref=f2e562]:
+            - text: Current
+            - emphasis [ref=f2e563]: Gurgaon weather
+            - text: condition is Smoky haze with real-time temperature (28°C - Pleasant), humidity 80%, wind 9km/h, pressure (1002mb), UV (0), ...
+        - generic [ref=f2e567]:
+          - generic [ref=f2e570]:
+            - link "Gurgaon, India 10-Day Weather Forecast Weather Underground https://www.wunderground.com › forecast › gurgaon" [ref=f2e572] [cursor=pointer]:
+              - /url: /goto?url=CAESaAHrOzAVARY2ebSYXf0hoFAcUhgCR1FZHL8fS8bsko_-SDNNUpa8jZIiSLMgOrdKBCkL0F6j_ZH9x96Ic1IpLU92L9G7o8z8MkcppYxahijgVQnJxolgAYpVNsA5dCswwwi3wPhEqKkD
+              - heading "Gurgaon, India 10-Day Weather Forecast" [level=3] [ref=f2e573]
+              - generic [ref=f2e579]:
+                - generic [ref=f2e580]: Weather Underground
+                - generic [ref=f2e582]: https://www.wunderground.com › forecast › gurgaon
+            - button "About this result" [ref=f2e588] [cursor=pointer]
+          - generic [ref=f2e595]:
+            - emphasis [ref=f2e596]: Gurgaon
+            - text: ", Haryana, 87 °F Chander Nagar Station|Report. Pressure 29.61 °in Visibility 1.5 °miles Clouds Cloudy Dew Point 78 °F Humidity 79 °% Rainfall 0 °in Snow ..."
+        - generic [ref=f2e600]:
+          - generic [ref=f2e603]:
+            - link "Gurgaon (India) weather Met Office https://weather.metoffice.gov.uk › forecast › ttncbsur8" [ref=f2e605] [cursor=pointer]:
+              - /url: /goto?url=CAESawHrOzAVvq7103ztrae1uILnLr2mnMFWzW8vlafpONob4YM_Mm6s4vu7VMJ1ptxVENENOYtj6gvtZtBAgdBSAuTZ8apBxeimBvyf10toIwHqK18bkH1xxxK-PpojC6TgebxIkvclg34JK2yG
+              - heading "Gurgaon (India) weather" [level=3] [ref=f2e606]
+              - generic [ref=f2e612]:
+                - generic [ref=f2e613]: Met Office
+                - generic [ref=f2e615]: https://weather.metoffice.gov.uk › forecast › ttncbsur8
+            - button "About this result" [ref=f2e621] [cursor=pointer]
+          - generic [ref=f2e626]: "Today Sunny day; Maximum daytime temperature: 37 degrees Celsius; 27° Minimum nighttime temperature: 27 degrees Celsius; Tue 1 Tue 1 Sep Sunny day; Avoid being ..."
+        - generic [ref=f2e631]:
+          - generic [ref=f2e634]:
+            - 'link "Gurgaon Weather Forecast 2026 : Today''s Temperature, ... NDTV https://www.ndtv.com › weather › gurgaon-weather-for..." [ref=f2e636] [cursor=pointer]':
+              - /url: /goto?url=CAEScwHrOzAVYc3Gxn_FrpUGNbkF7NZXBzJ49Pj9nCIiEmglD0yDiSDLBZ0XM6jz5iSsQZLdse0sD9kHCreElqFJ-cxGsuLJa1gQZ78j7OcXfYeOpoTHTW2VDhKlG5gN3UXIoSdHsv6dtta4m8VqESGLkyCOSFI
+              - 'heading "Gurgaon Weather Forecast 2026 : Today''s Temperature, ..." [level=3] [ref=f2e637]'
+              - generic [ref=f2e643]:
+                - generic [ref=f2e644]: NDTV
+                - generic [ref=f2e646]: https://www.ndtv.com › weather › gurgaon-weather-for...
+            - button "About this result" [ref=f2e652] [cursor=pointer]
+          - generic [ref=f2e659]:
+            - text: Today's weather forecast in Gurgaon is
+            - emphasis [ref=f2e660]: Part cloudy with occassional rain or thunder showers
+            - text: . High 35°C, Low 27°C . Currently 29°C.
+        - generic [ref=f2e664]:
+          - generic [ref=f2e667]:
+            - link "Gurgaon Weather Today (Thursday, Aug 27, 2026) The Indian Express https://indianexpress.com › section › gurgaon-weather-f..." [ref=f2e669] [cursor=pointer]:
+              - /url: /goto?url=CAESgQEB6zswFaW66umK-np-6fl7gy6_kLH6xronHXa-bVHjN5e5psSVxuX8xSR5T9lJZi2AiYfMqeMfhEnaIFYHhWdSbJaU63ZQI4tMtIE-e2T1IM7qLhzVMlYjQgeQuV5KOpYST-0oQLlOSDyhRQ8x-H2EDGt0PzxV7DEBIIWMvRmViBI
+              - heading "Gurgaon Weather Today (Thursday, Aug 27, 2026)" [level=3] [ref=f2e670]
+              - generic [ref=f2e676]:
+                - generic [ref=f2e677]: The Indian Express
+                - generic [ref=f2e679]: https://indianexpress.com › section › gurgaon-weather-f...
+            - button "About this result" [ref=f2e685] [cursor=pointer]
+          - generic [ref=f2e691]:
+            - generic [ref=f2e692]:
+              - emphasis [ref=f2e693]: Gurgaon weather today shows a temperature of 28.5°C
+              - text: with Smoky haze conditions. The current weather in Gurgaon feels like 30.8°C, with humidity at 64%, wind ...
+            - link "Read more" [ref=f2e694] [cursor=pointer]:
+              - /url: /goto?url=CAES1wEB6zswFSe2fnLlFbetDzltraRB7X06F7q_8t544wVpjepZcCfXaDdbl5AMlyxePeISYdvuV281qKklASc1P_n3IzX5ScT7Um1p3ggLJIYrqicM6xfEthjq6Oa3SrBnoSDupNzSIc3D-kfGhTWQjMBEoY2JSi166cG7obVIuREMrzZVopgKO2kPzw49jUa5jwsy62THC_Ai4lTg6ofoG2bKGqg2TtjyUvZDlwsBOeDx7nhL9FtDCLcVhvkZ-yjqrZYdl37pb3RVOadWt6cvlsQWsws7MGy6Rw
+        - generic [ref=f2e698]:
+          - generic [ref=f2e701]:
+            - link "10-day weather forecast for Gurgaon, Haryana The Weather Channel https://weather.com › haryana › city › gurgaon › tenday" [ref=f2e703] [cursor=pointer]:
+              - /url: /goto?url=CAEScAHrOzAVjCMRWUcsq7rPPLOyEHKq3ANdfPhOA1MGQmCN3Dq8TlN8YMw_Dbcp9HsSp-4_XhlTS1UtglRclNjbii4duatNt1totssRJqD6NBaZ67wvrYbeU7sVa10MAn_ZczQIi2QhNNH6qP5Yv0MD7Uw
+              - heading "10-day weather forecast for Gurgaon, Haryana" [level=3] [ref=f2e704]
+              - generic [ref=f2e710]:
+                - generic [ref=f2e711]: The Weather Channel
+                - generic [ref=f2e713]: https://weather.com › haryana › city › gurgaon › tenday
+            - button "About this result" [ref=f2e719] [cursor=pointer]
+          - generic [ref=f2e725]:
+            - generic [ref=f2e726]:
+              - emphasis [ref=f2e727]: Daily Forecast
+              - text: · Today. 20%. Mostly Cloudy. 82°. 91°. 7 mph -- W · Thu 27. 9%. Partly Cloudy. 82°. 93°. 9 mph -- W · Fri 28. 6%. Partly Cloudy. 83°. 96°. 10 mph ...
+            - link "Read more" [ref=f2e728] [cursor=pointer]:
+              - /url: /goto?url=CAESzAEB6zswFd-JH396B57Pkex6s6TePLJMIcAoCqRh6m3853N6b3RBRoFy7iYaD7KNGOYGRrVWt8TFDMANCoh68si-f_bVMjn4Er0YWV57ZCQubLwm4OfFVj0BnuyX4NuCn8P1yBGKZUBy0TQEddo80KCufivOaGoVzpdSWmVITOwg2BdUhVm_QTWaStmBw6MjIlvAFWHW77gnISICdlbq96ev1dr5BqkDiTSQjAuwwiZbO3ibTfleCTiu1P9pAmjQz6Qr-R1Bw3dTSCJxvcI
+        - generic [ref=f2e732]:
+          - generic [ref=f2e735]:
+            - link "Gurgaon Sector 14, Gurugram, Haryana Weather Forecast MSN https://www.msn.com › en-in › in-Gurgaon-Sector-14,-G..." [ref=f2e737] [cursor=pointer]:
+              - /url: /goto?url=CAESiwEB6zswFbfhkB1VtjZl9YS_YXeLb7dk42lnsAEr9TRG1dDGG2Cf9T5qx3liGcajCmzQUq7fGHKHdql5_iZIeoWpbZVHumTVdA29l7JArreCNuiLob2ZpTo6KdhMhaaRgDUkAe9zgtui2DtonqTnKPGqPx4QDUMVwzx2KBMX0qDivudDHc67VOKcYyZx
+              - heading "Gurgaon Sector 14, Gurugram, Haryana Weather Forecast" [level=3] [ref=f2e738]
+              - generic [ref=f2e744]:
+                - generic [ref=f2e745]: MSN
+                - generic [ref=f2e747]: https://www.msn.com › en-in › in-Gurgaon-Sector-14,-G...
+            - button "About this result" [ref=f2e753] [cursor=pointer]
+          - generic [ref=f2e759]:
+            - generic [ref=f2e760]:
+              - emphasis [ref=f2e761]: Mostly sunny
+              - text: . Gurgaon Sector 14, Gurugram, Haryana. Current weather. 5:30 AM. Mostly sunny 28°C. Feels Like 33°. Mostly sunny.
+            - link "Read more" [ref=f2e762] [cursor=pointer]:
+              - /url: /goto?url=CAESpAEB6zswFb_fZU-6pCQAtcoNjOOQAUOJZ6PqMCeNBK4urj9yCm06BGp1S8t_xAFEf0UQXs-uPU6j56Q_PWGDdu7o1EB3wjKzOFFE_vfuW4-PeD2f6qs07TuRor1y42-rWoCK4IleklrbImDJr1Kh9t9JyzbQy4LQIhl9mu_h-BTZZ3I-x_MPFlA7GWLN9anvoeTeXIkH0FZ_MytHW7RKtk3Hopv8dQ
+      - generic [ref=f2e764]:
+        - generic [ref=f2e769]:
+          - heading "People also search for" [level=2] [ref=f2e771]
+          - generic [ref=f2e773]:
+            - generic [ref=f2e774]:
+              - link "Weather in gurgaon 10 days" [ref=f2e778] [cursor=pointer]:
+                - /url: /search?sca_esv=a4ac375be92b09b0&q=Weather+in+gurgaon+10+days&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ1QJ6BAhOEAE
+              - link "Weather in gurgaon tomorrow" [ref=f2e792] [cursor=pointer]:
+                - /url: /search?sca_esv=a4ac375be92b09b0&q=Weather+in+gurgaon+tomorrow&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ1QJ6BAhTEAE
+              - link "Weather in gurgaon for next 15 days" [ref=f2e806] [cursor=pointer]:
+                - /url: /search?sca_esv=a4ac375be92b09b0&q=Weather+in+gurgaon+for+next+15+days&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ1QJ6BAhSEAE
+              - link "Weather today Gurgaon" [ref=f2e820] [cursor=pointer]:
+                - /url: /search?sca_esv=a4ac375be92b09b0&q=Weather+today+Gurgaon&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ1QJ6BAhREAE
+            - generic [ref=f2e831]:
+              - link "Gurgaon weather forecast 30 days" [ref=f2e835] [cursor=pointer]:
+                - /url: /search?sca_esv=a4ac375be92b09b0&q=Gurgaon+weather+forecast+30+days&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ1QJ6BAhQEAE
+              - link "Weather in gurgaon this week" [ref=f2e849] [cursor=pointer]:
+                - /url: /search?sca_esv=a4ac375be92b09b0&q=Weather+in+gurgaon+this+week&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ1QJ6BAhNEAE
+              - link "Weather in gurgaon today hourly" [ref=f2e863] [cursor=pointer]:
+                - /url: /search?sca_esv=a4ac375be92b09b0&q=Weather+in+gurgaon+today+hourly&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ1QJ6BAhMEAE
+              - link "Gurgaon weather fog today" [ref=f2e877] [cursor=pointer]:
+                - /url: /search?sca_esv=a4ac375be92b09b0&q=Gurgaon+weather+fog+today&sa=X&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ1QJ6BAhPEAE
+        - navigation [ref=f2e888]:
+          - heading "Page navigation" [level=1] [ref=f2e889]
+          - text: "1"
+          - link "Page 2" [ref=f2e892] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=10&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAE
+            - text: "2"
+          - link "Page 3" [ref=f2e894] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=20&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAG
+            - text: "3"
+          - link "Page 4" [ref=f2e896] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=30&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAI
+            - text: "4"
+          - link "Page 5" [ref=f2e898] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=40&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAK
+            - text: "5"
+          - link "Page 6" [ref=f2e900] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=50&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAM
+            - text: "6"
+          - link "Page 7" [ref=f2e902] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=60&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAO
+            - text: "7"
+          - link "Page 8" [ref=f2e904] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=70&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAQ
+            - text: "8"
+          - link "Page 9" [ref=f2e906] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=80&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAS
+            - text: "9"
+          - link "Page 10" [ref=f2e908] [cursor=pointer]:
+            - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=90&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8tMDegQIQBAU
+            - text: "10"
+          - heading [level=2] [ref=f2e910]:
+            - link "Next" [ref=f2e911] [cursor=pointer]:
+              - /url: /search?q=weather+in+Gurgaon&sca_esv=a4ac375be92b09b0&ei=8QeQaq6ELM2g1sQP9NvX0QY&start=10&sa=N&sstk=AS6-VmJBuenJC92Xc5VAyao8zzw_Nv2fo-kPNfKczDXsoMh3GVkZoRF36Nlk81kr_Wv0xRba_kgs8JyqNtVVCBtQsrRZDef6FJZ_cA&ved=2ahUKEwjuwODpw8CWAxVNkJUCHfTtNWoQ8NMDegQIQBAW
+      - navigation
+    - contentinfo [ref=f2e914]:
+      - heading "Footer links" [level=1] [ref=f2e915]
+      - generic [ref=f2e919]:
+        - generic [ref=f2e921]:
+          - text: India
+          - generic [ref=f2e923]:
+            - button "East Delhi, Ghaziabad, Uttar Pradesh - From your IP address" [ref=f2e925] [cursor=pointer]:
+              - generic [ref=f2e926]: East Delhi, Ghaziabad, Uttar Pradesh
+              - generic [ref=f2e928]:
+                - text: "-"
+                - generic [ref=f2e929]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=f2e931] [cursor=pointer]
+        - generic [ref=f2e934]:
+          - link "Help" [ref=f2e935] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=f2e936] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f2e937] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=f2e938] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

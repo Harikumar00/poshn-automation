@@ -1,0 +1,26 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/poshn
+      - link [ref=e10] [cursor=pointer]:
+        - /url: https://poshn.co/
+  - main [ref=e20]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]: Welcome Back!
+          - paragraph [ref=e27]: Please login to your account
+        - generic [ref=e28]:
+          - tabpanel [ref=e30]:
+            - tabpanel [ref=e31]:
+              - generic [ref=e35]:
+                - generic [ref=e37]:
+                  - paragraph [ref=e38]: Phone Number *
+                  - separator
+                - generic [ref=e41]:
+                  - generic [ref=e42]: "+91"
+                  - textbox "+91" [ref=e45]:
+                    - /placeholder: Enter your 10 digits phone number
+          - button "Continue" [ref=e48] [cursor=pointer]
+      - paragraph [ref=e52]: ©Poshn, Crafted with ❤️ in India

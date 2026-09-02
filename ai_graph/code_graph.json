@@ -1,0 +1,455 @@
+[
+  {
+    "file": "conftest.py",
+    "module": "conftest",
+    "imports": [
+      "config.settings",
+      "pages.login_page",
+      "pathlib",
+      "playwright.sync_api",
+      "pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "authenticated_page",
+      "browser",
+      "context",
+      "page",
+      "playwright",
+      "pytest_runtest_makereport",
+      "unauthenticated_context",
+      "unauthenticated_page"
+    ]
+  },
+  {
+    "file": "config/__init__.py",
+    "module": "config.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "config/settings.py",
+    "module": "config.settings",
+    "imports": [
+      "dataclasses",
+      "dotenv",
+      "os",
+      "pathlib"
+    ],
+    "classes": [
+      "Settings"
+    ],
+    "functions": []
+  },
+  {
+    "file": "tests/__init__.py",
+    "module": "tests.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "utils/__init__.py",
+    "module": "utils.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "utils/calculations.py",
+    "module": "utils.calculations",
+    "imports": [
+      "decimal",
+      "re"
+    ],
+    "classes": [],
+    "functions": [
+      "ledger_closing",
+      "line_total",
+      "money"
+    ]
+  },
+  {
+    "file": "components/__init__.py",
+    "module": "components.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "components/navigation.py",
+    "module": "components.navigation",
+    "imports": [
+      "playwright.sync_api"
+    ],
+    "classes": [
+      "Navigation"
+    ],
+    "functions": [
+      "__init__",
+      "open",
+      "visible_labels"
+    ]
+  },
+  {
+    "file": "ai_graph/__init__.py",
+    "module": "ai_graph.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "ai_graph/builder.py",
+    "module": "ai_graph.builder",
+    "imports": [
+      "ast",
+      "json",
+      "pathlib"
+    ],
+    "classes": [],
+    "functions": [
+      "analyze_file",
+      "build_graph",
+      "module_name",
+      "python_files"
+    ]
+  },
+  {
+    "file": "pages/base_page.py",
+    "module": "pages.base_page",
+    "imports": [
+      "playwright.sync_api"
+    ],
+    "classes": [
+      "BasePage"
+    ],
+    "functions": [
+      "__init__",
+      "heading_text",
+      "open"
+    ]
+  },
+  {
+    "file": "pages/users_page.py",
+    "module": "pages.users_page",
+    "imports": [
+      "pages.base_page",
+      "playwright.sync_api",
+      "re"
+    ],
+    "classes": [
+      "UsersPage"
+    ],
+    "functions": [
+      "__init__",
+      "assert_add_form",
+      "assert_list_loaded",
+      "open_add",
+      "open_list",
+      "search",
+      "verify_page"
+    ]
+  },
+  {
+    "file": "pages/purchase_orders_page.py",
+    "module": "pages.purchase_orders_page",
+    "imports": [
+      "pages.list_page",
+      "playwright.sync_api",
+      "re"
+    ],
+    "classes": [
+      "PurchaseOrdersPage"
+    ],
+    "functions": [
+      "open_create_form",
+      "required_form_labels",
+      "verify_page"
+    ]
+  },
+  {
+    "file": "pages/login_page.py",
+    "module": "pages.login_page",
+    "imports": [
+      "playwright.sync_api"
+    ],
+    "classes": [
+      "LoginPage"
+    ],
+    "functions": [
+      "__init__",
+      "authenticate"
+    ]
+  },
+  {
+    "file": "pages/__init__.py",
+    "module": "pages.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "pages/dashboard_page.py",
+    "module": "pages.dashboard_page",
+    "imports": [
+      "pages.base_page"
+    ],
+    "classes": [
+      "DashboardPage"
+    ],
+    "functions": []
+  },
+  {
+    "file": "pages/module_page.py",
+    "module": "pages.module_page",
+    "imports": [
+      "pages.base_page",
+      "playwright.sync_api",
+      "re"
+    ],
+    "classes": [
+      "ModulePage"
+    ],
+    "functions": [
+      "__init__",
+      "assert_headers",
+      "open_and_assert",
+      "search_if_available"
+    ]
+  },
+  {
+    "file": "pages/list_page.py",
+    "module": "pages.list_page",
+    "imports": [
+      "pages.base_page",
+      "playwright.sync_api"
+    ],
+    "classes": [
+      "ListPage"
+    ],
+    "functions": [
+      "assert_loaded",
+      "clear_search",
+      "search"
+    ]
+  },
+  {
+    "file": "tests/customers/__init__.py",
+    "module": "tests.customers.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/customers/test_customers.py",
+    "module": "tests.customers.test_customers",
+    "imports": [
+      "pages.users_page",
+      "playwright.sync_api",
+      "pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_customer_add_form_required_validation_without_submit",
+      "test_customer_list_search_and_status_filter",
+      "test_customer_status_tabs_are_available"
+    ]
+  },
+  {
+    "file": "tests/smoke/test_navigation.py",
+    "module": "tests.smoke.test_navigation",
+    "imports": [
+      "config.settings",
+      "playwright.sync_api",
+      "pytest",
+      "re"
+    ],
+    "classes": [],
+    "functions": [
+      "test_dashboard_loads",
+      "test_major_module_route_loads"
+    ]
+  },
+  {
+    "file": "tests/smoke/__init__.py",
+    "module": "tests.smoke.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/vendors/test_vendors.py",
+    "module": "tests.vendors.test_vendors",
+    "imports": [
+      "pages.users_page",
+      "playwright.sync_api",
+      "pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_vendor_add_form_required_validation_without_submit",
+      "test_vendor_list_search_and_filter"
+    ]
+  },
+  {
+    "file": "tests/vendors/__init__.py",
+    "module": "tests.vendors.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/invoices/__init__.py",
+    "module": "tests.invoices.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/invoices/test_invoices.py",
+    "module": "tests.invoices.test_invoices",
+    "imports": [
+      "pages.module_page",
+      "playwright.sync_api",
+      "pytest",
+      "utils.calculations"
+    ],
+    "classes": [],
+    "functions": [
+      "test_invoice_line_calculation",
+      "test_invoice_listing_search_and_filters",
+      "test_invoice_table_exposes_business_columns"
+    ]
+  },
+  {
+    "file": "tests/ledgers/__init__.py",
+    "module": "tests.ledgers.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/ledgers/test_ledgers.py",
+    "module": "tests.ledgers.test_ledgers",
+    "imports": [
+      "decimal",
+      "pages.module_page",
+      "playwright.sync_api",
+      "pytest",
+      "utils.calculations"
+    ],
+    "classes": [],
+    "functions": [
+      "test_ledger_closing_calculation",
+      "test_receivables_ledger_search_filters_and_balance_columns",
+      "test_receivables_visible_balance_due_is_mathematically_consistent"
+    ]
+  },
+  {
+    "file": "tests/exports/test_exports.py",
+    "module": "tests.exports.test_exports",
+    "imports": [
+      "pages.module_page",
+      "playwright.sync_api",
+      "pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_export_surfaces_are_discoverable_without_downloading"
+    ]
+  },
+  {
+    "file": "tests/exports/__init__.py",
+    "module": "tests.exports.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/transactions/__init__.py",
+    "module": "tests.transactions.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/transactions/test_transactions.py",
+    "module": "tests.transactions.test_transactions",
+    "imports": [
+      "pages.module_page",
+      "playwright.sync_api",
+      "pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_accounts_transactions_search_and_filters",
+      "test_customer_and_vendor_payment_pages_are_available"
+    ]
+  },
+  {
+    "file": "tests/notes/__init__.py",
+    "module": "tests.notes.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/notes/test_notes.py",
+    "module": "tests.notes.test_notes",
+    "imports": [
+      "pages.module_page",
+      "playwright.sync_api",
+      "pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_note_listing_search_and_filters"
+    ]
+  },
+  {
+    "file": "tests/purchase_orders/test_purchase_orders.py",
+    "module": "tests.purchase_orders.test_purchase_orders",
+    "imports": [
+      "pages.purchase_orders_page",
+      "playwright.sync_api",
+      "pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_create_po_required_fields_are_exposed_without_submit",
+      "test_purchase_orders_listing_and_pagination",
+      "test_purchase_orders_search_is_read_only"
+    ]
+  },
+  {
+    "file": "tests/purchase_orders/__init__.py",
+    "module": "tests.purchase_orders.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/authentication/__init__.py",
+    "module": "tests.authentication.__init__",
+    "imports": [],
+    "classes": [],
+    "functions": []
+  },
+  {
+    "file": "tests/authentication/test_authentication.py",
+    "module": "tests.authentication.test_authentication",
+    "imports": [
+      "config.settings",
+      "pages.login_page",
+      "playwright.sync_api",
+      "pytest"
+    ],
+    "classes": [],
+    "functions": [
+      "test_invalid_phone_validation",
+      "test_logout",
+      "test_valid_login_and_session_reuse"
+    ]
+  }
+]

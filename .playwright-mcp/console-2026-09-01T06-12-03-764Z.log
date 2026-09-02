@@ -1,0 +1,164 @@
+[     515ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[    1054ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[    2352ms] [INFO] [Twilio] Client initialized successfully for poshn @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[    3066ms] [INFO] [Twilio] Client initialized successfully for user @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   27246ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   27481ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   27832ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   27929ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   28287ms] [LOG] %cREQUEST SETUP ERROR: color:red @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   28287ms] [ERROR] CanceledError: Request Cancelled
+    at Object.cancel (https://nucleus-dev.poshn.app/assets/axios.js:11:2797)
+    at https://nucleus-dev.poshn.app/assets/table.js:3:503
+    at https://nucleus-dev.poshn.app/assets/api-clients.js:3:425
+    at r (https://nucleus-dev.poshn.app/assets/sentry.js:6:44463) @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   28288ms] [LOG] %cREQUEST CONFIG: color:yellow @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   28288ms] [LOG] undefined @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   28288ms] [ERROR] CanceledError: Request Cancelled
+    at Object.cancel (https://nucleus-dev.poshn.app/assets/axios.js:11:2797)
+    at https://nucleus-dev.poshn.app/assets/table.js:3:503
+    at https://nucleus-dev.poshn.app/assets/api-clients.js:3:425
+    at r (https://nucleus-dev.poshn.app/assets/sentry.js:6:44463)
+    at Q.request (https://nucleus-dev.poshn.app/assets/axios.js:7:2125)
+    at async EL (https://nucleus-dev.poshn.app/assets/otp.js:10:287074)
+    at async Promise.all (index 1)
+    at async Proxy.E (https://nucleus-dev.poshn.app/assets/otp.js:68:93904)
+    at async Promise.all (index 1)
+    at async https://nucleus-dev.poshn.app/assets/table.js:3:575 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   28288ms] [WARNING] Request Cancelled @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   29482ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   29621ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   30087ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   30283ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   30643ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   30892ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   32402ms] [INFO] [Twilio] Client initialized successfully for user @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   32816ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   32971ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   33536ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   33670ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   34155ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   34319ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   34699ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   34865ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   35395ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   35526ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   35949ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   36118ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   36530ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   36666ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   37215ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   37352ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   37829ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   37926ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   38347ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   38515ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   38980ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   39195ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   39553ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   39785ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   40298ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   40452ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   40819ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   40935ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   41391ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   41544ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   42031ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   42189ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   42746ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   42930ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   43264ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   43483ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   43861ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   43998ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   44493ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   44623ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   45071ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   45439ms] [INFO] [OneSignal] Initialized successfully @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   45439ms] [INFO] [OneSignal] Notification click handler registered @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   45685ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   45860ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   46350ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   46424ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   46949ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   47122ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   47503ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   47691ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   48168ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   48305ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   48830ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   48990ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   49425ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   49560ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   49986ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   50207ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[   51629ms] [INFO] [Twilio] Client initialized successfully for poshn @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   52391ms] [INFO] [Twilio] Client initialized successfully for user @ https://nucleus-dev.poshn.app/assets/sentry.js:5

@@ -1,0 +1,609 @@
+- generic [ref=f132e9]:
+  - banner [ref=f132e10]:
+    - toolbar [ref=f132e11]:
+      - generic [ref=f132e12]:
+        - link [ref=f132e14] [cursor=pointer]:
+          - /url: /home
+        - button [ref=f132e20] [cursor=pointer]
+      - combobox [ref=f132e34]
+      - button "Notifications" [ref=f132e36] [cursor=pointer]
+      - generic [ref=f132e41]:
+        - paragraph [ref=f132e42]: Hari-Ven
+        - generic [ref=f132e43]: Admin
+      - generic [ref=f132e44]: H
+  - complementary [ref=f132e47]:
+    - list [ref=f132e49]:
+      - generic [ref=f132e51]:
+        - button "Home" [ref=f132e54] [cursor=pointer]:
+          - generic "Home" [ref=f132e60]
+        - generic [ref=f132e62]:
+          - button "Users Collapse" [ref=f132e63] [cursor=pointer]:
+            - generic "Users" [ref=f132e71]
+            - button "Collapse" [expanded] [ref=f132e72]:
+              - generic [ref=f132e73]: expand_less
+          - generic [ref=f132e74]:
+            - link "Customers" [ref=f132e77] [cursor=pointer]:
+              - /url: /users#customers
+              - generic "Customers" [ref=f132e79]
+            - link "Vendors" [ref=f132e82] [cursor=pointer]:
+              - /url: /users#vendors
+              - generic "Vendors" [ref=f132e84]
+            - link "Team Members" [ref=f132e87] [cursor=pointer]:
+              - /url: /users#team-members
+              - generic "Team Members" [ref=f132e89]
+            - link "Organisations" [ref=f132e92] [cursor=pointer]:
+              - /url: /users/organisations
+              - generic "Organisations" [ref=f132e94]
+        - link "Roles Management" [ref=f132e97] [cursor=pointer]:
+          - /url: /roles-management
+          - generic "Roles Management" [ref=f132e105]
+        - button "Catalogue Expand" [ref=f132e108] [cursor=pointer]:
+          - generic "Catalogue" [ref=f132e116]
+          - button "Expand" [ref=f132e117]:
+            - generic [ref=f132e118]: expand_more
+        - button "Trade Expand" [ref=f132e121] [cursor=pointer]:
+          - generic "Trade" [ref=f132e128]
+          - button "Expand" [ref=f132e129]:
+            - generic [ref=f132e130]: expand_more
+        - button "Sales Expand" [ref=f132e133] [cursor=pointer]:
+          - generic "Sales" [ref=f132e140]
+          - button "Expand" [ref=f132e141]:
+            - generic [ref=f132e142]: expand_more
+        - button "Purchases Expand" [ref=f132e145] [cursor=pointer]:
+          - generic "Purchases" [ref=f132e152]
+          - button "Expand" [ref=f132e153]:
+            - generic [ref=f132e154]: expand_more
+        - button "Shipping Expand" [ref=f132e157] [cursor=pointer]:
+          - generic "Shipping" [ref=f132e164]
+          - button "Expand" [ref=f132e165]:
+            - generic [ref=f132e166]: expand_more
+        - button "Accounts Expand" [ref=f132e169] [cursor=pointer]:
+          - generic "Accounts" [ref=f132e176]
+          - button "Expand" [ref=f132e177]:
+            - generic [ref=f132e178]: expand_more
+        - button "Reports Expand" [ref=f132e181] [cursor=pointer]:
+          - generic "Reports" [ref=f132e188]
+          - button "Expand" [ref=f132e189]:
+            - generic [ref=f132e190]: expand_more
+        - link "Inbox (7)" [ref=f132e193] [cursor=pointer]:
+          - /url: /inbox
+          - generic "Inbox (7)" [ref=f132e199]
+        - button "Cashflow Manager Expand" [ref=f132e202] [cursor=pointer]:
+          - generic "Cashflow Manager" [ref=f132e209]
+          - button "Expand" [ref=f132e210]:
+            - generic [ref=f132e211]: expand_more
+        - link "File Manager" [ref=f132e214] [cursor=pointer]:
+          - /url: /file-manager
+          - generic "File Manager" [ref=f132e221]
+        - button "Utility Expand" [ref=f132e224] [cursor=pointer]:
+          - generic "Utility" [ref=f132e230]
+          - button "Expand" [ref=f132e231]:
+            - generic [ref=f132e232]: expand_more
+        - link "Analytics" [ref=f132e235] [cursor=pointer]:
+          - /url: https://bi.poshn.app/
+          - generic "Analytics" [ref=f132e243]
+        - button "Integrations" [ref=f132e246] [cursor=pointer]:
+          - generic "Integrations" [ref=f132e255]
+      - separator [ref=f132e256]
+      - generic [ref=f132e257]:
+        - button "Log Out" [ref=f132e258] [cursor=pointer]
+        - paragraph [ref=f132e263]: ©Poshn, Crafted with ❤️ in India
+  - main [ref=f132e265]:
+    - generic [ref=f132e266]:
+      - generic [ref=f132e267]:
+        - generic [ref=f132e269]:
+          - link "Users" [ref=f132e271] [cursor=pointer]:
+            - /url: /users
+          - generic [ref=f132e273]: /
+          - link "Customers" [ref=f132e275] [cursor=pointer]:
+            - /url: /users/#customers
+        - generic [ref=f132e277]:
+          - generic [ref=f132e278]: Total Pendencies
+          - generic [ref=f132e279]: "1445"
+      - generic [ref=f132e280]:
+        - textbox [ref=f132e290]:
+          - /placeholder: Search by name, trade name, phone or email
+        - generic [ref=f132e294] [cursor=pointer]:
+          - generic [ref=f132e296]:
+            - generic [ref=f132e297]: All Status
+            - combobox "All Status" [ref=f132e298]
+          - generic [ref=f132e299]: expand_more
+        - button "Add Customer" [ref=f132e301] [cursor=pointer]
+      - generic [ref=f132e304]:
+        - tablist [ref=f132e305]:
+          - generic [ref=f132e306]:
+            - tab "Approved (1289)" [selected] [ref=f132e307] [cursor=pointer]
+            - tab "Pending Application (80)" [ref=f132e310] [cursor=pointer]
+            - tab "In Review (1365)" [ref=f132e313] [cursor=pointer]
+            - tab "Rejected (27)" [ref=f132e316] [cursor=pointer]
+        - separator [ref=f132e319]
+        - tabpanel [ref=f132e321]:
+          - tabpanel [ref=f132e322]:
+            - generic [ref=f132e323]:
+              - table [ref=f132e325]:
+                - rowgroup [ref=f132e326]:
+                  - row [ref=f132e327]:
+                    - columnheader "Registered Name" [ref=f132e328] [cursor=pointer]:
+                      - text: Registered Name
+                      - generic [ref=f132e329]: arrow_upward
+                    - columnheader "GSTIN" [ref=f132e330] [cursor=pointer]:
+                      - text: GSTIN
+                      - generic [ref=f132e331]: arrow_upward
+                    - columnheader "User Role" [ref=f132e332] [cursor=pointer]:
+                      - text: User Role
+                      - generic [ref=f132e333]: arrow_upward
+                    - columnheader "Status" [ref=f132e334] [cursor=pointer]:
+                      - text: Status
+                      - generic [ref=f132e335]: arrow_upward
+                    - columnheader "Contact Name" [ref=f132e336] [cursor=pointer]:
+                      - text: Contact Name
+                      - generic [ref=f132e337]: arrow_upward
+                    - columnheader "Contact No." [ref=f132e338] [cursor=pointer]:
+                      - text: Contact No.
+                      - generic [ref=f132e339]: arrow_upward
+                    - columnheader "Contact Email" [ref=f132e340] [cursor=pointer]:
+                      - text: Contact Email
+                      - generic [ref=f132e341]: arrow_upward
+                    - columnheader "City" [ref=f132e342] [cursor=pointer]:
+                      - text: City
+                      - generic [ref=f132e343]: arrow_upward
+                    - columnheader "State" [ref=f132e344] [cursor=pointer]:
+                      - text: State
+                      - generic [ref=f132e345]: arrow_upward
+                    - columnheader "Organisation Code" [ref=f132e346]
+                    - columnheader "Payments Cycle (in days)" [ref=f132e347] [cursor=pointer]:
+                      - text: Payments Cycle (in days)
+                      - generic [ref=f132e348]: arrow_upward
+                    - columnheader "Demand Broadcast" [ref=f132e349] [cursor=pointer]:
+                      - text: Demand Broadcast
+                      - generic [ref=f132e350]: arrow_upward
+                    - columnheader "Credit Limit" [ref=f132e351] [cursor=pointer]:
+                      - generic [ref=f132e352]: arrow_upward
+                      - text: Credit Limit
+                    - columnheader "Tax Settings" [ref=f132e353] [cursor=pointer]:
+                      - text: Tax Settings
+                      - generic [ref=f132e354]: arrow_upward
+                    - columnheader "Beneficiary Name" [ref=f132e355] [cursor=pointer]:
+                      - text: Beneficiary Name
+                      - generic [ref=f132e356]: arrow_upward
+                    - columnheader "Created At" [ref=f132e357] [cursor=pointer]:
+                      - text: Created At
+                      - generic [ref=f132e358]: arrow_upward
+                    - columnheader "Action" [ref=f132e359]
+                - rowgroup:
+                  - row:
+                    - cell
+                - rowgroup [ref=f132e360]:
+                  - row [ref=f132e361]:
+                    - cell "The Federal Bank Limited" [ref=f132e362]
+                    - cell "32AABCT0020H4Z2" [ref=f132e365]
+                    - cell "Buyer" [ref=f132e366]
+                    - cell [ref=f132e367]:
+                      - status "Active" [ref=f132e368]
+                    - cell "Fed-Cus_002" [ref=f132e369]
+                    - cell "8937845793" [ref=f132e370]
+                    - cell "-" [ref=f132e371]
+                    - cell "Ernakulam" [ref=f132e372]
+                    - cell "Kerala" [ref=f132e373]
+                    - cell "STSPL-O-2048" [ref=f132e374]
+                    - cell "-" [ref=f132e375]
+                    - cell "-" [ref=f132e376]
+                    - cell "₹1.000" [ref=f132e378]
+                    - cell "N/A" [ref=f132e379]
+                    - cell "-" [ref=f132e380]
+                    - cell "27 Aug 2026, 2:15 pm" [ref=f132e381]
+                    - cell [ref=f132e382]:
+                      - button [ref=f132e383] [cursor=pointer]
+                  - row [ref=f132e389]:
+                    - cell "The Federal Bank Limited" [ref=f132e390]
+                    - cell "13AABCT0020H2Z4" [ref=f132e393]
+                    - cell "Buyer" [ref=f132e394]
+                    - cell [ref=f132e395]:
+                      - status "Active" [ref=f132e396]
+                    - cell "Feder_001" [ref=f132e397]
+                    - cell "3974958739" [ref=f132e398]
+                    - cell "-" [ref=f132e399]
+                    - cell "Dimapur" [ref=f132e400]
+                    - cell "Nagaland" [ref=f132e401]
+                    - cell "STSPL-O-2048" [ref=f132e402]
+                    - cell "-" [ref=f132e403]
+                    - cell "-" [ref=f132e404]
+                    - cell "₹1.000" [ref=f132e406]
+                    - cell "N/A" [ref=f132e407]
+                    - cell "-" [ref=f132e408]
+                    - cell "27 Aug 2026, 2:14 pm" [ref=f132e409]
+                    - cell [ref=f132e410]:
+                      - button [ref=f132e411] [cursor=pointer]
+                  - row [ref=f132e417]:
+                    - cell "Persistent Systems Limited" [ref=f132e418]
+                    - cell "30AABCP1209Q1ZL" [ref=f132e421]
+                    - cell "Buyer" [ref=f132e422]
+                    - cell [ref=f132e423]:
+                      - status "Active" [ref=f132e424]
+                    - cell "Seller_cus_02" [ref=f132e425]
+                    - cell "9834753749" [ref=f132e426]
+                    - cell "-" [ref=f132e427]
+                    - cell "South Goa" [ref=f132e428]
+                    - cell "Goa" [ref=f132e429]
+                    - cell "STSPL-O-2046" [ref=f132e430]
+                    - cell "-" [ref=f132e431]
+                    - cell "-" [ref=f132e432]
+                    - cell "₹1.000" [ref=f132e434]
+                    - cell "N/A" [ref=f132e435]
+                    - cell "-" [ref=f132e436]
+                    - cell "27 Aug 2026, 2:05 pm" [ref=f132e437]
+                    - cell [ref=f132e438]:
+                      - button [ref=f132e439] [cursor=pointer]
+                  - row [ref=f132e445]:
+                    - cell "Meesho Limited" [ref=f132e446]
+                    - cell "06AACCF6368D1ZQ" [ref=f132e449]
+                    - cell "Buyer" [ref=f132e450]
+                    - cell [ref=f132e451]:
+                      - status "Active" [ref=f132e452]
+                    - cell "Demo_cus_1" [ref=f132e453]
+                    - cell "9279387492" [ref=f132e454]
+                    - cell "-" [ref=f132e455]
+                    - cell "Gurgaon" [ref=f132e456]
+                    - cell "Haryana" [ref=f132e457]
+                    - cell "STSPL-O-2044" [ref=f132e458]
+                    - cell "-" [ref=f132e459]
+                    - cell "-" [ref=f132e460]
+                    - cell "₹1.000" [ref=f132e462]
+                    - cell "N/A" [ref=f132e463]
+                    - cell "-" [ref=f132e464]
+                    - cell "27 Aug 2026, 1:57 pm" [ref=f132e465]
+                    - cell [ref=f132e466]:
+                      - button [ref=f132e467] [cursor=pointer]
+                  - row [ref=f132e473]:
+                    - cell "Bharat Forge Limited" [ref=f132e474]
+                    - cell "29AAACB8519L2Z9" [ref=f132e477]
+                    - cell "Buyer" [ref=f132e478]
+                    - cell [ref=f132e479]:
+                      - status "Active" [ref=f132e480]
+                    - cell "Cust_sel_test_01" [ref=f132e481]
+                    - cell "9394759374" [ref=f132e482]
+                    - cell "-" [ref=f132e483]
+                    - cell "Bangalore" [ref=f132e484]
+                    - cell "Karnataka" [ref=f132e485]
+                    - cell "STSPL-O-2043" [ref=f132e486]
+                    - cell "-" [ref=f132e487]
+                    - cell "-" [ref=f132e488]
+                    - cell "₹1.000" [ref=f132e490]
+                    - cell "N/A" [ref=f132e491]
+                    - cell "-" [ref=f132e492]
+                    - cell "27 Aug 2026, 11:35 am" [ref=f132e493]
+                    - cell [ref=f132e494]:
+                      - button [ref=f132e495] [cursor=pointer]
+                  - row [ref=f132e501]:
+                    - cell "Mazagon Dock Shipbuilders Limi ..." [ref=f132e502]:
+                      - generic [ref=f132e504] [cursor=pointer]:
+                        - text: Mazagon Dock Shipbuilders Limi
+                        - generic [ref=f132e505]: ...
+                    - cell "27AAACM8029J1ZA" [ref=f132e506]
+                    - cell "Buyer" [ref=f132e507]
+                    - cell [ref=f132e508]:
+                      - status "Active" [ref=f132e509]
+                    - cell "Test_dd_02" [ref=f132e510]
+                    - cell "3984573947" [ref=f132e511]
+                    - cell "-" [ref=f132e512]
+                    - cell "Mumbai" [ref=f132e513]
+                    - cell "Maharashtra" [ref=f132e514]
+                    - cell "STSPL-O-2040" [ref=f132e515]
+                    - cell "-" [ref=f132e516]
+                    - cell "-" [ref=f132e517]
+                    - cell "₹1.000" [ref=f132e519]
+                    - cell "N/A" [ref=f132e520]
+                    - cell "-" [ref=f132e521]
+                    - cell "26 Aug 2026, 4:35 pm" [ref=f132e522]
+                    - cell [ref=f132e523]:
+                      - button [ref=f132e524] [cursor=pointer]
+                  - row [ref=f132e530]:
+                    - cell "One97 Communications Limited" [ref=f132e531]
+                    - cell "08AAACO4007A7ZZ" [ref=f132e534]
+                    - cell "Buyer" [ref=f132e535]
+                    - cell [ref=f132e536]:
+                      - status "Active" [ref=f132e537]
+                    - cell "Testing_flow_009" [ref=f132e538]
+                    - cell "3984757349" [ref=f132e539]
+                    - cell "-" [ref=f132e540]
+                    - cell "Jaipur" [ref=f132e541]
+                    - cell "Rajasthan" [ref=f132e542]
+                    - cell "STSPL-O-2039" [ref=f132e543]
+                    - cell "-" [ref=f132e544]
+                    - cell "-" [ref=f132e545]
+                    - cell "₹1.000" [ref=f132e547]
+                    - cell "N/A" [ref=f132e548]
+                    - cell "-" [ref=f132e549]
+                    - cell "25 Aug 2026, 1:07 pm" [ref=f132e550]
+                    - cell [ref=f132e551]:
+                      - button [ref=f132e552] [cursor=pointer]
+                  - row [ref=f132e558]:
+                    - cell "Govind Ganninath Galla Bhandar" [ref=f132e559]
+                    - cell "10GYLPS5411L1Z6" [ref=f132e562]
+                    - cell "Buyer" [ref=f132e563]
+                    - cell [ref=f132e564]:
+                      - status "Active" [ref=f132e565]
+                    - cell "Option_05" [ref=f132e566]
+                    - cell "2876384682" [ref=f132e567]
+                    - cell "-" [ref=f132e568]
+                    - cell "Samastipur" [ref=f132e569]
+                    - cell "Bihar" [ref=f132e570]
+                    - cell "STSPL-O-2038" [ref=f132e571]
+                    - cell "-" [ref=f132e572]
+                    - cell "-" [ref=f132e573]
+                    - cell "₹1.000" [ref=f132e575]
+                    - cell "N/A" [ref=f132e576]
+                    - cell "-" [ref=f132e577]
+                    - cell "24 Aug 2026, 11:29 am" [ref=f132e578]
+                    - cell [ref=f132e579]:
+                      - button [ref=f132e580] [cursor=pointer]
+                  - row [ref=f132e586]:
+                    - cell "Abhishek Agro Tech" [ref=f132e587]
+                    - cell "07ABYFA2940C1ZF" [ref=f132e590]
+                    - cell "Buyer" [ref=f132e591]
+                    - cell [ref=f132e592]:
+                      - status "Active" [ref=f132e593]
+                    - cell "Take_time_055" [ref=f132e594]
+                    - cell "3874675863" [ref=f132e595]
+                    - cell "-" [ref=f132e596]
+                    - cell "North West Delhi" [ref=f132e597]
+                    - cell "Delhi" [ref=f132e598]
+                    - cell "STSPL-O-2037" [ref=f132e599]
+                    - cell "-" [ref=f132e600]
+                    - cell "-" [ref=f132e601]
+                    - cell "₹1.000" [ref=f132e603]
+                    - cell "N/A" [ref=f132e604]
+                    - cell "-" [ref=f132e605]
+                    - cell "24 Aug 2026, 11:20 am" [ref=f132e606]
+                    - cell [ref=f132e607]:
+                      - button [ref=f132e608] [cursor=pointer]
+                  - row [ref=f132e614]:
+                    - cell "Cummins India Limited" [ref=f132e615]
+                    - cell "20AAACC7258B1ZA" [ref=f132e618]
+                    - cell "Buyer" [ref=f132e619]
+                    - cell [ref=f132e620]:
+                      - status "Active" [ref=f132e621]
+                    - cell "Test_can_05" [ref=f132e622]
+                    - cell "2937472934" [ref=f132e623]
+                    - cell "-" [ref=f132e624]
+                    - cell "Ranchi" [ref=f132e625]
+                    - cell "Jharkhand" [ref=f132e626]
+                    - cell "STSPL-O-2034" [ref=f132e627]
+                    - cell "-" [ref=f132e628]
+                    - cell "-" [ref=f132e629]
+                    - cell "₹1.000" [ref=f132e631]
+                    - cell "N/A" [ref=f132e632]
+                    - cell "-" [ref=f132e633]
+                    - cell "24 Aug 2026, 10:43 am" [ref=f132e634]
+                    - cell [ref=f132e635]:
+                      - button [ref=f132e636] [cursor=pointer]
+                  - row [ref=f132e642]:
+                    - cell "Solar Industries India Limited" [ref=f132e643]
+                    - cell "29AACCS2132E1ZP" [ref=f132e646]
+                    - cell "Buyer" [ref=f132e647]
+                    - cell [ref=f132e648]:
+                      - status "Active" [ref=f132e649]
+                    - cell "For_negative_test" [ref=f132e650]
+                    - cell "8273978768" [ref=f132e651]
+                    - cell "-" [ref=f132e652]
+                    - cell "Bangalore Rural" [ref=f132e653]
+                    - cell "Karnataka" [ref=f132e654]
+                    - cell "STSPL-O-2032" [ref=f132e655]
+                    - cell "-" [ref=f132e656]
+                    - cell "-" [ref=f132e657]
+                    - cell "₹1.000" [ref=f132e659]
+                    - cell "N/A" [ref=f132e660]
+                    - cell "-" [ref=f132e661]
+                    - cell "22 Aug 2026, 2:20 pm" [ref=f132e662]
+                    - cell [ref=f132e663]:
+                      - button [ref=f132e664] [cursor=pointer]
+                  - row [ref=f132e670]:
+                    - cell "Grasim Industries Limited" [ref=f132e671]
+                    - cell "05AAACG4464B3Z2" [ref=f132e674]
+                    - cell "Buyer" [ref=f132e675]
+                    - cell [ref=f132e676]:
+                      - status "Active" [ref=f132e677]
+                    - cell "Again_005" [ref=f132e678]
+                    - cell "3984975938" [ref=f132e679]
+                    - cell "-" [ref=f132e680]
+                    - cell "Dehradun" [ref=f132e681]
+                    - cell "Uttarakhand" [ref=f132e682]
+                    - cell "STSPL-O-2030" [ref=f132e683]
+                    - cell "-" [ref=f132e684]
+                    - cell "-" [ref=f132e685]
+                    - cell "₹1.000" [ref=f132e687]
+                    - cell "N/A" [ref=f132e688]
+                    - cell "-" [ref=f132e689]
+                    - cell "21 Aug 2026, 11:19 am" [ref=f132e690]
+                    - cell [ref=f132e691]:
+                      - button [ref=f132e692] [cursor=pointer]
+                  - row [ref=f132e698]:
+                    - cell "Gujarat Ambuja Exports Ltd" [ref=f132e699]
+                    - cell "24AAACG3980A2Z2" [ref=f132e702]
+                    - cell "Buyer" [ref=f132e703]
+                    - cell [ref=f132e704]:
+                      - status "Active" [ref=f132e705]
+                    - cell "Test_ag_008" [ref=f132e706]
+                    - cell "2873479273" [ref=f132e707]
+                    - cell "-" [ref=f132e708]
+                    - cell "Ahmedabad" [ref=f132e709]
+                    - cell "Gujarat" [ref=f132e710]
+                    - cell "STSPL-O-2019" [ref=f132e711]
+                    - cell "15" [ref=f132e712]
+                    - cell "-" [ref=f132e713]
+                    - cell "₹1.000" [ref=f132e715]
+                    - cell "N/A" [ref=f132e716]
+                    - cell "-" [ref=f132e717]
+                    - cell "21 Aug 2026, 11:08 am" [ref=f132e718]
+                    - cell [ref=f132e719]:
+                      - button [ref=f132e720] [cursor=pointer]
+                  - row [ref=f132e726]:
+                    - cell "Utsav Traders" [ref=f132e727]
+                    - cell "10EJCPK9397B1ZB" [ref=f132e730]
+                    - cell "Buyer" [ref=f132e731]
+                    - cell [ref=f132e732]:
+                      - status "Active" [ref=f132e733]
+                    - cell "Not_att_mana" [ref=f132e734]
+                    - cell "3983745987" [ref=f132e735]
+                    - cell "-" [ref=f132e736]
+                    - cell "Samastipur" [ref=f132e737]
+                    - cell "Bihar" [ref=f132e738]
+                    - cell "STSPL-O-2028" [ref=f132e739]
+                    - cell "-" [ref=f132e740]
+                    - cell "-" [ref=f132e741]
+                    - cell "₹1.000" [ref=f132e743]
+                    - cell "N/A" [ref=f132e744]
+                    - cell "-" [ref=f132e745]
+                    - cell "20 Aug 2026, 11:05 pm" [ref=f132e746]
+                    - cell [ref=f132e747]:
+                      - button [ref=f132e748] [cursor=pointer]
+                  - row [ref=f132e754]:
+                    - cell "Godrej Consumer Products Ltd." [ref=f132e755]
+                    - cell "19AABCG3365J1ZF" [ref=f132e758]
+                    - cell "Buyer" [ref=f132e759]
+                    - cell [ref=f132e760]:
+                      - status "Active" [ref=f132e761]
+                    - cell "Test-Cus_ff" [ref=f132e762]
+                    - cell "9829739479" [ref=f132e763]
+                    - cell "-" [ref=f132e764]
+                    - cell "North 24 Parganas" [ref=f132e765]
+                    - cell "West Bengal" [ref=f132e766]
+                    - cell "STSPL-O-2021" [ref=f132e767]
+                    - cell "-" [ref=f132e768]
+                    - cell "-" [ref=f132e769]
+                    - cell "₹1.000" [ref=f132e771]
+                    - cell "N/A" [ref=f132e772]
+                    - cell "-" [ref=f132e773]
+                    - cell "17 Aug 2026, 9:54 pm" [ref=f132e774]
+                    - cell [ref=f132e775]:
+                      - button [ref=f132e776] [cursor=pointer]
+                  - row [ref=f132e782]:
+                    - cell "Gujarat Ambuja Exports Ltd" [ref=f132e783]
+                    - cell "05AAACG3980A1Z3" [ref=f132e786]
+                    - cell "Buyer" [ref=f132e787]
+                    - cell [ref=f132e788]:
+                      - status "Active" [ref=f132e789]
+                    - cell "Gujarat Ambuja Exports Ltd" [ref=f132e790]
+                    - cell "9948103180" [ref=f132e791]
+                    - cell "-" [ref=f132e792]
+                    - cell "Udham Singh Nagar" [ref=f132e793]
+                    - cell "Uttarakhand" [ref=f132e794]
+                    - cell "STSPL-O-2019" [ref=f132e795]
+                    - cell "15" [ref=f132e796]
+                    - cell "-" [ref=f132e797]
+                    - cell "₹1.000" [ref=f132e799]
+                    - cell "N/A" [ref=f132e800]
+                    - cell "-" [ref=f132e801]
+                    - cell "17 Aug 2026, 3:17 pm" [ref=f132e802]
+                    - cell [ref=f132e803]:
+                      - button [ref=f132e804] [cursor=pointer]
+                  - row [ref=f132e810]:
+                    - cell "Gujarat Ambuja Exports Ltd" [ref=f132e811]
+                    - cell "19AAACG3980A1ZU" [ref=f132e814]
+                    - cell "Buyer" [ref=f132e815]
+                    - cell [ref=f132e816]:
+                      - status "Active" [ref=f132e817]
+                    - cell "Gujarat Ambuja Exports Ltd" [ref=f132e818]
+                    - cell "9829482918" [ref=f132e819]
+                    - cell "-" [ref=f132e820]
+                    - cell "Malda" [ref=f132e821]
+                    - cell "West Bengal" [ref=f132e822]
+                    - cell "STSPL-O-2019" [ref=f132e823]
+                    - cell "10" [ref=f132e824]
+                    - cell "-" [ref=f132e825]
+                    - cell "₹1.000" [ref=f132e827]
+                    - cell "N/A" [ref=f132e828]
+                    - cell "-" [ref=f132e829]
+                    - cell "17 Aug 2026, 3:15 pm" [ref=f132e830]
+                    - cell [ref=f132e831]:
+                      - button [ref=f132e832] [cursor=pointer]
+                  - row [ref=f132e838]:
+                    - cell "Avenue Supermarts Limited" [ref=f132e839]
+                    - cell "09AACCA8432H1ZO" [ref=f132e842]
+                    - cell "Buyer" [ref=f132e843]
+                    - cell [ref=f132e844]:
+                      - status "Active" [ref=f132e845]
+                    - cell "Prashant Sharma" [ref=f132e846]
+                    - cell "8920696996" [ref=f132e847]
+                    - cell "-" [ref=f132e848]
+                    - cell "Ghaziabad" [ref=f132e849]
+                    - cell "Uttar Pradesh" [ref=f132e850]
+                    - cell "STSPL-O-1594" [ref=f132e851]
+                    - cell "10" [ref=f132e852]
+                    - cell "-" [ref=f132e853]
+                    - cell "₹1.000" [ref=f132e855]
+                    - cell "N/A" [ref=f132e856]
+                    - cell "-" [ref=f132e857]
+                    - cell "17 Aug 2026, 12:47 pm" [ref=f132e858]
+                    - cell [ref=f132e859]:
+                      - button [ref=f132e860] [cursor=pointer]
+                  - row [ref=f132e866]:
+                    - cell "Avenue Supermarts Limited" [ref=f132e867]
+                    - cell "06AACCA8432H2ZT" [ref=f132e870]
+                    - cell "Buyer" [ref=f132e871]
+                    - cell [ref=f132e872]:
+                      - status "Active" [ref=f132e873]
+                    - cell "Prashant Sharma" [ref=f132e874]
+                    - cell "7004696155" [ref=f132e875]
+                    - cell "prashant.sharma@dmartindia.com" [ref=f132e876]
+                    - cell "Faridabad" [ref=f132e877]
+                    - cell "Haryana" [ref=f132e878]
+                    - cell "STSPL-O-1594" [ref=f132e879]
+                    - cell "7" [ref=f132e880]
+                    - cell "-" [ref=f132e881]
+                    - cell "₹1,00,000.000" [ref=f132e883]
+                    - cell "N/A" [ref=f132e884]
+                    - cell "-" [ref=f132e885]
+                    - cell "17 Aug 2026, 12:44 pm" [ref=f132e886]
+                    - cell [ref=f132e887]:
+                      - button [ref=f132e888] [cursor=pointer]
+                  - row [ref=f132e894]:
+                    - cell "Shivanya Enterprises" [ref=f132e895]
+                    - cell "10CEAPS4312D1Z9" [ref=f132e898]
+                    - cell "Buyer" [ref=f132e899]
+                    - cell [ref=f132e900]:
+                      - status "Active" [ref=f132e901]
+                    - cell "Mala Sinha" [ref=f132e902]
+                    - cell "7091519710" [ref=f132e903]
+                    - cell "shubhamk871@gmail.com" [ref=f132e904]
+                    - cell "Muzaffarpur" [ref=f132e905]
+                    - cell "Bihar" [ref=f132e906]
+                    - cell "STSPL-O-2017" [ref=f132e907]
+                    - cell "2" [ref=f132e908]
+                    - cell "-" [ref=f132e909]
+                    - cell "₹1.000" [ref=f132e911]
+                    - cell "N/A" [ref=f132e912]
+                    - cell "-" [ref=f132e913]
+                    - cell "17 Aug 2026, 12:08 pm" [ref=f132e914]
+                    - cell [ref=f132e915]:
+                      - button [ref=f132e916] [cursor=pointer]
+                  - row [ref=f132e922]:
+                    - cell "Ashok Leyland Limited" [ref=f132e923]
+                    - cell "09AAACA4651L2ZJ" [ref=f132e926]
+                    - cell "Buyer" [ref=f132e927]
+                    - cell [ref=f132e928]:
+                      - status "Active" [ref=f132e929]
+                    - cell "Test_org_tt_22" [ref=f132e930]
+                    - cell "9287384444" [ref=f132e931]
+                    - cell "-" [ref=f132e932]
+                    - cell "Lucknow" [ref=f132e933]
+                    - cell "Uttar Pradesh" [ref=f132e934]
+                    - cell "STSPL-O-2015" [ref=f132e935]
+                    - cell "-" [ref=f132e936]
+                    - cell "-" [ref=f132e937]
+                    - cell "₹1.000" [ref=f132e939]
+                    - cell "N/A" [ref=f132e940]
+                    - cell "-" [ref=f132e941]
+                    - cell "12 Aug 2026, 9:33 am" [ref=f132e942]
+                    - cell [ref=f132e943]:
+                      - button [ref=f132e944] [cursor=pointer]
+                - rowgroup [ref=f132e950]:
+                  - row [ref=f132e951]:
+                    - cell [ref=f132e952]
+              - generic [ref=f132e953]:
+                - button [ref=f132e954] [cursor=pointer]:
+                  - img [ref=f132e956]: fullscreen
+                - generic [ref=f132e957]:
+                  - generic [ref=f132e958]: 1 - 25 of 1289
+                  - button [disabled] [ref=f132e959]
+                  - button [ref=f132e963] [cursor=pointer]

@@ -1,0 +1,40 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/poshn
+        - link [ref=e10] [cursor=pointer]:
+          - /url: https://poshn.co/
+    - main [ref=e20]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - paragraph [ref=e26]: Welcome Back!
+            - paragraph [ref=e27]: Please login to your account
+          - generic [ref=e28]:
+            - tabpanel [ref=e54]:
+              - tabpanel [ref=e55]:
+                - generic [ref=e58]:
+                  - paragraph [ref=e59]: "OTP is sent to:"
+                  - generic [ref=e60]:
+                    - generic [ref=e61]: "+918596896586"
+                    - button "Change number?" [ref=e62] [cursor=pointer]
+                  - generic [ref=e66]:
+                    - spinbutton [ref=e68]
+                    - spinbutton [ref=e70]
+                    - spinbutton [ref=e72]
+                    - spinbutton [ref=e74]
+            - generic [ref=e47]:
+              - button "Login" [active] [ref=e75] [cursor=pointer]
+              - paragraph [ref=e76]:
+                - text: Haven't got the OTP yet?
+                - generic [ref=e77]:
+                  - text: Wait until
+                  - generic [ref=e78]: "54"
+                  - text: secs
+        - paragraph [ref=e52]: ©Poshn, Crafted with ❤️ in India
+  - alert [ref=e79]:
+    - generic [ref=e81]:
+      - img [ref=e82]: check_circle
+      - generic [ref=e83]: OTP sent successfully!

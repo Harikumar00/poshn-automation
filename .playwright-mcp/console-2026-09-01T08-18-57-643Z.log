@@ -1,0 +1,38 @@
+[     512ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[     869ms] [INFO] [OneSignal] Initialized successfully @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[     869ms] [INFO] [OneSignal] Notification click handler registered @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[    1117ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[    2642ms] [INFO] [Twilio] Client initialized successfully for poshn @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[    3373ms] [INFO] [Twilio] Client initialized successfully for user @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64422ms] [WARNING] 🔄 [chatListItemState-CH049673c063dd4909be5a1b5015a3e00c] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64423ms] [WARNING] 🔄 [chatListItemState-CHdbe5feb01a9b4e0686ffcfc501995fce] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64423ms] [WARNING] 🔄 [chatListItemState-CHb10135b24caf4e40ba6cd14468c35de3] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64423ms] [WARNING] 🔄 [chatListItemState-CH54a8236529b24e60ac162a7d599f8ab3] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64423ms] [WARNING] 🔄 [chatListItemState-CH525e396558c040c7aade393d776d3a19] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64423ms] [WARNING] 🔄 [chatListItemState-CH8c8c1c2c077a48acb32fbd9aa86e5d17] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64423ms] [WARNING] 🔄 [chatListItemState-CHbb93e45232654dea8ed4c63335c43fb6] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64423ms] [WARNING] 🔄 [chatListItemState-CH5f24ced217734afa955f008abace3620] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64689ms] [WARNING] 🔄 [chatListItemState-CHb6806138665b4e8991b9ecf30c24addc] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64689ms] [WARNING] 🔄 [chatListItemState-CH8c2abb325e4740908e8fc70b81920d3f] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64689ms] [WARNING] 🔄 [chatListItemState-CHdc1bd991a63f429986d5186242c819c1] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64689ms] [WARNING] 🔄 [chatListItemState-CHbeff9bdcded94b109801f106a71843f8] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64689ms] [WARNING] 🔄 [chatListItemState-CH361d18746aa24fe393e26f20daa006d5] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   64689ms] [WARNING] 🔄 [chatListItemState-CHa8cf0136b10f48d2854400574b764a6f] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   93388ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154422ms] [WARNING] 🔄 [chatListItemState-CH049673c063dd4909be5a1b5015a3e00c] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154425ms] [WARNING] 🔄 [chatListItemState-CHdbe5feb01a9b4e0686ffcfc501995fce] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154425ms] [WARNING] 🔄 [chatListItemState-CHb10135b24caf4e40ba6cd14468c35de3] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154425ms] [WARNING] 🔄 [chatListItemState-CH54a8236529b24e60ac162a7d599f8ab3] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154425ms] [WARNING] 🔄 [chatListItemState-CH525e396558c040c7aade393d776d3a19] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154425ms] [WARNING] 🔄 [chatListItemState-CH8c8c1c2c077a48acb32fbd9aa86e5d17] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154425ms] [WARNING] 🔄 [chatListItemState-CHbb93e45232654dea8ed4c63335c43fb6] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154425ms] [WARNING] 🔄 [chatListItemState-CH5f24ced217734afa955f008abace3620] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154689ms] [WARNING] 🔄 [chatListItemState-CHb6806138665b4e8991b9ecf30c24addc] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154689ms] [WARNING] 🔄 [chatListItemState-CH8c2abb325e4740908e8fc70b81920d3f] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154689ms] [WARNING] 🔄 [chatListItemState-CHdc1bd991a63f429986d5186242c819c1] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154689ms] [WARNING] 🔄 [chatListItemState-CHbeff9bdcded94b109801f106a71843f8] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154689ms] [WARNING] 🔄 [chatListItemState-CH361d18746aa24fe393e26f20daa006d5] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  154689ms] [WARNING] 🔄 [chatListItemState-CHa8cf0136b10f48d2854400574b764a6f] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  183388ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5

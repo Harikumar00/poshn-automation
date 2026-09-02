@@ -1,0 +1,157 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e61]:
+    - banner [ref=e62]:
+      - toolbar [ref=e63]:
+        - generic [ref=e64]:
+          - link [ref=e66] [cursor=pointer]:
+            - /url: /home
+          - button [ref=e72] [cursor=pointer]
+        - combobox [ref=e86]
+        - button "Notifications" [ref=e88] [cursor=pointer]
+        - generic [ref=e93]:
+          - paragraph [ref=e94]: Hari-Ven
+          - generic [ref=e95]: Admin
+        - generic [ref=e96]: H
+    - complementary [ref=e99]:
+      - list [ref=e101]:
+        - generic [ref=e103]:
+          - button "Home" [ref=e106] [cursor=pointer]:
+            - generic "Home" [ref=e112]
+          - button "Users Expand" [ref=e115] [cursor=pointer]:
+            - generic "Users" [ref=e123]
+            - button "Expand" [ref=e124]:
+              - generic [ref=e125]: expand_more
+          - link "Roles Management" [ref=e128] [cursor=pointer]:
+            - /url: /roles-management
+            - generic "Roles Management" [ref=e136]
+          - button "Catalogue Expand" [ref=e139] [cursor=pointer]:
+            - generic "Catalogue" [ref=e147]
+            - button "Expand" [ref=e148]:
+              - generic [ref=e149]: expand_more
+          - button "Trade Expand" [ref=e152] [cursor=pointer]:
+            - generic "Trade" [ref=e159]
+            - button "Expand" [ref=e160]:
+              - generic [ref=e161]: expand_more
+          - generic [ref=e163]:
+            - button "Sales Collapse" [ref=e164] [cursor=pointer]:
+              - generic "Sales" [ref=e171]
+              - button "Collapse" [expanded] [ref=e172]:
+                - generic [ref=e173]: expand_less
+            - generic [ref=e174]:
+              - link "Purchase Orders" [ref=e177] [cursor=pointer]:
+                - /url: /sales/purchase-orders
+                - generic "Purchase Orders" [ref=e179]
+              - link "Invoices" [ref=e182] [cursor=pointer]:
+                - /url: /sales/invoices
+                - generic "Invoices" [ref=e184]
+              - link "Proof of Deliveries" [ref=e187] [cursor=pointer]:
+                - /url: /sales/proof-of-deliveries
+                - generic "Proof of Deliveries" [ref=e189]
+              - link "Credit Notes" [ref=e192] [cursor=pointer]:
+                - /url: /sales/credit-notes
+                - generic "Credit Notes" [ref=e194]
+              - link "Debit Notes" [ref=e197] [cursor=pointer]:
+                - /url: /sales/debit-notes
+                - generic "Debit Notes" [ref=e199]
+          - button "Purchases Expand" [ref=e202] [cursor=pointer]:
+            - generic "Purchases" [ref=e209]
+            - button "Expand" [ref=e210]:
+              - generic [ref=e211]: expand_more
+          - button "Shipping Expand" [ref=e214] [cursor=pointer]:
+            - generic "Shipping" [ref=e221]
+            - button "Expand" [ref=e222]:
+              - generic [ref=e223]: expand_more
+          - button "Accounts Expand" [ref=e226] [cursor=pointer]:
+            - generic "Accounts" [ref=e233]
+            - button "Expand" [ref=e234]:
+              - generic [ref=e235]: expand_more
+          - button "Reports Expand" [ref=e238] [cursor=pointer]:
+            - generic "Reports" [ref=e245]
+            - button "Expand" [ref=e246]:
+              - generic [ref=e247]: expand_more
+          - link "Inbox (0)" [ref=e250] [cursor=pointer]:
+            - /url: /inbox
+            - generic "Inbox (0)" [ref=e256]
+          - button "Cashflow Manager Expand" [ref=e259] [cursor=pointer]:
+            - generic "Cashflow Manager" [ref=e266]
+            - button "Expand" [ref=e267]:
+              - generic [ref=e268]: expand_more
+          - link "File Manager" [ref=e271] [cursor=pointer]:
+            - /url: /file-manager
+            - generic "File Manager" [ref=e278]
+          - button "Utility Expand" [ref=e281] [cursor=pointer]:
+            - generic "Utility" [ref=e287]
+            - button "Expand" [ref=e288]:
+              - generic [ref=e289]: expand_more
+          - link "Analytics" [ref=e292] [cursor=pointer]:
+            - /url: https://bi.poshn.app/
+            - generic "Analytics" [ref=e300]
+          - button "Integrations" [ref=e303] [cursor=pointer]:
+            - generic "Integrations" [ref=e312]
+        - separator [ref=e313]
+        - generic [ref=e314]:
+          - button "Log Out" [ref=e315] [cursor=pointer]
+          - paragraph [ref=e320]: ©Poshn, Crafted with ❤️ in India
+    - main [ref=e322]:
+      - generic [ref=e323]:
+        - generic [ref=e325]:
+          - generic [ref=e326]: Sales
+          - generic [ref=e329]: /
+          - link "Purchase Orders" [ref=e331] [cursor=pointer]:
+            - /url: /sales/purchase-orders
+        - generic [ref=e333]:
+          - generic [ref=e334]:
+            - textbox [ref=e344]:
+              - /placeholder: Search by PO, PB, Invoice number or Customer name
+            - generic [ref=e348]:
+              - combobox [ref=e351]
+              - generic [ref=e352]: expand_more
+            - generic [ref=e356]:
+              - combobox [ref=e359]
+              - generic [ref=e360]: expand_more
+            - button "Create PO" [ref=e362] [cursor=pointer]
+          - table [ref=e366]:
+            - rowgroup [ref=e367]:
+              - row [ref=e368]:
+                - columnheader [ref=e369]
+                - columnheader "Number" [ref=e370]
+                - columnheader "Status" [ref=e371]
+                - columnheader "Customer" [ref=e372]
+                - columnheader "Total Amount" [ref=e373] [cursor=pointer]:
+                  - generic [ref=e374]: arrow_upward
+                  - text: Total Amount
+                - columnheader "Products" [ref=e375] [cursor=pointer]:
+                  - text: Products
+                  - generic [ref=e376]: arrow_upward
+                - columnheader "Expiry Date" [ref=e377] [cursor=pointer]:
+                  - text: Expiry Date
+                  - generic [ref=e378]: arrow_upward
+                - columnheader "Files" [ref=e379] [cursor=pointer]:
+                  - text: Files
+                  - generic [ref=e380]: arrow_upward
+                - columnheader "Delivery Type" [ref=e381]
+                - columnheader "Added" [ref=e382] [cursor=pointer]:
+                  - text: Added
+                  - generic [ref=e383]: arrow_upward
+                - columnheader "Cancel Reason" [ref=e384] [cursor=pointer]:
+                  - text: Cancel Reason
+                  - generic [ref=e385]: arrow_upward
+                - columnheader "Update On" [ref=e386] [cursor=pointer]:
+                  - text: Update On
+                  - generic [ref=e387]: arrow_upward
+                - columnheader "Action" [ref=e388]
+              - row:
+                - columnheader:
+                  - progressbar [ref=e389]
+            - rowgroup:
+              - row:
+                - cell
+            - rowgroup
+            - rowgroup:
+              - row:
+                - cell
+          - generic [ref=e392]: Loading...
+  - alert [ref=e394]:
+    - generic [ref=e396]:
+      - img [ref=e397]: check_circle
+      - generic [ref=e398]: Logged in successfully!

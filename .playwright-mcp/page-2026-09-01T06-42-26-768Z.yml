@@ -1,0 +1,867 @@
+- generic [ref=f135e9]:
+  - banner [ref=f135e10]:
+    - toolbar [ref=f135e11]:
+      - generic [ref=f135e12]:
+        - link [ref=f135e14] [cursor=pointer]:
+          - /url: /home
+        - button [ref=f135e20] [cursor=pointer]
+      - combobox [ref=f135e34]
+      - button "Notifications" [ref=f135e36] [cursor=pointer]
+      - generic [ref=f135e41]:
+        - paragraph [ref=f135e42]: Hari-Ven
+        - generic [ref=f135e43]: Admin
+      - generic [ref=f135e44]: H
+  - complementary [ref=f135e47]:
+    - list [ref=f135e49]:
+      - generic [ref=f135e51]:
+        - button "Home" [ref=f135e54] [cursor=pointer]:
+          - generic "Home" [ref=f135e60]
+        - button "Users Expand" [ref=f135e63] [cursor=pointer]:
+          - generic "Users" [ref=f135e71]
+          - button "Expand" [ref=f135e72]:
+            - generic [ref=f135e73]: expand_more
+        - link "Roles Management" [ref=f135e76] [cursor=pointer]:
+          - /url: /roles-management
+          - generic "Roles Management" [ref=f135e84]
+        - button "Catalogue Expand" [ref=f135e87] [cursor=pointer]:
+          - generic "Catalogue" [ref=f135e95]
+          - button "Expand" [ref=f135e96]:
+            - generic [ref=f135e97]: expand_more
+        - button "Trade Expand" [ref=f135e100] [cursor=pointer]:
+          - generic "Trade" [ref=f135e107]
+          - button "Expand" [ref=f135e108]:
+            - generic [ref=f135e109]: expand_more
+        - button "Sales Expand" [ref=f135e112] [cursor=pointer]:
+          - generic "Sales" [ref=f135e119]
+          - button "Expand" [ref=f135e120]:
+            - generic [ref=f135e121]: expand_more
+        - button "Purchases Expand" [ref=f135e124] [cursor=pointer]:
+          - generic "Purchases" [ref=f135e131]
+          - button "Expand" [ref=f135e132]:
+            - generic [ref=f135e133]: expand_more
+        - button "Shipping Expand" [ref=f135e136] [cursor=pointer]:
+          - generic "Shipping" [ref=f135e143]
+          - button "Expand" [ref=f135e144]:
+            - generic [ref=f135e145]: expand_more
+        - generic [ref=f135e147]:
+          - button "Accounts Collapse" [ref=f135e148] [cursor=pointer]:
+            - generic "Accounts" [ref=f135e155]
+            - button "Collapse" [expanded] [ref=f135e156]:
+              - generic [ref=f135e157]: expand_less
+          - generic [ref=f135e158]:
+            - link "Invoice Requests" [ref=f135e161] [cursor=pointer]:
+              - /url: /accounts/invoice-requests
+              - generic "Invoice Requests" [ref=f135e163]
+            - link "Payment Requests" [ref=f135e166] [cursor=pointer]:
+              - /url: /accounts/payment-requests
+              - generic "Payment Requests" [ref=f135e168]
+            - link "Receivables" [ref=f135e171] [cursor=pointer]:
+              - /url: /accounts/receivables
+              - generic "Receivables" [ref=f135e173]
+            - link "Transactions" [ref=f135e176] [cursor=pointer]:
+              - /url: /accounts/transactions
+              - generic "Transactions" [ref=f135e178]
+        - button "Reports Expand" [ref=f135e181] [cursor=pointer]:
+          - generic "Reports" [ref=f135e188]
+          - button "Expand" [ref=f135e189]:
+            - generic [ref=f135e190]: expand_more
+        - link "Inbox (7)" [ref=f135e193] [cursor=pointer]:
+          - /url: /inbox
+          - generic "Inbox (7)" [ref=f135e199]
+        - button "Cashflow Manager Expand" [ref=f135e202] [cursor=pointer]:
+          - generic "Cashflow Manager" [ref=f135e209]
+          - button "Expand" [ref=f135e210]:
+            - generic [ref=f135e211]: expand_more
+        - link "File Manager" [ref=f135e214] [cursor=pointer]:
+          - /url: /file-manager
+          - generic "File Manager" [ref=f135e221]
+        - button "Utility Expand" [ref=f135e224] [cursor=pointer]:
+          - generic "Utility" [ref=f135e230]
+          - button "Expand" [ref=f135e231]:
+            - generic [ref=f135e232]: expand_more
+        - link "Analytics" [ref=f135e235] [cursor=pointer]:
+          - /url: https://bi.poshn.app/
+          - generic "Analytics" [ref=f135e243]
+        - button "Integrations" [ref=f135e246] [cursor=pointer]:
+          - generic "Integrations" [ref=f135e255]
+      - separator [ref=f135e256]
+      - generic [ref=f135e257]:
+        - button "Log Out" [ref=f135e258] [cursor=pointer]
+        - paragraph [ref=f135e263]: ©Poshn, Crafted with ❤️ in India
+  - main [ref=f135e265]:
+    - generic [ref=f135e266]:
+      - generic [ref=f135e267]:
+        - generic [ref=f135e269]:
+          - generic [ref=f135e270]: Accounts
+          - generic [ref=f135e273]: /
+          - link "Receivables" [ref=f135e275] [cursor=pointer]:
+            - /url: /accounts/receivables
+        - tablist [ref=f135e277]:
+          - generic [ref=f135e278]:
+            - tab [selected] [ref=f135e279] [cursor=pointer]:
+              - generic [ref=f135e282]:
+                - paragraph [ref=f135e283]: Total Pendencies
+                - paragraph [ref=f135e284]: "1230"
+            - tab [ref=f135e286] [cursor=pointer]:
+              - generic [ref=f135e289]:
+                - paragraph [ref=f135e290]: Total Paid
+                - paragraph [ref=f135e291]: "205"
+      - generic [ref=f135e294]:
+        - generic [ref=f135e295]:
+          - textbox [ref=f135e305]:
+            - /placeholder: Search by Invoice#, Customer, Payment#, PO Number
+          - generic [ref=f135e309]:
+            - combobox [ref=f135e312]
+            - generic [ref=f135e313]: expand_more
+          - generic [ref=f135e317]:
+            - combobox [ref=f135e320]
+            - generic [ref=f135e321]: expand_more
+          - button "Reconcile" [ref=f135e323] [cursor=pointer]
+        - table [ref=f135e327]:
+          - rowgroup [ref=f135e328]:
+            - row [ref=f135e329]:
+              - columnheader "Date" [ref=f135e330] [cursor=pointer]:
+                - text: Date
+                - generic [ref=f135e331]: arrow_upward
+              - columnheader "Invoice#" [ref=f135e332] [cursor=pointer]:
+                - text: Invoice#
+                - generic [ref=f135e333]: arrow_upward
+              - columnheader "Customer" [ref=f135e334] [cursor=pointer]:
+                - text: Customer
+                - generic [ref=f135e335]: arrow_upward
+              - columnheader "Status" [ref=f135e336] [cursor=pointer]:
+                - text: Status
+                - generic [ref=f135e337]: arrow_upward
+              - columnheader "Payment#" [ref=f135e338] [cursor=pointer]:
+                - text: Payment#
+                - generic [ref=f135e339]: arrow_upward
+              - columnheader "Credit#" [ref=f135e340] [cursor=pointer]:
+                - text: Credit#
+                - generic [ref=f135e341]: arrow_upward
+              - columnheader "Amount" [ref=f135e342] [cursor=pointer]:
+                - generic [ref=f135e343]: arrow_upward
+                - text: Amount
+              - columnheader "Due Date" [ref=f135e344] [cursor=pointer]:
+                - text: Due Date
+                - generic [ref=f135e345]: arrow_upward
+              - columnheader "PO Number" [ref=f135e346] [cursor=pointer]:
+                - text: PO Number
+                - generic [ref=f135e347]: arrow_upward
+              - columnheader "Stage" [ref=f135e348] [cursor=pointer]:
+                - text: Stage
+                - generic [ref=f135e349]: arrow_upward
+              - columnheader "Timelines" [ref=f135e350]
+              - columnheader "Last Reconciled At" [ref=f135e351]
+              - columnheader "Requested" [ref=f135e352]
+              - columnheader "Updated" [ref=f135e353]
+              - columnheader "Action" [ref=f135e354]
+          - rowgroup:
+            - row:
+              - cell
+          - rowgroup [ref=f135e355]:
+            - row [ref=f135e356]:
+              - cell "-" [ref=f135e357]
+              - cell "-" [ref=f135e358]
+              - cell [ref=f135e359]:
+                - paragraph [ref=f135e360]: "-"
+                - paragraph [ref=f135e361]: ","
+              - cell [ref=f135e362]:
+                - status "overdue" [ref=f135e363]
+                - paragraph [ref=f135e364]: By 288 days
+              - cell "-" [ref=f135e365]
+              - cell "-" [ref=f135e368]
+              - cell [ref=f135e371]:
+                - paragraph [ref=f135e372]: ₹20,41,238.700
+                - paragraph [ref=f135e373]: "Balance due: ₹20,41,238.700"
+              - cell "17 Nov 2025" [ref=f135e374]
+              - cell "magic upload" [ref=f135e375]
+              - cell [ref=f135e376]:
+                - status "POD Pending" [ref=f135e377]
+              - cell [ref=f135e378]:
+                - button "0" [ref=f135e379] [cursor=pointer]
+              - cell "-" [ref=f135e382]
+              - cell [ref=f135e383]:
+                - paragraph [ref=f135e384]: Seller_123_test
+                - paragraph [ref=f135e385]: 13 Nov 2025, 1:11 pm
+              - cell [ref=f135e386]:
+                - paragraph [ref=f135e387]: Rachit K Dogra
+                - paragraph [ref=f135e388]: 13 Nov 2025, 1:15 pm
+              - cell [ref=f135e389]:
+                - button [ref=f135e390] [cursor=pointer]
+            - row [ref=f135e396]:
+              - cell "-" [ref=f135e397]
+              - cell "-" [ref=f135e398]
+              - cell [ref=f135e399]:
+                - paragraph [ref=f135e400]: "-"
+                - paragraph [ref=f135e401]: ","
+              - cell [ref=f135e402]:
+                - status "overdue" [ref=f135e403]
+                - paragraph [ref=f135e404]: By 288 days
+              - cell "-" [ref=f135e405]
+              - cell "-" [ref=f135e408]
+              - cell [ref=f135e411]:
+                - paragraph [ref=f135e412]: ₹107.110
+                - paragraph [ref=f135e413]: "Balance due: ₹107.110"
+              - cell "17 Nov 2025" [ref=f135e414]
+              - cell "Android appnn" [ref=f135e415]
+              - cell [ref=f135e416]:
+                - status "POD Pending" [ref=f135e417]
+              - cell [ref=f135e418]:
+                - button "0" [ref=f135e419] [cursor=pointer]
+              - cell "-" [ref=f135e422]
+              - cell [ref=f135e423]:
+                - paragraph [ref=f135e424]: Seller_123_test
+                - paragraph [ref=f135e425]: 13 Nov 2025, 1:01 pm
+              - cell [ref=f135e426]:
+                - paragraph [ref=f135e427]: Rachit K Dogra
+                - paragraph [ref=f135e428]: 13 Nov 2025, 1:13 pm
+              - cell [ref=f135e429]:
+                - button [ref=f135e430] [cursor=pointer]
+            - row [ref=f135e436]:
+              - cell "-" [ref=f135e437]
+              - cell "-" [ref=f135e438]
+              - cell [ref=f135e439]:
+                - paragraph [ref=f135e440]: Nilkamal Limited
+                - paragraph [ref=f135e441]: 23AAACN2329N1ZI, MP
+              - cell [ref=f135e442]:
+                - status "Unpaid" [ref=f135e443]
+                - paragraph
+              - cell "-" [ref=f135e444]
+              - cell "-" [ref=f135e447]
+              - cell [ref=f135e450]:
+                - paragraph [ref=f135e451]: ₹1,014.000
+                - paragraph [ref=f135e452]: "Balance due: ₹1,014.000"
+              - cell "-" [ref=f135e453]
+              - cell "sfpo_1" [ref=f135e454]
+              - cell [ref=f135e455]:
+                - status "In Progress" [ref=f135e456]
+              - cell [ref=f135e457]:
+                - button "0" [ref=f135e458] [cursor=pointer]
+              - cell "-" [ref=f135e461]
+              - cell [ref=f135e462]:
+                - paragraph [ref=f135e463]: Rishav Kumar
+                - paragraph [ref=f135e464]: 01 Apr 2025, 4:43 pm
+              - cell [ref=f135e465]:
+                - paragraph [ref=f135e466]: Rishav Kumar
+                - paragraph [ref=f135e467]: 01 Apr 2025, 5:27 pm
+              - cell [ref=f135e468]:
+                - button [ref=f135e469] [cursor=pointer]
+            - row [ref=f135e475]:
+              - cell "-" [ref=f135e476]
+              - cell "-" [ref=f135e477]
+              - cell [ref=f135e478]:
+                - paragraph [ref=f135e479]: "-"
+                - paragraph [ref=f135e480]: ","
+              - cell [ref=f135e481]:
+                - status "overdue" [ref=f135e482]
+                - paragraph [ref=f135e483]: By 281 days
+              - cell "-" [ref=f135e484]
+              - cell "-" [ref=f135e487]
+              - cell [ref=f135e490]:
+                - paragraph [ref=f135e491]: ₹15,07,044.350
+                - paragraph [ref=f135e492]: "Balance due: ₹15,07,044.350"
+              - cell "24 Nov 2025" [ref=f135e493]
+              - cell "2025-26/126" [ref=f135e494]
+              - cell [ref=f135e495]:
+                - status "POD Pending" [ref=f135e496]
+              - cell [ref=f135e497]:
+                - button "0" [ref=f135e498] [cursor=pointer]
+              - cell "-" [ref=f135e501]
+              - cell [ref=f135e502]:
+                - paragraph [ref=f135e503]: Seller_123_test
+                - paragraph [ref=f135e504]: 13 Nov 2025, 12:12 pm
+              - cell [ref=f135e505]:
+                - paragraph [ref=f135e506]: Rachit K Dogra
+                - paragraph [ref=f135e507]: 13 Nov 2025, 1:17 pm
+              - cell [ref=f135e508]:
+                - button [ref=f135e509] [cursor=pointer]
+            - row [ref=f135e515]:
+              - cell "-" [ref=f135e516]
+              - cell "-" [ref=f135e517]
+              - cell [ref=f135e518]:
+                - paragraph [ref=f135e519]: Nilkamal Limited
+                - paragraph [ref=f135e520]: 23AAACN2329N1ZI, MP
+              - cell [ref=f135e521]:
+                - status "Unpaid" [ref=f135e522]
+                - paragraph
+              - cell "-" [ref=f135e523]
+              - cell "-" [ref=f135e526]
+              - cell [ref=f135e529]:
+                - paragraph [ref=f135e530]: ₹2,140.000
+                - paragraph [ref=f135e531]: "Balance due: ₹2,140.000"
+              - cell "-" [ref=f135e532]
+              - cell "sfpo_1" [ref=f135e533]
+              - cell [ref=f135e534]:
+                - status "In Progress" [ref=f135e535]
+              - cell [ref=f135e536]:
+                - button "0" [ref=f135e537] [cursor=pointer]
+              - cell "-" [ref=f135e540]
+              - cell [ref=f135e541]:
+                - paragraph [ref=f135e542]: Rishav Kumar
+                - paragraph [ref=f135e543]: 01 Apr 2025, 5:20 pm
+              - cell [ref=f135e544]:
+                - paragraph [ref=f135e545]: Rishav Kumar
+                - paragraph [ref=f135e546]: 01 Apr 2025, 5:24 pm
+              - cell [ref=f135e547]:
+                - button [ref=f135e548] [cursor=pointer]
+            - row [ref=f135e554]:
+              - cell "-" [ref=f135e555]
+              - cell "-" [ref=f135e556]
+              - cell [ref=f135e557]:
+                - paragraph [ref=f135e558]: Cus06
+                - paragraph [ref=f135e559]: URP-1735, HR
+              - cell [ref=f135e560]:
+                - status "Unpaid" [ref=f135e561]
+                - paragraph
+              - cell "-" [ref=f135e562]
+              - cell "-" [ref=f135e565]
+              - cell [ref=f135e568]:
+                - paragraph [ref=f135e569]: ₹11,50,000.000
+                - paragraph [ref=f135e570]: "Balance due: ₹11,50,000.000"
+              - cell "-" [ref=f135e571]
+              - cell "abc" [ref=f135e572]
+              - cell [ref=f135e573]:
+                - status "In Progress" [ref=f135e574]
+              - cell [ref=f135e575]:
+                - button "0" [ref=f135e576] [cursor=pointer]
+              - cell "-" [ref=f135e579]
+              - cell [ref=f135e580]:
+                - paragraph [ref=f135e581]: Rishav Kumar
+                - paragraph [ref=f135e582]: 01 Apr 2025, 5:33 pm
+              - cell [ref=f135e583]:
+                - paragraph [ref=f135e584]: Rishav Kumar
+                - paragraph [ref=f135e585]: 01 Apr 2025, 5:33 pm
+              - cell [ref=f135e586]:
+                - button [ref=f135e587] [cursor=pointer]
+            - row [ref=f135e593]:
+              - cell "-" [ref=f135e594]
+              - cell "-" [ref=f135e595]
+              - cell [ref=f135e596]:
+                - paragraph [ref=f135e597]: Nilkamal Limited
+                - paragraph [ref=f135e598]: 23AAACN2329N1ZI, MP
+              - cell [ref=f135e599]:
+                - status "Unpaid" [ref=f135e600]
+                - paragraph
+              - cell "-" [ref=f135e601]
+              - cell "-" [ref=f135e604]
+              - cell [ref=f135e607]:
+                - paragraph [ref=f135e608]: ₹1,014.000
+                - paragraph [ref=f135e609]: "Balance due: ₹1,014.000"
+              - cell "-" [ref=f135e610]
+              - cell "sfpo_1" [ref=f135e611]
+              - cell [ref=f135e612]:
+                - status "In Progress" [ref=f135e613]
+              - cell [ref=f135e614]:
+                - button "0" [ref=f135e615] [cursor=pointer]
+              - cell "-" [ref=f135e618]
+              - cell [ref=f135e619]:
+                - paragraph [ref=f135e620]: Rishav Kumar
+                - paragraph [ref=f135e621]: 01 Apr 2025, 5:19 pm
+              - cell [ref=f135e622]:
+                - paragraph [ref=f135e623]: Rishav Kumar
+                - paragraph [ref=f135e624]: 01 Apr 2025, 5:25 pm
+              - cell [ref=f135e625]:
+                - button [ref=f135e626] [cursor=pointer]
+            - row [ref=f135e632]:
+              - cell "-" [ref=f135e633]
+              - cell "-" [ref=f135e634]
+              - cell [ref=f135e635]:
+                - paragraph [ref=f135e636]: "-"
+                - paragraph [ref=f135e637]: ","
+              - cell [ref=f135e638]:
+                - status "overdue" [ref=f135e639]
+                - paragraph [ref=f135e640]: By 278 days
+              - cell "-" [ref=f135e641]
+              - cell "-" [ref=f135e644]
+              - cell [ref=f135e647]:
+                - paragraph [ref=f135e648]: ₹9,20,557.970
+                - paragraph [ref=f135e649]: "Balance due: ₹9,20,557.970"
+              - cell "27 Nov 2025" [ref=f135e650]
+              - cell "2025-26/125" [ref=f135e651]
+              - cell [ref=f135e652]:
+                - status "Not Started" [ref=f135e653]
+              - cell [ref=f135e654]:
+                - button "0" [ref=f135e655] [cursor=pointer]
+              - cell "-" [ref=f135e658]
+              - cell [ref=f135e659]:
+                - paragraph [ref=f135e660]: Seller_123_test
+                - paragraph [ref=f135e661]: 11 Nov 2025, 5:27 pm
+              - cell [ref=f135e662]:
+                - paragraph [ref=f135e663]: Rachit K Dogra
+                - paragraph [ref=f135e664]: 12 Nov 2025, 10:37 am
+              - cell [ref=f135e665]:
+                - button [ref=f135e666] [cursor=pointer]
+            - row [ref=f135e672]:
+              - cell "-" [ref=f135e673]
+              - cell "-" [ref=f135e674]
+              - cell [ref=f135e675]:
+                - paragraph [ref=f135e676]: Bata India Limited
+                - paragraph [ref=f135e677]: 01AABCB1043Q1Z0, JK
+              - cell [ref=f135e678]:
+                - status "Unpaid" [ref=f135e679]
+                - paragraph
+              - cell "-" [ref=f135e680]
+              - cell "-" [ref=f135e683]
+              - cell [ref=f135e686]:
+                - paragraph [ref=f135e687]: ₹3,78,85,100.000
+                - paragraph [ref=f135e688]: "Balance due: ₹3,78,85,100.000"
+              - cell "-" [ref=f135e689]
+              - cell "IN_DEV_01" [ref=f135e690]
+              - cell [ref=f135e691]:
+                - status "In Progress" [ref=f135e692]
+              - cell [ref=f135e693]:
+                - button "0" [ref=f135e694] [cursor=pointer]
+              - cell "-" [ref=f135e697]
+              - cell [ref=f135e698]:
+                - paragraph [ref=f135e699]: Rishav Kumar
+                - paragraph [ref=f135e700]: 01 Apr 2025, 5:29 pm
+              - cell [ref=f135e701]:
+                - paragraph [ref=f135e702]: Rishav Kumar
+                - paragraph [ref=f135e703]: 01 Apr 2025, 5:31 pm
+              - cell [ref=f135e704]:
+                - button [ref=f135e705] [cursor=pointer]
+            - row [ref=f135e711]:
+              - cell "-" [ref=f135e712]
+              - cell "-" [ref=f135e713]
+              - cell [ref=f135e714]:
+                - paragraph [ref=f135e715]: Cus06
+                - paragraph [ref=f135e716]: URP-1735, HR
+              - cell [ref=f135e717]:
+                - status "Unpaid" [ref=f135e718]
+                - paragraph
+              - cell "-" [ref=f135e719]
+              - cell "-" [ref=f135e722]
+              - cell [ref=f135e725]:
+                - paragraph [ref=f135e726]: ₹11,50,000.000
+                - paragraph [ref=f135e727]: "Balance due: ₹11,50,000.000"
+              - cell "-" [ref=f135e728]
+              - cell "abc" [ref=f135e729]
+              - cell [ref=f135e730]:
+                - status "In Progress" [ref=f135e731]
+              - cell [ref=f135e732]:
+                - button "0" [ref=f135e733] [cursor=pointer]
+              - cell "-" [ref=f135e736]
+              - cell [ref=f135e737]:
+                - paragraph [ref=f135e738]: Rishav Kumar
+                - paragraph [ref=f135e739]: 01 Apr 2025, 5:32 pm
+              - cell [ref=f135e740]:
+                - paragraph [ref=f135e741]: Rishav Kumar
+                - paragraph [ref=f135e742]: 01 Apr 2025, 5:36 pm
+              - cell [ref=f135e743]:
+                - button [ref=f135e744] [cursor=pointer]
+            - row [ref=f135e750]:
+              - cell "20 Jun 2024" [ref=f135e751]
+              - cell "BCU6223H1ZG" [ref=f135e752]
+              - cell [ref=f135e753]:
+                - paragraph [ref=f135e754]: Amelia Food And Beverage - 1 Mei
+                - paragraph [ref=f135e755]: URP-824, TS
+              - cell [ref=f135e756]:
+                - status "overdue" [ref=f135e757]
+                - paragraph [ref=f135e758]: By 789 days
+              - cell "-" [ref=f135e759]
+              - cell "-" [ref=f135e762]
+              - cell [ref=f135e765]:
+                - paragraph [ref=f135e766]: ₹12,41,079.840
+                - paragraph [ref=f135e767]: "Balance due: ₹12,41,079.840"
+              - cell "04 Jul 2024" [ref=f135e768]
+              - cell "PO_my_own_1" [ref=f135e769]
+              - cell [ref=f135e770]:
+                - status "POD Pending" [ref=f135e771]
+              - cell [ref=f135e772]:
+                - button "0" [ref=f135e773] [cursor=pointer]
+              - cell "-" [ref=f135e776]
+              - cell [ref=f135e777]:
+                - paragraph [ref=f135e778]: Rishav Kumar
+                - paragraph [ref=f135e779]: 20 Jun 2024, 4:46 pm
+              - cell [ref=f135e780]:
+                - paragraph [ref=f135e781]: System.
+                - paragraph [ref=f135e782]: 27 Feb 2026, 12:22 pm
+              - cell [ref=f135e783]:
+                - button [ref=f135e784] [cursor=pointer]
+            - row [ref=f135e790]:
+              - cell "25 Jun 2024" [ref=f135e791]
+              - cell "INV-1456" [ref=f135e792]
+              - cell [ref=f135e793]:
+                - paragraph [ref=f135e794]: kiran business
+                - paragraph [ref=f135e795]: URP-1234, TS
+              - cell [ref=f135e796]:
+                - status "overdue" [ref=f135e797]
+                - paragraph [ref=f135e798]: By 792 days
+              - cell "-" [ref=f135e799]
+              - cell "-" [ref=f135e802]
+              - cell [ref=f135e805]:
+                - paragraph [ref=f135e806]: ₹11.200
+                - paragraph [ref=f135e807]: "Balance due: ₹11.200"
+              - cell "01 Jul 2024" [ref=f135e808]
+              - cell "Pur_ord_4" [ref=f135e809]
+              - cell [ref=f135e810]:
+                - status "POD Pending" [ref=f135e811]
+              - cell [ref=f135e812]:
+                - button "0" [ref=f135e813] [cursor=pointer]
+              - cell "-" [ref=f135e816]
+              - cell [ref=f135e817]:
+                - paragraph [ref=f135e818]: Anshul Gupta
+                - paragraph [ref=f135e819]: 25 Jun 2024, 4:23 pm
+              - cell [ref=f135e820]:
+                - paragraph [ref=f135e821]: Arbaaz K
+                - paragraph [ref=f135e822]: 23 Feb 2026, 4:31 pm
+              - cell [ref=f135e823]:
+                - button [ref=f135e824] [cursor=pointer]
+            - row [ref=f135e830]:
+              - cell "01 Jul 2024" [ref=f135e831]
+              - cell "kjnsdhcijunciju" [ref=f135e832]
+              - cell [ref=f135e833]:
+                - paragraph [ref=f135e834]: Standard Bakers
+                - paragraph [ref=f135e835]: URP-2490, RJ
+              - cell [ref=f135e836]:
+                - status "overdue" [ref=f135e837]
+                - paragraph [ref=f135e838]: By 792 days
+              - cell "-" [ref=f135e839]
+              - cell "-" [ref=f135e842]
+              - cell [ref=f135e845]:
+                - paragraph [ref=f135e846]: ₹2,224.250
+                - paragraph [ref=f135e847]: "Balance due: ₹2,224.250"
+              - cell "01 Jul 2024" [ref=f135e848]
+              - cell "PO_PB_EDIT" [ref=f135e849]
+              - cell [ref=f135e850]:
+                - status "POD Pending" [ref=f135e851]
+              - cell [ref=f135e852]:
+                - button "0" [ref=f135e853] [cursor=pointer]
+              - cell "-" [ref=f135e856]
+              - cell [ref=f135e857]:
+                - paragraph [ref=f135e858]: "-"
+                - paragraph [ref=f135e859]: 01 Jul 2024, 11:57 am
+              - cell [ref=f135e860]:
+                - paragraph [ref=f135e861]: "-"
+                - paragraph [ref=f135e862]: 08 Apr 2026, 4:03 pm
+              - cell [ref=f135e863]:
+                - button [ref=f135e864] [cursor=pointer]
+            - row [ref=f135e870]:
+              - cell "02 Jul 2024" [ref=f135e871]
+              - cell "INV_PO_111" [ref=f135e872]
+              - cell [ref=f135e873]:
+                - paragraph [ref=f135e874]: Test Reg Name
+                - paragraph [ref=f135e875]: URP-931, TS
+              - cell [ref=f135e876]:
+                - status "overdue" [ref=f135e877]
+                - paragraph [ref=f135e878]: By 792 days
+              - cell "-" [ref=f135e879]
+              - cell "-" [ref=f135e882]
+              - cell [ref=f135e885]:
+                - paragraph [ref=f135e886]: ₹96,800.000
+                - paragraph [ref=f135e887]: "Balance due: ₹96,800.000"
+              - cell "01 Jul 2024" [ref=f135e888]
+              - cell "PO_111" [ref=f135e889]
+              - cell [ref=f135e890]:
+                - status "POD Pending" [ref=f135e891]
+              - cell [ref=f135e892]:
+                - button "0" [ref=f135e893] [cursor=pointer]
+              - cell "-" [ref=f135e896]
+              - cell [ref=f135e897]:
+                - paragraph [ref=f135e898]: "-"
+                - paragraph [ref=f135e899]: 02 Jul 2024, 10:51 pm
+              - cell [ref=f135e900]:
+                - paragraph [ref=f135e901]: Akshay@Poshn.Co
+                - paragraph [ref=f135e902]: 19 Feb 2026, 5:08 pm
+              - cell [ref=f135e903]:
+                - button [ref=f135e904] [cursor=pointer]
+            - row [ref=f135e910]:
+              - cell "03 Jul 2024" [ref=f135e911]
+              - cell "INV_PO_PB_Link_1" [ref=f135e912]
+              - cell [ref=f135e913]:
+                - paragraph [ref=f135e914]: Standard Bakers
+                - paragraph [ref=f135e915]: URP-2490, RJ
+              - cell [ref=f135e916]:
+                - status "overdue" [ref=f135e917]
+                - paragraph [ref=f135e918]: By 788 days
+              - cell "-" [ref=f135e919]
+              - cell "-" [ref=f135e922]
+              - cell [ref=f135e925]:
+                - paragraph [ref=f135e926]: ₹11,480.000
+                - paragraph [ref=f135e927]: "Balance due: ₹11,480.000"
+              - cell "05 Jul 2024" [ref=f135e928]
+              - cell "PO_PB_Link_1" [ref=f135e929]
+              - cell [ref=f135e930]:
+                - status "POD Pending" [ref=f135e931]
+              - cell [ref=f135e932]:
+                - button "0" [ref=f135e933] [cursor=pointer]
+              - cell "-" [ref=f135e936]
+              - cell [ref=f135e937]:
+                - paragraph [ref=f135e938]: "-"
+                - paragraph [ref=f135e939]: 03 Jul 2024, 9:59 am
+              - cell [ref=f135e940]:
+                - paragraph [ref=f135e941]: Akshay@Poshn.Co
+                - paragraph [ref=f135e942]: 19 Feb 2026, 5:13 pm
+              - cell [ref=f135e943]:
+                - button [ref=f135e944] [cursor=pointer]
+            - row [ref=f135e950]:
+              - cell "03 Jul 2024" [ref=f135e951]
+              - cell "this is trestnig" [ref=f135e952]
+              - cell [ref=f135e953]:
+                - paragraph [ref=f135e954]: Standard Bakers
+                - paragraph [ref=f135e955]: URP-2490, RJ
+              - cell [ref=f135e956]:
+                - status "overdue" [ref=f135e957]
+                - paragraph [ref=f135e958]: By 790 days
+              - cell "-" [ref=f135e959]
+              - cell "-" [ref=f135e962]
+              - cell [ref=f135e965]:
+                - paragraph [ref=f135e966]: ₹11,480.000
+                - paragraph [ref=f135e967]: "Balance due: ₹11,480.000"
+              - cell "03 Jul 2024" [ref=f135e968]
+              - cell "PO_PB_Link_1" [ref=f135e969]
+              - cell [ref=f135e970]:
+                - status "POD Pending" [ref=f135e971]
+              - cell [ref=f135e972]:
+                - button "0" [ref=f135e973] [cursor=pointer]
+              - cell "-" [ref=f135e976]
+              - cell [ref=f135e977]:
+                - paragraph [ref=f135e978]: "-"
+                - paragraph [ref=f135e979]: 03 Jul 2024, 10:25 am
+              - cell [ref=f135e980]:
+                - paragraph [ref=f135e981]: "-"
+                - paragraph [ref=f135e982]: 08 Apr 2026, 4:05 pm
+              - cell [ref=f135e983]:
+                - button [ref=f135e984] [cursor=pointer]
+            - row [ref=f135e990]:
+              - cell "05 Jul 2024" [ref=f135e991]
+              - cell "jojobox" [ref=f135e992]
+              - cell [ref=f135e993]:
+                - paragraph [ref=f135e994]: Test Reg Name
+                - paragraph [ref=f135e995]: URP-931, TS
+              - cell [ref=f135e996]:
+                - status "overdue" [ref=f135e997]
+                - paragraph [ref=f135e998]: By 788 days
+              - cell "-" [ref=f135e999]
+              - cell "-" [ref=f135e1002]
+              - cell [ref=f135e1005]:
+                - paragraph [ref=f135e1006]: ₹10,612.000
+                - paragraph [ref=f135e1007]: "Balance due: ₹10,612.000"
+              - cell "05 Jul 2024" [ref=f135e1008]
+              - cell "PO_OLD_prod" [ref=f135e1009]
+              - cell [ref=f135e1010]:
+                - status "POD Pending" [ref=f135e1011]
+              - cell [ref=f135e1012]:
+                - button "0" [ref=f135e1013] [cursor=pointer]
+              - cell "-" [ref=f135e1016]
+              - cell [ref=f135e1017]:
+                - paragraph [ref=f135e1018]: Rupa
+                - paragraph [ref=f135e1019]: 05 Jul 2024, 4:08 pm
+              - cell [ref=f135e1020]:
+                - paragraph [ref=f135e1021]: Kkk
+                - paragraph [ref=f135e1022]: 12 Jun 2026, 3:59 pm
+              - cell [ref=f135e1023]:
+                - button [ref=f135e1024] [cursor=pointer]
+            - row [ref=f135e1030]:
+              - cell "05 Aug 2024" [ref=f135e1031]
+              - cell "YEs_working_fine" [ref=f135e1032]
+              - cell [ref=f135e1033]:
+                - paragraph [ref=f135e1034]: Test Rupa
+                - paragraph [ref=f135e1035]: URP-1006, TS
+              - cell [ref=f135e1036]:
+                - status "Unpaid" [ref=f135e1037]
+                - paragraph
+              - cell "-" [ref=f135e1038]
+              - cell "-" [ref=f135e1041]
+              - cell [ref=f135e1044]:
+                - paragraph [ref=f135e1045]: ₹17,23,72,200.000
+                - paragraph [ref=f135e1046]: "Balance due: ₹17,23,72,200.000"
+              - cell "-" [ref=f135e1047]
+              - cell "PO_PRD_14_1" [ref=f135e1048]
+              - cell [ref=f135e1049]:
+                - status "POD Accepted" [ref=f135e1050]
+              - cell [ref=f135e1051]:
+                - button "0" [ref=f135e1052] [cursor=pointer]
+              - cell "-" [ref=f135e1055]
+              - cell [ref=f135e1056]:
+                - paragraph [ref=f135e1057]: "-"
+                - paragraph [ref=f135e1058]: 05 Aug 2024, 11:03 pm
+              - cell [ref=f135e1059]:
+                - paragraph [ref=f135e1060]: Anshul Gupta
+                - paragraph [ref=f135e1061]: 06 Aug 2024, 1:20 pm
+              - cell [ref=f135e1062]:
+                - button [ref=f135e1063] [cursor=pointer]
+            - row [ref=f135e1069]:
+              - cell "13 Aug 2024" [ref=f135e1070]
+              - cell "test_invoice_pod" [ref=f135e1071]
+              - cell [ref=f135e1072]:
+                - paragraph [ref=f135e1073]: Abcd Xyz
+                - paragraph [ref=f135e1074]: 22AAAAA0000A1Z5, GJ
+              - cell [ref=f135e1075]:
+                - status "Partially Paid" [ref=f135e1076]
+                - paragraph
+              - cell "-" [ref=f135e1077]
+              - cell "testing0" [ref=f135e1080]
+              - cell [ref=f135e1083]:
+                - paragraph [ref=f135e1084]: ₹8,400.000
+                - paragraph [ref=f135e1085]: "Balance due: ₹8,400.000"
+              - cell "-" [ref=f135e1086]
+              - cell "Test_PO" [ref=f135e1087]
+              - cell [ref=f135e1088]:
+                - status "QC Accepted" [ref=f135e1089]
+              - cell [ref=f135e1090]:
+                - button "0" [ref=f135e1091] [cursor=pointer]
+              - cell "-" [ref=f135e1094]
+              - cell [ref=f135e1095]:
+                - paragraph [ref=f135e1096]: Rishav Kumar
+                - paragraph [ref=f135e1097]: 13 Aug 2024, 4:35 pm
+              - cell [ref=f135e1098]:
+                - paragraph [ref=f135e1099]: Rishav Kumar
+                - paragraph [ref=f135e1100]: 13 Aug 2024, 10:54 pm
+              - cell [ref=f135e1101]:
+                - button [ref=f135e1102] [cursor=pointer]
+            - row [ref=f135e1108]:
+              - cell "13 Jan 2025" [ref=f135e1109]
+              - cell "Test_002_Aiyaz" [ref=f135e1110]
+              - cell [ref=f135e1111]:
+                - paragraph [ref=f135e1112]: Arbaz Enterprise
+                - paragraph [ref=f135e1113]: URP-1383, GJ
+              - cell [ref=f135e1114]:
+                - status "overdue" [ref=f135e1115]
+                - paragraph [ref=f135e1116]: By 558 days
+              - cell "-" [ref=f135e1117]
+              - cell "-" [ref=f135e1120]
+              - cell [ref=f135e1123]:
+                - paragraph [ref=f135e1124]: ₹99,99,90,000.000
+                - paragraph [ref=f135e1125]: "Balance due: ₹99,99,90,000.000"
+              - cell "20 Feb 2025" [ref=f135e1126]
+              - cell "PO_Aiyaz_02" [ref=f135e1127]
+              - cell [ref=f135e1128]:
+                - status "POD Accepted" [ref=f135e1129]
+              - cell [ref=f135e1130]:
+                - button "0" [ref=f135e1131] [cursor=pointer]
+              - cell "-" [ref=f135e1134]
+              - cell [ref=f135e1135]:
+                - paragraph [ref=f135e1136]: "-"
+                - paragraph [ref=f135e1137]: 13 Jan 2025, 5:47 pm
+              - cell [ref=f135e1138]:
+                - paragraph [ref=f135e1139]: "-"
+                - paragraph [ref=f135e1140]: 13 Jan 2025, 5:49 pm
+              - cell [ref=f135e1141]:
+                - button [ref=f135e1142] [cursor=pointer]
+            - row [ref=f135e1148]:
+              - cell "13 Jan 2025" [ref=f135e1149]
+              - cell "Aiyaz_inv_01" [ref=f135e1150]
+              - cell [ref=f135e1151]:
+                - paragraph [ref=f135e1152]: Arbaz Enterprise
+                - paragraph [ref=f135e1153]: URP-1383, GJ
+              - cell [ref=f135e1154]:
+                - status "overdue" [ref=f135e1155]
+                - paragraph [ref=f135e1156]: By 558 days
+              - cell "-" [ref=f135e1157]
+              - cell "-" [ref=f135e1160]
+              - cell [ref=f135e1163]:
+                - paragraph [ref=f135e1164]: ₹1,40,00,000.000
+                - paragraph [ref=f135e1165]: "Balance due: ₹1,40,00,000.000"
+              - cell "20 Feb 2025" [ref=f135e1166]
+              - cell "PO_AIyaz_test_01" [ref=f135e1167]
+              - cell [ref=f135e1168]:
+                - status "POD Received" [ref=f135e1169]
+              - cell [ref=f135e1170]:
+                - button "0" [ref=f135e1171] [cursor=pointer]
+              - cell "-" [ref=f135e1174]
+              - cell [ref=f135e1175]:
+                - paragraph [ref=f135e1176]: "-"
+                - paragraph [ref=f135e1177]: 13 Jan 2025, 5:38 pm
+              - cell [ref=f135e1178]:
+                - paragraph [ref=f135e1179]: "-"
+                - paragraph [ref=f135e1180]: 13 Jan 2025, 5:44 pm
+              - cell [ref=f135e1181]:
+                - button [ref=f135e1182] [cursor=pointer]
+            - row [ref=f135e1188]:
+              - cell "21 Jan 2025" [ref=f135e1189]
+              - cell "Test_inv_5_6_items" [ref=f135e1190]
+              - cell [ref=f135e1191]:
+                - paragraph [ref=f135e1192]: cus add
+                - paragraph [ref=f135e1193]: URP-1385, TS
+              - cell [ref=f135e1194]:
+                - status "overdue" [ref=f135e1195]
+                - paragraph [ref=f135e1196]: By 550 days
+              - cell "-" [ref=f135e1197]
+              - cell "-" [ref=f135e1200]
+              - cell [ref=f135e1203]:
+                - paragraph [ref=f135e1204]: ₹4,17,60,000.000
+                - paragraph [ref=f135e1205]: "Balance due: ₹4,17,60,000.000"
+              - cell "28 Feb 2025" [ref=f135e1206]
+              - cell "PO_5_6_items" [ref=f135e1207]
+              - cell [ref=f135e1208]:
+                - status "POD Pending" [ref=f135e1209]
+              - cell [ref=f135e1210]:
+                - button "0" [ref=f135e1211] [cursor=pointer]
+              - cell "-" [ref=f135e1214]
+              - cell [ref=f135e1215]:
+                - paragraph [ref=f135e1216]: "-"
+                - paragraph [ref=f135e1217]: 21 Jan 2025, 11:30 am
+              - cell [ref=f135e1218]:
+                - paragraph [ref=f135e1219]: Vikas_admin_1
+                - paragraph [ref=f135e1220]: 24 Jan 2025, 1:14 am
+              - cell [ref=f135e1221]:
+                - button [ref=f135e1222] [cursor=pointer]
+            - row [ref=f135e1228]:
+              - cell "24 Jan 2025" [ref=f135e1229]
+              - cell "file_testig_01" [ref=f135e1230]
+              - cell [ref=f135e1231]:
+                - paragraph [ref=f135e1232]: cus add
+                - paragraph [ref=f135e1233]: URP-1385, TS
+              - cell [ref=f135e1234]:
+                - status "overdue" [ref=f135e1235]
+                - paragraph [ref=f135e1236]: By 556 days
+              - cell "-" [ref=f135e1237]
+              - cell "cn_file_testing_01" [ref=f135e1240]
+              - cell [ref=f135e1243]:
+                - paragraph [ref=f135e1244]: ₹93,09,43,20,66,350.000
+                - paragraph [ref=f135e1245]: "Balance due: ₹93,09,43,20,66,350.000"
+              - cell "22 Feb 2025" [ref=f135e1246]
+              - cell "PO_5_6_items" [ref=f135e1247]
+              - cell [ref=f135e1248]:
+                - status "POD Rejected" [ref=f135e1249]
+              - cell [ref=f135e1250]:
+                - button "0" [ref=f135e1251] [cursor=pointer]
+              - cell "-" [ref=f135e1254]
+              - cell [ref=f135e1255]:
+                - paragraph [ref=f135e1256]: Vikas_admin_1
+                - paragraph [ref=f135e1257]: 24 Jan 2025, 1:08 am
+              - cell [ref=f135e1258]:
+                - paragraph [ref=f135e1259]: Vikas_admin_1
+                - paragraph [ref=f135e1260]: 24 Jan 2025, 1:15 am
+              - cell [ref=f135e1261]:
+                - button [ref=f135e1262] [cursor=pointer]
+            - row [ref=f135e1268]:
+              - cell "20 Feb 2025" [ref=f135e1269]
+              - cell "Aiyaz_INV_03" [ref=f135e1270]
+              - cell [ref=f135e1271]:
+                - paragraph [ref=f135e1272]: Louis Dreyfus Company India Private Limited
+                - paragraph [ref=f135e1273]: 37AAACL7361E1ZK, AP
+              - cell [ref=f135e1274]:
+                - status "overdue" [ref=f135e1275]
+                - paragraph [ref=f135e1276]: By 554 days
+              - cell "-" [ref=f135e1277]
+              - cell "Aiyaz_CN_03" [ref=f135e1280]
+              - cell [ref=f135e1283]:
+                - paragraph [ref=f135e1284]: ₹1,23,46,13,780.400
+                - paragraph [ref=f135e1285]: "Balance due: ₹0.000"
+              - cell "24 Feb 2025" [ref=f135e1286]
+              - cell "Aiyaz_PO_3" [ref=f135e1287]
+              - cell [ref=f135e1288]:
+                - status "POD Accepted" [ref=f135e1289]
+              - cell [ref=f135e1290]:
+                - button "0" [ref=f135e1291] [cursor=pointer]
+              - cell "-" [ref=f135e1294]
+              - cell [ref=f135e1295]:
+                - paragraph [ref=f135e1296]: "-"
+                - paragraph [ref=f135e1297]: 20 Feb 2025, 10:56 pm
+              - cell [ref=f135e1298]:
+                - paragraph [ref=f135e1299]: "-"
+                - paragraph [ref=f135e1300]: 20 Feb 2025, 10:58 pm
+              - cell [ref=f135e1301]:
+                - button [ref=f135e1302] [cursor=pointer]
+          - rowgroup [ref=f135e1308]:
+            - row [ref=f135e1309]:
+              - cell [ref=f135e1310]
+        - generic [ref=f135e1311]:
+          - button [ref=f135e1312] [cursor=pointer]:
+            - img [ref=f135e1314]: fullscreen
+          - generic [ref=f135e1315]:
+            - generic [ref=f135e1316]: 1 - 25 of 1230
+            - button [disabled] [ref=f135e1317]
+            - button [ref=f135e1321] [cursor=pointer]

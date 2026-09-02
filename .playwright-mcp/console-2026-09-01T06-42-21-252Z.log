@@ -1,0 +1,30 @@
+[     366ms] [LOG] Quasar version: 2.23.1 @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[     824ms] Uncaught (in promise) Error: Can only be used on: https://nucleus-stage.poshn.app
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18360)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160609:0:18422)
+[    2341ms] [INFO] [Twilio] Client initialized successfully for poshn @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[    3200ms] [INFO] [Twilio] Client initialized successfully for user @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[   93200ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  183200ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  273198ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  363196ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  453195ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  543193ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  633188ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  723188ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  813185ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  903184ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[  993181ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 1953053ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 2299570ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 2389571ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 2479571ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 2569568ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 2659565ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 2749564ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 2839564ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 2929571ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 3019575ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 3109574ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 3199573ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5
+[ 3289572ms] [WARNING] 🔄 [conversationsUnreadCount] Stale (>60000ms), forcing execution... @ https://nucleus-dev.poshn.app/assets/sentry.js:5

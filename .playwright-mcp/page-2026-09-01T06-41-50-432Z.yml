@@ -1,0 +1,618 @@
+- generic [ref=f132e9]:
+  - banner [ref=f132e10]:
+    - toolbar [ref=f132e11]:
+      - generic [ref=f132e12]:
+        - link [ref=f132e14] [cursor=pointer]:
+          - /url: /home
+        - button [ref=f132e20] [cursor=pointer]
+      - combobox [ref=f132e34]
+      - button "Notifications" [ref=f132e36] [cursor=pointer]
+      - generic [ref=f132e41]:
+        - paragraph [ref=f132e42]: Hari-Ven
+        - generic [ref=f132e43]: Admin
+      - generic [ref=f132e44]: H
+  - complementary [ref=f132e47]:
+    - list [ref=f132e49]:
+      - generic [ref=f132e51]:
+        - button "Home" [ref=f132e54] [cursor=pointer]:
+          - generic "Home" [ref=f132e60]
+        - generic [ref=f132e62]:
+          - button "Users Collapse" [ref=f132e63] [cursor=pointer]:
+            - generic "Users" [ref=f132e71]
+            - button "Collapse" [expanded] [ref=f132e72]:
+              - generic [ref=f132e73]: expand_less
+          - generic [ref=f132e74]:
+            - link "Customers" [ref=f132e77] [cursor=pointer]:
+              - /url: /users#customers
+              - generic "Customers" [ref=f132e79]
+            - link "Vendors" [ref=f132e82] [cursor=pointer]:
+              - /url: /users#vendors
+              - generic "Vendors" [ref=f132e84]
+            - link "Team Members" [ref=f132e87] [cursor=pointer]:
+              - /url: /users#team-members
+              - generic "Team Members" [ref=f132e89]
+            - link "Organisations" [ref=f132e92] [cursor=pointer]:
+              - /url: /users/organisations
+              - generic "Organisations" [ref=f132e94]
+        - link "Roles Management" [ref=f132e97] [cursor=pointer]:
+          - /url: /roles-management
+          - generic "Roles Management" [ref=f132e105]
+        - button "Catalogue Expand" [ref=f132e108] [cursor=pointer]:
+          - generic "Catalogue" [ref=f132e116]
+          - button "Expand" [ref=f132e117]:
+            - generic [ref=f132e118]: expand_more
+        - button "Trade Expand" [ref=f132e121] [cursor=pointer]:
+          - generic "Trade" [ref=f132e128]
+          - button "Expand" [ref=f132e129]:
+            - generic [ref=f132e130]: expand_more
+        - button "Sales Expand" [ref=f132e133] [cursor=pointer]:
+          - generic "Sales" [ref=f132e140]
+          - button "Expand" [ref=f132e141]:
+            - generic [ref=f132e142]: expand_more
+        - button "Purchases Expand" [ref=f132e145] [cursor=pointer]:
+          - generic "Purchases" [ref=f132e152]
+          - button "Expand" [ref=f132e153]:
+            - generic [ref=f132e154]: expand_more
+        - button "Shipping Expand" [ref=f132e157] [cursor=pointer]:
+          - generic "Shipping" [ref=f132e164]
+          - button "Expand" [ref=f132e165]:
+            - generic [ref=f132e166]: expand_more
+        - button "Accounts Expand" [ref=f132e169] [cursor=pointer]:
+          - generic "Accounts" [ref=f132e176]
+          - button "Expand" [ref=f132e177]:
+            - generic [ref=f132e178]: expand_more
+        - button "Reports Expand" [ref=f132e181] [cursor=pointer]:
+          - generic "Reports" [ref=f132e188]
+          - button "Expand" [ref=f132e189]:
+            - generic [ref=f132e190]: expand_more
+        - link "Inbox (7)" [ref=f132e193] [cursor=pointer]:
+          - /url: /inbox
+          - generic "Inbox (7)" [ref=f132e199]
+        - button "Cashflow Manager Expand" [ref=f132e202] [cursor=pointer]:
+          - generic "Cashflow Manager" [ref=f132e209]
+          - button "Expand" [ref=f132e210]:
+            - generic [ref=f132e211]: expand_more
+        - link "File Manager" [ref=f132e214] [cursor=pointer]:
+          - /url: /file-manager
+          - generic "File Manager" [ref=f132e221]
+        - button "Utility Expand" [ref=f132e224] [cursor=pointer]:
+          - generic "Utility" [ref=f132e230]
+          - button "Expand" [ref=f132e231]:
+            - generic [ref=f132e232]: expand_more
+        - link "Analytics" [ref=f132e235] [cursor=pointer]:
+          - /url: https://bi.poshn.app/
+          - generic "Analytics" [ref=f132e243]
+        - button "Integrations" [ref=f132e246] [cursor=pointer]:
+          - generic "Integrations" [ref=f132e255]
+      - separator [ref=f132e256]
+      - generic [ref=f132e257]:
+        - button "Log Out" [ref=f132e258] [cursor=pointer]
+        - paragraph [ref=f132e263]: ©Poshn, Crafted with ❤️ in India
+  - main [ref=f132e265]:
+    - generic [ref=f132e266]:
+      - generic [ref=f132e267]:
+        - generic [ref=f132e269]:
+          - link "Users" [ref=f132e271] [cursor=pointer]:
+            - /url: /users
+          - generic [ref=f132e273]: /
+          - link "Vendors" [ref=f132e1146] [cursor=pointer]:
+            - /url: /users/#vendors
+        - generic [ref=f132e277]:
+          - generic [ref=f132e278]: Total Pendencies
+          - generic [ref=f132e279]: "1207"
+      - generic [ref=f132e280]:
+        - textbox [ref=f132e290]:
+          - /placeholder: Search by name, trade name, phone or email
+        - generic [ref=f132e294] [cursor=pointer]:
+          - generic [ref=f132e296]:
+            - generic [ref=f132e297]: All Status
+            - combobox "All Status" [ref=f132e298]
+          - generic [ref=f132e299]: expand_more
+        - button "Add Vendor" [ref=f132e1147] [cursor=pointer]
+      - generic [ref=f132e304]:
+        - tablist [ref=f132e305]:
+          - generic [ref=f132e306]:
+            - tab "Approved (1240)" [selected] [ref=f132e1148] [cursor=pointer]
+            - tab "Pending Application (46)" [ref=f132e1149] [cursor=pointer]
+            - tab "In Review (1161)" [ref=f132e1150] [cursor=pointer]
+            - tab "Rejected (13)" [ref=f132e1151] [cursor=pointer]
+        - separator [ref=f132e319]
+        - tabpanel [ref=f132e321]:
+          - tabpanel [ref=f132e322]:
+            - generic [ref=f132e323]:
+              - table [ref=f132e325]:
+                - rowgroup [ref=f132e326]:
+                  - row [ref=f132e327]:
+                    - columnheader "Registered Name" [ref=f132e328] [cursor=pointer]:
+                      - text: Registered Name
+                      - generic [ref=f132e329]: arrow_upward
+                    - columnheader "GSTIN" [ref=f132e330] [cursor=pointer]:
+                      - text: GSTIN
+                      - generic [ref=f132e331]: arrow_upward
+                    - columnheader "User Role" [ref=f132e332] [cursor=pointer]:
+                      - text: User Role
+                      - generic [ref=f132e333]: arrow_upward
+                    - columnheader "Status" [ref=f132e334] [cursor=pointer]:
+                      - text: Status
+                      - generic [ref=f132e335]: arrow_upward
+                    - columnheader "Contact Name" [ref=f132e336] [cursor=pointer]:
+                      - text: Contact Name
+                      - generic [ref=f132e337]: arrow_upward
+                    - columnheader "Contact No." [ref=f132e338] [cursor=pointer]:
+                      - text: Contact No.
+                      - generic [ref=f132e339]: arrow_upward
+                    - columnheader "Contact Email" [ref=f132e340] [cursor=pointer]:
+                      - text: Contact Email
+                      - generic [ref=f132e341]: arrow_upward
+                    - columnheader "City" [ref=f132e342] [cursor=pointer]:
+                      - text: City
+                      - generic [ref=f132e343]: arrow_upward
+                    - columnheader "State" [ref=f132e344] [cursor=pointer]:
+                      - text: State
+                      - generic [ref=f132e345]: arrow_upward
+                    - columnheader "Organisation Code" [ref=f132e346]
+                    - columnheader "Payments Cycle (in days)" [ref=f132e347] [cursor=pointer]:
+                      - text: Payments Cycle (in days)
+                      - generic [ref=f132e348]: arrow_upward
+                    - columnheader "Demand Broadcast" [ref=f132e349] [cursor=pointer]:
+                      - text: Demand Broadcast
+                      - generic [ref=f132e350]: arrow_upward
+                    - columnheader "Credit Limit" [ref=f132e351] [cursor=pointer]:
+                      - generic [ref=f132e352]: arrow_upward
+                      - text: Credit Limit
+                    - columnheader "Tax Settings" [ref=f132e353] [cursor=pointer]:
+                      - text: Tax Settings
+                      - generic [ref=f132e354]: arrow_upward
+                    - columnheader "Beneficiary Name" [ref=f132e355] [cursor=pointer]:
+                      - text: Beneficiary Name
+                      - generic [ref=f132e356]: arrow_upward
+                    - columnheader "Created At" [ref=f132e357] [cursor=pointer]:
+                      - text: Created At
+                      - generic [ref=f132e358]: arrow_upward
+                    - columnheader "Action" [ref=f132e359]
+                - rowgroup:
+                  - row:
+                    - cell
+                - rowgroup [ref=f132e360]:
+                  - row [ref=f132e1152]:
+                    - cell "Bharti Hexacom Limited" [ref=f132e1153]
+                    - cell "16AAACH1766P1Z8" [ref=f132e1154]
+                    - cell "Seller" [ref=f132e1155]
+                    - cell [ref=f132e367]:
+                      - status "Active" [ref=f132e368]
+                    - cell "Test-004" [ref=f132e1156]
+                    - cell "3984345345" [ref=f132e1157]
+                    - cell "-" [ref=f132e371]
+                    - cell "West Tripura" [ref=f132e1158]
+                    - cell "Tripura" [ref=f132e1159]
+                    - cell "STSPL-O-2049" [ref=f132e1160]
+                    - cell "7" [ref=f132e1161]
+                    - cell "-" [ref=f132e376]
+                    - cell "₹1.000" [ref=f132e378]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1162]
+                    - cell "popmusic" [ref=f132e1163]
+                    - cell "27 Aug 2026, 2:19 pm" [ref=f132e1164]
+                    - cell [ref=f132e382]:
+                      - button [ref=f132e383] [cursor=pointer]
+                  - row [ref=f132e1165]:
+                    - cell "Bharti Hexacom Limited" [ref=f132e1166]
+                    - cell "08AAACH1766P1Z5" [ref=f132e1167]
+                    - cell "Seller" [ref=f132e1168]
+                    - cell [ref=f132e395]:
+                      - status "Active" [ref=f132e396]
+                    - cell "Cus_002_multi" [ref=f132e1169]
+                    - cell "2877687686" [ref=f132e1170]
+                    - cell "-" [ref=f132e399]
+                    - cell "Jaipur" [ref=f132e1171]
+                    - cell "Rajasthan" [ref=f132e1172]
+                    - cell "STSPL-O-2049" [ref=f132e1173]
+                    - cell "7" [ref=f132e1174]
+                    - cell "-" [ref=f132e404]
+                    - cell "₹1.000" [ref=f132e406]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1175]
+                    - cell "cond" [ref=f132e1176]
+                    - cell "27 Aug 2026, 2:18 pm" [ref=f132e1177]
+                    - cell [ref=f132e410]:
+                      - button [ref=f132e411] [cursor=pointer]
+                  - row [ref=f132e1178]:
+                    - cell "Shree Cement Limited" [ref=f132e1179]
+                    - cell "09AACCS8796G1ZP" [ref=f132e1180]
+                    - cell "Seller" [ref=f132e1181]
+                    - cell [ref=f132e423]:
+                      - status "Active" [ref=f132e424]
+                    - cell "Seller_vend_03" [ref=f132e1182]
+                    - cell "2987389479" [ref=f132e1183]
+                    - cell "-" [ref=f132e427]
+                    - cell "Bulandshahr" [ref=f132e1184]
+                    - cell "Uttar Pradesh" [ref=f132e1185]
+                    - cell "STSPL-O-2047" [ref=f132e1186]
+                    - cell "7" [ref=f132e1187]
+                    - cell "-" [ref=f132e432]
+                    - cell "₹1.000" [ref=f132e434]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1188]
+                    - cell "utr" [ref=f132e1189]
+                    - cell "27 Aug 2026, 2:08 pm" [ref=f132e1190]
+                    - cell [ref=f132e438]:
+                      - button [ref=f132e439] [cursor=pointer]
+                  - row [ref=f132e1191]:
+                    - cell "Dixon Technologies (India) Lim ..." [ref=f132e1192]:
+                      - generic [ref=f132e448] [cursor=pointer]:
+                        - text: Dixon Technologies (India) Lim
+                        - generic [ref=f132e1193]: ...
+                    - cell "09AAACD3641D2Z1" [ref=f132e1194]
+                    - cell "Seller" [ref=f132e1195]
+                    - cell [ref=f132e451]:
+                      - status "Active" [ref=f132e452]
+                    - cell "Demo_vendor_1" [ref=f132e1196]
+                    - cell "3987459374" [ref=f132e1197]
+                    - cell "-" [ref=f132e455]
+                    - cell "Gautam Buddha Nagar" [ref=f132e1198]
+                    - cell "Uttar Pradesh" [ref=f132e1199]
+                    - cell "STSPL-O-2045" [ref=f132e1200]
+                    - cell "7" [ref=f132e1201]
+                    - cell "-" [ref=f132e460]
+                    - cell "₹1.000" [ref=f132e462]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1202]
+                    - cell "only" [ref=f132e1203]
+                    - cell "27 Aug 2026, 2:00 pm" [ref=f132e1204]
+                    - cell [ref=f132e466]:
+                      - button [ref=f132e467] [cursor=pointer]
+                  - row [ref=f132e1205]:
+                    - cell "Laurus Labs Limited" [ref=f132e1206]
+                    - cell "37AABCL1170C2ZZ" [ref=f132e1207]
+                    - cell "Seller" [ref=f132e1208]
+                    - cell [ref=f132e479]:
+                      - status "Active" [ref=f132e480]
+                    - cell "For_sel_app_09" [ref=f132e1209]
+                    - cell "9273947293" [ref=f132e1210]
+                    - cell "-" [ref=f132e483]
+                    - cell "Visakhapatnam" [ref=f132e1211]
+                    - cell "Andhra Pradesh" [ref=f132e1212]
+                    - cell "STSPL-O-2042" [ref=f132e1213]
+                    - cell "7" [ref=f132e1214]
+                    - cell "-" [ref=f132e488]
+                    - cell "₹1.000" [ref=f132e490]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1215]
+                    - cell "sellerbank" [ref=f132e1216]
+                    - cell "27 Aug 2026, 11:31 am" [ref=f132e1217]
+                    - cell [ref=f132e494]:
+                      - button [ref=f132e495] [cursor=pointer]
+                  - row [ref=f132e1218]:
+                    - cell "Indus Towers Limited" [ref=f132e1219]
+                    - cell "38AADCB0274F1ZX" [ref=f132e1220]
+                    - cell "Seller" [ref=f132e1221]
+                    - cell [ref=f132e508]:
+                      - status "Active" [ref=f132e509]
+                    - cell "Test_raw" [ref=f132e1222]
+                    - cell "9345793479" [ref=f132e1223]
+                    - cell "-" [ref=f132e512]
+                    - cell "Leh" [ref=f132e1224]
+                    - cell "Karnataka" [ref=f132e1225]
+                    - cell "STSPL-O-2041" [ref=f132e1226]
+                    - cell "7" [ref=f132e1227]
+                    - cell "-" [ref=f132e517]
+                    - cell "₹1.000" [ref=f132e519]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1228]
+                    - cell "bank" [ref=f132e1229]
+                    - cell "26 Aug 2026, 4:39 pm" [ref=f132e1230]
+                    - cell [ref=f132e523]:
+                      - button [ref=f132e524] [cursor=pointer]
+                  - row [ref=f132e1231]:
+                    - cell "Aksh Enterprise" [ref=f132e1232]
+                    - cell "URP-2742" [ref=f132e1233]
+                    - cell "Seller" [ref=f132e1234]
+                    - cell [ref=f132e536]:
+                      - status "Active" [ref=f132e537]
+                    - cell "Aksh" [ref=f132e1235]
+                    - cell "8849266830" [ref=f132e1236]
+                    - cell "aiyaz.parmar@gmail.com" [ref=f132e1237]
+                    - cell "Rajkot" [ref=f132e1238]
+                    - cell "Gujarat" [ref=f132e1239]
+                    - cell "STSPL-O-1082" [ref=f132e1240]
+                    - cell "7" [ref=f132e1241]
+                    - cell "-" [ref=f132e545]
+                    - cell "-" [ref=f132e1242]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1243]
+                    - cell "-" [ref=f132e549]
+                    - cell "25 Aug 2026, 4:34 pm" [ref=f132e1244]
+                    - cell [ref=f132e551]:
+                      - button [ref=f132e552] [cursor=pointer]
+                  - row [ref=f132e1245]:
+                    - cell "Marico Limited" [ref=f132e1246]
+                    - cell "23AAACM7493G1ZF" [ref=f132e1247]
+                    - cell "Seller" [ref=f132e1248]
+                    - cell [ref=f132e564]:
+                      - status "Active" [ref=f132e565]
+                    - cell "Test_these_vens_f_009" [ref=f132e1249]
+                    - cell "3848576386" [ref=f132e1250]
+                    - cell "-" [ref=f132e568]
+                    - cell "Indore" [ref=f132e1251]
+                    - cell "Madhya Pradesh" [ref=f132e1252]
+                    - cell "STSPL-O-1498" [ref=f132e1253]
+                    - cell "7" [ref=f132e1254]
+                    - cell "-" [ref=f132e573]
+                    - cell "₹51.000" [ref=f132e1255]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1256]
+                    - cell "kumar" [ref=f132e1257]
+                    - cell "25 Aug 2026, 1:13 pm" [ref=f132e1258]
+                    - cell [ref=f132e579]:
+                      - button [ref=f132e580] [cursor=pointer]
+                  - row [ref=f132e1259]:
+                    - cell "Indian Railway Finance Corpora ..." [ref=f132e1260]:
+                      - generic [ref=f132e589] [cursor=pointer]:
+                        - text: Indian Railway Finance Corpora
+                        - generic [ref=f132e1261]: ...
+                    - cell "15AAACI0681C1Z4" [ref=f132e1262]
+                    - cell "Seller" [ref=f132e1263]
+                    - cell [ref=f132e592]:
+                      - status "Active" [ref=f132e593]
+                    - cell "Ven-Can_005" [ref=f132e1264]
+                    - cell "8263847628" [ref=f132e1265]
+                    - cell "-" [ref=f132e596]
+                    - cell "Aizawl" [ref=f132e1266]
+                    - cell "Mizoram" [ref=f132e1267]
+                    - cell "STSPL-O-2035" [ref=f132e1268]
+                    - cell "7" [ref=f132e1269]
+                    - cell "-" [ref=f132e601]
+                    - cell "₹1.000" [ref=f132e603]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1270]
+                    - cell "utib" [ref=f132e1271]
+                    - cell "24 Aug 2026, 10:48 am" [ref=f132e1272]
+                    - cell [ref=f132e607]:
+                      - button [ref=f132e608] [cursor=pointer]
+                  - row [ref=f132e1273]:
+                    - cell "Samvardhana Motherson Internat ..." [ref=f132e1274]:
+                      - generic [ref=f132e617] [cursor=pointer]:
+                        - text: Samvardhana Motherson Internat
+                        - generic [ref=f132e1275]: ...
+                    - cell "09AAACM0405A2ZA" [ref=f132e1276]
+                    - cell "Seller" [ref=f132e1277]
+                    - cell [ref=f132e620]:
+                      - status "Active" [ref=f132e621]
+                    - cell "Test_neg_sell" [ref=f132e1278]
+                    - cell "8767836485" [ref=f132e1279]
+                    - cell "-" [ref=f132e624]
+                    - cell "Gautam Buddha Nagar" [ref=f132e1280]
+                    - cell "Uttar Pradesh" [ref=f132e1281]
+                    - cell "STSPL-O-2033" [ref=f132e1282]
+                    - cell "7" [ref=f132e1283]
+                    - cell "-" [ref=f132e629]
+                    - cell "₹1.000" [ref=f132e631]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1284]
+                    - cell "bank" [ref=f132e1285]
+                    - cell "22 Aug 2026, 2:23 pm" [ref=f132e1286]
+                    - cell [ref=f132e635]:
+                      - button [ref=f132e636] [cursor=pointer]
+                  - row [ref=f132e1287]:
+                    - cell "Interglobe Aviation Limited" [ref=f132e1288]
+                    - cell "35AABCI2726B1Z5" [ref=f132e1289]
+                    - cell "Seller" [ref=f132e1290]
+                    - cell [ref=f132e648]:
+                      - status "Active" [ref=f132e649]
+                    - cell "Everyt_003" [ref=f132e1291]
+                    - cell "8692397498" [ref=f132e1292]
+                    - cell "-" [ref=f132e652]
+                    - cell "Dhaulpur" [ref=f132e1293]
+                    - cell "Rajasthan" [ref=f132e1294]
+                    - cell "STSPL-O-2031" [ref=f132e1295]
+                    - cell "7" [ref=f132e1296]
+                    - cell "-" [ref=f132e657]
+                    - cell "₹1.000" [ref=f132e659]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1297]
+                    - cell "Itook" [ref=f132e1298]
+                    - cell "21 Aug 2026, 11:22 am" [ref=f132e1299]
+                    - cell [ref=f132e663]:
+                      - button [ref=f132e664] [cursor=pointer]
+                  - row [ref=f132e1300]:
+                    - cell "S.B.Traders" [ref=f132e1301]
+                    - cell "19AGPPB3063K1Z6" [ref=f132e1302]
+                    - cell "Seller" [ref=f132e1303]
+                    - cell [ref=f132e676]:
+                      - status "Active" [ref=f132e677]
+                    - cell "Knowing_002" [ref=f132e1304]
+                    - cell "2298237497" [ref=f132e1305]
+                    - cell "-" [ref=f132e680]
+                    - cell "Kolkata" [ref=f132e1306]
+                    - cell "West Bengal" [ref=f132e1307]
+                    - cell "STSPL-O-1995" [ref=f132e1308]
+                    - cell "7" [ref=f132e1309]
+                    - cell "-" [ref=f132e685]
+                    - cell "₹1.000" [ref=f132e687]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1310]
+                    - cell "master" [ref=f132e1311]
+                    - cell "21 Aug 2026, 11:11 am" [ref=f132e1312]
+                    - cell [ref=f132e691]:
+                      - button [ref=f132e692] [cursor=pointer]
+                  - row [ref=f132e1313]:
+                    - cell "Laxmi Rice Industries" [ref=f132e1314]
+                    - cell "27AQBPG7988C1ZO" [ref=f132e1315]
+                    - cell "Seller" [ref=f132e1316]
+                    - cell [ref=f132e704]:
+                      - status "Active" [ref=f132e705]
+                    - cell "Willn" [ref=f132e1317]
+                    - cell "9287392323" [ref=f132e1318]
+                    - cell "-" [ref=f132e708]
+                    - cell "Chandrapur" [ref=f132e1319]
+                    - cell "Maharashtra" [ref=f132e1320]
+                    - cell "STSPL-O-2029" [ref=f132e1321]
+                    - cell "7" [ref=f132e1322]
+                    - cell "-" [ref=f132e713]
+                    - cell "₹1.000" [ref=f132e715]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1323]
+                    - cell "kk_bank" [ref=f132e1324]
+                    - cell "20 Aug 2026, 11:09 pm" [ref=f132e1325]
+                    - cell [ref=f132e719]:
+                      - button [ref=f132e720] [cursor=pointer]
+                  - row [ref=f132e1326]:
+                    - cell "Ashok Enterprises" [ref=f132e1327]
+                    - cell "10DYSPK8888P1Z7" [ref=f132e1328]
+                    - cell "Seller" [ref=f132e1329]
+                    - cell [ref=f132e732]:
+                      - status "Active" [ref=f132e733]
+                    - cell "Test_this" [ref=f132e1330]
+                    - cell "9872998797" [ref=f132e1331]
+                    - cell "-" [ref=f132e736]
+                    - cell "East Champaran" [ref=f132e1332]
+                    - cell "Bihar" [ref=f132e738]
+                    - cell "STSPL-O-2024" [ref=f132e1333]
+                    - cell "7" [ref=f132e1334]
+                    - cell "-" [ref=f132e741]
+                    - cell "₹1.000" [ref=f132e743]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1335]
+                    - cell "test" [ref=f132e1336]
+                    - cell "18 Aug 2026, 3:20 pm" [ref=f132e1337]
+                    - cell [ref=f132e747]:
+                      - button [ref=f132e748] [cursor=pointer]
+                  - row [ref=f132e1338]:
+                    - cell "Hindalco Industries Limited" [ref=f132e1339]
+                    - cell "08AAACH1201R2ZM" [ref=f132e1340]
+                    - cell "Seller" [ref=f132e1341]
+                    - cell [ref=f132e760]:
+                      - status "Active" [ref=f132e761]
+                    - cell "Test_ven_ff" [ref=f132e1342]
+                    - cell "3987495734" [ref=f132e1343]
+                    - cell "-" [ref=f132e764]
+                    - cell "Alwar" [ref=f132e1344]
+                    - cell "Rajasthan" [ref=f132e1345]
+                    - cell "STSPL-O-2022" [ref=f132e1346]
+                    - cell "7" [ref=f132e1347]
+                    - cell "-" [ref=f132e769]
+                    - cell "₹1.000" [ref=f132e771]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1348]
+                    - cell "banker" [ref=f132e1349]
+                    - cell "17 Aug 2026, 9:55 pm" [ref=f132e1350]
+                    - cell [ref=f132e775]:
+                      - button [ref=f132e776] [cursor=pointer]
+                  - row [ref=f132e1351]:
+                    - cell "Mukul Baheti" [ref=f132e1352]
+                    - cell "URP-2739" [ref=f132e1353]
+                    - cell "Seller" [ref=f132e1354]
+                    - cell [ref=f132e788]:
+                      - status "Active" [ref=f132e789]
+                    - cell "Mukul Baheti" [ref=f132e1355]
+                    - cell "7063089830" [ref=f132e1356]
+                    - cell "-" [ref=f132e792]
+                    - cell "North Dinajpur" [ref=f132e1357]
+                    - cell "West Bengal" [ref=f132e1358]
+                    - cell "STSPL-O-2018" [ref=f132e1359]
+                    - cell "7" [ref=f132e1360]
+                    - cell "-" [ref=f132e797]
+                    - cell "₹1.000" [ref=f132e799]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1361]
+                    - cell "KASHIRAM AND SONS" [ref=f132e1362]
+                    - cell "17 Aug 2026, 12:20 pm" [ref=f132e1363]
+                    - cell [ref=f132e803]:
+                      - button [ref=f132e804] [cursor=pointer]
+                  - row [ref=f132e1364]:
+                    - cell "Blue Star Limited" [ref=f132e1365]
+                    - cell "09AAACB4487D1ZQ" [ref=f132e1366]
+                    - cell "Seller" [ref=f132e1367]
+                    - cell [ref=f132e816]:
+                      - status "Active" [ref=f132e817]
+                    - cell "Test_003" [ref=f132e1368]
+                    - cell "6823472934" [ref=f132e1369]
+                    - cell "-" [ref=f132e820]
+                    - cell "Lucknow" [ref=f132e1370]
+                    - cell "Uttar Pradesh" [ref=f132e1371]
+                    - cell "STSPL-O-2016" [ref=f132e1372]
+                    - cell "7" [ref=f132e1373]
+                    - cell "-" [ref=f132e825]
+                    - cell "₹1.000" [ref=f132e827]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1374]
+                    - cell "testbank" [ref=f132e1375]
+                    - cell "12 Aug 2026, 9:35 am" [ref=f132e1376]
+                    - cell [ref=f132e831]:
+                      - button [ref=f132e832] [cursor=pointer]
+                  - row [ref=f132e1377]:
+                    - cell "Flipkart Internet Private Limi ..." [ref=f132e1378]:
+                      - generic [ref=f132e841] [cursor=pointer]:
+                        - text: Flipkart Internet Private Limi
+                        - generic [ref=f132e1379]: ...
+                    - cell "17AACCF0683K1ZI" [ref=f132e1380]
+                    - cell "Seller" [ref=f132e1381]
+                    - cell [ref=f132e844]:
+                      - status "Active" [ref=f132e845]
+                    - cell "Test-This-Ven" [ref=f132e1382]
+                    - cell "2983048208" [ref=f132e1383]
+                    - cell "-" [ref=f132e848]
+                    - cell "East Khasi Hills" [ref=f132e1384]
+                    - cell "Meghalaya" [ref=f132e1385]
+                    - cell "STSPL-O-2014" [ref=f132e1386]
+                    - cell "7" [ref=f132e1387]
+                    - cell "-" [ref=f132e853]
+                    - cell "₹1.000" [ref=f132e855]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1388]
+                    - cell "kk uti" [ref=f132e1389]
+                    - cell "11 Aug 2026, 1:07 pm" [ref=f132e1390]
+                    - cell [ref=f132e859]:
+                      - button [ref=f132e860] [cursor=pointer]
+                  - row [ref=f132e1391]:
+                    - cell "Roshan Traders" [ref=f132e1392]
+                    - cell "09AAUPA0825D1ZY" [ref=f132e1393]
+                    - cell "Seller" [ref=f132e1394]
+                    - cell [ref=f132e872]:
+                      - status "Active" [ref=f132e873]
+                    - cell "kumar" [ref=f132e1395]
+                    - cell "9866151364" [ref=f132e1396]
+                    - cell "-" [ref=f132e1397]
+                    - cell "BAHRAICH" [ref=f132e1398]
+                    - cell "Uttar Pradesh" [ref=f132e1399]
+                    - cell "STSPL-O-2012" [ref=f132e1400]
+                    - cell "7" [ref=f132e880]
+                    - cell "-" [ref=f132e881]
+                    - cell "-" [ref=f132e1401]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1402]
+                    - cell "kumar" [ref=f132e1403]
+                    - cell "10 Aug 2026, 8:58 pm" [ref=f132e1404]
+                    - cell [ref=f132e887]:
+                      - button [ref=f132e888] [cursor=pointer]
+                  - row [ref=f132e1405]:
+                    - cell "Modern Packaging Concept" [ref=f132e1406]
+                    - cell "01AASFM5106D1ZP" [ref=f132e1407]
+                    - cell "Seller" [ref=f132e1408]
+                    - cell [ref=f132e900]:
+                      - status "Active" [ref=f132e901]
+                    - cell "Test_top_comp" [ref=f132e1409]
+                    - cell "3748957374" [ref=f132e1410]
+                    - cell "-" [ref=f132e1411]
+                    - cell "Jammu" [ref=f132e1412]
+                    - cell "Nagaland" [ref=f132e1413]
+                    - cell "STSPL-O-2004" [ref=f132e1414]
+                    - cell "7" [ref=f132e1415]
+                    - cell "-" [ref=f132e909]
+                    - cell "₹1.000" [ref=f132e911]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1416]
+                    - cell "kiran" [ref=f132e1417]
+                    - cell "6 Aug 2026, 3:12 pm" [ref=f132e1418]
+                    - cell [ref=f132e915]:
+                      - button [ref=f132e916] [cursor=pointer]
+                  - row [ref=f132e1419]:
+                    - cell "Hcl Technologies Limited" [ref=f132e1420]
+                    - cell "37AAACH1645P3Z8" [ref=f132e1421]
+                    - cell "Seller" [ref=f132e1422]
+                    - cell [ref=f132e928]:
+                      - status "Active" [ref=f132e929]
+                    - cell "Test_flow_vendor_1" [ref=f132e1423]
+                    - cell "2873684767" [ref=f132e1424]
+                    - cell "-" [ref=f132e932]
+                    - cell "Krishna" [ref=f132e1425]
+                    - cell "Andhra Pradesh" [ref=f132e1426]
+                    - cell "STSPL-O-2000" [ref=f132e1427]
+                    - cell "7" [ref=f132e1428]
+                    - cell "-" [ref=f132e937]
+                    - cell "₹1.000" [ref=f132e939]
+                    - cell "TDS Payable U/S 393 [0.1%]" [ref=f132e1429]
+                    - cell "kiran" [ref=f132e1430]
+                    - cell "6 Aug 2026, 10:44 am" [ref=f132e1431]
+                    - cell [ref=f132e943]:
+                      - button [ref=f132e944] [cursor=pointer]
+                - rowgroup [ref=f132e950]:
+                  - row [ref=f132e951]:
+                    - cell [ref=f132e952]
+              - generic [ref=f132e953]:
+                - button [ref=f132e954] [cursor=pointer]:
+                  - img [ref=f132e956]: fullscreen
+                - generic [ref=f132e957]:
+                  - generic [ref=f132e958]: 1 - 25 of 1240
+                  - button [disabled] [ref=f132e959]
+                  - button [ref=f132e963] [cursor=pointer]
