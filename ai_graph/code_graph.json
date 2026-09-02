@@ -11,22 +11,75 @@
     ],
     "classes": [],
     "functions": [
-      "authenticated_page",
-      "browser",
-      "context",
-      "page",
-      "playwright",
-      "pytest_runtest_makereport",
-      "unauthenticated_context",
-      "unauthenticated_page"
-    ]
-  },
-  {
-    "file": "config/__init__.py",
-    "module": "config.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "playwright",
+        "async": false
+      },
+      {
+        "name": "browser",
+        "async": false
+      },
+      {
+        "name": "context",
+        "async": false
+      },
+      {
+        "name": "page",
+        "async": false
+      },
+      {
+        "name": "pytest_runtest_makereport",
+        "async": false
+      },
+      {
+        "name": "unauthenticated_context",
+        "async": false
+      },
+      {
+        "name": "unauthenticated_page",
+        "async": false
+      },
+      {
+        "name": "authenticated_page",
+        "async": false
+      }
+    ],
+    "calls": [
+      "LoginPage",
+      "Path",
+      "authenticate",
+      "close",
+      "count",
+      "enumerate",
+      "exists",
+      "fixture",
+      "get_by_role",
+      "get_result",
+      "getattr",
+      "goto",
+      "hookimpl",
+      "is_closed",
+      "launch",
+      "lower",
+      "min",
+      "mkdir",
+      "new_context",
+      "new_page",
+      "screenshot",
+      "set_default_navigation_timeout",
+      "set_default_timeout",
+      "setattr",
+      "skip",
+      "start",
+      "stop",
+      "storage_state",
+      "str",
+      "sync_playwright",
+      "title",
+      "wait_for",
+      "wait_for_function"
+    ],
+    "inheritance": []
   },
   {
     "file": "config/settings.py",
@@ -38,23 +91,25 @@
       "pathlib"
     ],
     "classes": [
-      "Settings"
+      {
+        "name": "Settings",
+        "bases": [],
+        "methods": []
+      }
     ],
-    "functions": []
-  },
-  {
-    "file": "tests/__init__.py",
-    "module": "tests.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
-  },
-  {
-    "file": "utils/__init__.py",
-    "module": "utils.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+    "functions": [],
+    "calls": [
+      "Path",
+      "Settings",
+      "dataclass",
+      "getenv",
+      "int",
+      "load_dotenv",
+      "lower",
+      "resolve",
+      "rstrip"
+    ],
+    "inheritance": []
   },
   {
     "file": "utils/calculations.py",
@@ -65,17 +120,28 @@
     ],
     "classes": [],
     "functions": [
-      "ledger_closing",
-      "line_total",
-      "money"
-    ]
-  },
-  {
-    "file": "components/__init__.py",
-    "module": "components.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "money",
+        "async": false
+      },
+      {
+        "name": "line_total",
+        "async": false
+      },
+      {
+        "name": "ledger_closing",
+        "async": false
+      }
+    ],
+    "calls": [
+      "Decimal",
+      "group",
+      "quantize",
+      "replace",
+      "search",
+      "str"
+    ],
+    "inheritance": []
   },
   {
     "file": "components/navigation.py",
@@ -84,36 +150,48 @@
       "playwright.sync_api"
     ],
     "classes": [
-      "Navigation"
+      {
+        "name": "Navigation",
+        "bases": [],
+        "methods": [
+          {
+            "name": "__init__",
+            "async": false
+          },
+          {
+            "name": "open",
+            "async": false
+          },
+          {
+            "name": "visible_labels",
+            "async": false
+          }
+        ]
+      }
     ],
     "functions": [
-      "__init__",
-      "open",
-      "visible_labels"
-    ]
-  },
-  {
-    "file": "ai_graph/__init__.py",
-    "module": "ai_graph.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
-  },
-  {
-    "file": "ai_graph/builder.py",
-    "module": "ai_graph.builder",
-    "imports": [
-      "ast",
-      "json",
-      "pathlib"
+      {
+        "name": "__init__",
+        "async": false
+      },
+      {
+        "name": "open",
+        "async": false
+      },
+      {
+        "name": "visible_labels",
+        "async": false
+      }
     ],
-    "classes": [],
-    "functions": [
-      "analyze_file",
-      "build_graph",
-      "module_name",
-      "python_files"
-    ]
+    "calls": [
+      "all_inner_texts",
+      "click",
+      "expect",
+      "locator",
+      "strip",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "pages/base_page.py",
@@ -122,13 +200,49 @@
       "playwright.sync_api"
     ],
     "classes": [
-      "BasePage"
+      {
+        "name": "BasePage",
+        "bases": [],
+        "methods": [
+          {
+            "name": "__init__",
+            "async": false
+          },
+          {
+            "name": "open",
+            "async": false
+          },
+          {
+            "name": "heading_text",
+            "async": false
+          }
+        ]
+      }
     ],
     "functions": [
-      "__init__",
-      "heading_text",
-      "open"
-    ]
+      {
+        "name": "__init__",
+        "async": false
+      },
+      {
+        "name": "open",
+        "async": false
+      },
+      {
+        "name": "heading_text",
+        "async": false
+      }
+    ],
+    "calls": [
+      "count",
+      "filter",
+      "goto",
+      "inner_text",
+      "locator",
+      "strip",
+      "wait_for_load_state"
+    ],
+    "inheritance": []
   },
   {
     "file": "pages/users_page.py",
@@ -139,16 +253,95 @@
       "re"
     ],
     "classes": [
-      "UsersPage"
+      {
+        "name": "UsersPage",
+        "bases": [
+          "BasePage"
+        ],
+        "methods": [
+          {
+            "name": "__init__",
+            "async": false
+          },
+          {
+            "name": "open_list",
+            "async": false
+          },
+          {
+            "name": "verify_page",
+            "async": false
+          },
+          {
+            "name": "assert_list_loaded",
+            "async": false
+          },
+          {
+            "name": "search",
+            "async": false
+          },
+          {
+            "name": "open_add",
+            "async": false
+          },
+          {
+            "name": "assert_add_form",
+            "async": false
+          }
+        ]
+      }
     ],
     "functions": [
+      {
+        "name": "__init__",
+        "async": false
+      },
+      {
+        "name": "open_list",
+        "async": false
+      },
+      {
+        "name": "verify_page",
+        "async": false
+      },
+      {
+        "name": "assert_list_loaded",
+        "async": false
+      },
+      {
+        "name": "search",
+        "async": false
+      },
+      {
+        "name": "open_add",
+        "async": false
+      },
+      {
+        "name": "assert_add_form",
+        "async": false
+      }
+    ],
+    "calls": [
       "__init__",
-      "assert_add_form",
       "assert_list_loaded",
-      "open_add",
-      "open_list",
-      "search",
-      "verify_page"
+      "click",
+      "compile",
+      "expect",
+      "fill",
+      "get_by_role",
+      "get_by_text",
+      "locator",
+      "open",
+      "press",
+      "super",
+      "to_be_visible",
+      "to_have_title",
+      "to_have_url"
+    ],
+    "inheritance": [
+      {
+        "class": "UsersPage",
+        "inherits": "BasePage"
+      }
     ]
   },
   {
@@ -160,12 +353,57 @@
       "re"
     ],
     "classes": [
-      "PurchaseOrdersPage"
+      {
+        "name": "PurchaseOrdersPage",
+        "bases": [
+          "ListPage"
+        ],
+        "methods": [
+          {
+            "name": "verify_page",
+            "async": false
+          },
+          {
+            "name": "open_create_form",
+            "async": false
+          },
+          {
+            "name": "required_form_labels",
+            "async": false
+          }
+        ]
+      }
     ],
     "functions": [
-      "open_create_form",
-      "required_form_labels",
-      "verify_page"
+      {
+        "name": "verify_page",
+        "async": false
+      },
+      {
+        "name": "open_create_form",
+        "async": false
+      },
+      {
+        "name": "required_form_labels",
+        "async": false
+      }
+    ],
+    "calls": [
+      "click",
+      "compile",
+      "expect",
+      "get_by_role",
+      "get_by_text",
+      "locator",
+      "to_be_visible",
+      "to_have_title",
+      "to_have_url"
+    ],
+    "inheritance": [
+      {
+        "class": "PurchaseOrdersPage",
+        "inherits": "ListPage"
+      }
     ]
   },
   {
@@ -175,19 +413,45 @@
       "playwright.sync_api"
     ],
     "classes": [
-      "LoginPage"
+      {
+        "name": "LoginPage",
+        "bases": [],
+        "methods": [
+          {
+            "name": "__init__",
+            "async": false
+          },
+          {
+            "name": "authenticate",
+            "async": false
+          }
+        ]
+      }
     ],
     "functions": [
-      "__init__",
-      "authenticate"
-    ]
-  },
-  {
-    "file": "pages/__init__.py",
-    "module": "pages.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "__init__",
+        "async": false
+      },
+      {
+        "name": "authenticate",
+        "async": false
+      }
+    ],
+    "calls": [
+      "ValueError",
+      "click",
+      "enumerate",
+      "expect",
+      "fill",
+      "get_by_role",
+      "isdigit",
+      "len",
+      "locator",
+      "nth",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "pages/dashboard_page.py",
@@ -196,9 +460,22 @@
       "pages.base_page"
     ],
     "classes": [
-      "DashboardPage"
+      {
+        "name": "DashboardPage",
+        "bases": [
+          "BasePage"
+        ],
+        "methods": []
+      }
     ],
-    "functions": []
+    "functions": [],
+    "calls": [],
+    "inheritance": [
+      {
+        "class": "DashboardPage",
+        "inherits": "BasePage"
+      }
+    ]
   },
   {
     "file": "pages/module_page.py",
@@ -209,13 +486,72 @@
       "re"
     ],
     "classes": [
-      "ModulePage"
+      {
+        "name": "ModulePage",
+        "bases": [
+          "BasePage"
+        ],
+        "methods": [
+          {
+            "name": "__init__",
+            "async": false
+          },
+          {
+            "name": "open_and_assert",
+            "async": false
+          },
+          {
+            "name": "search_if_available",
+            "async": false
+          },
+          {
+            "name": "assert_headers",
+            "async": false
+          }
+        ]
+      }
     ],
     "functions": [
+      {
+        "name": "__init__",
+        "async": false
+      },
+      {
+        "name": "open_and_assert",
+        "async": false
+      },
+      {
+        "name": "search_if_available",
+        "async": false
+      },
+      {
+        "name": "assert_headers",
+        "async": false
+      }
+    ],
+    "calls": [
       "__init__",
-      "assert_headers",
-      "open_and_assert",
-      "search_if_available"
+      "compile",
+      "count",
+      "escape",
+      "expect",
+      "fill",
+      "get_by_role",
+      "get_by_text",
+      "locator",
+      "open",
+      "press",
+      "split",
+      "super",
+      "to_be_visible",
+      "to_have_title",
+      "to_have_url"
+    ],
+    "inheritance": [
+      {
+        "class": "ModulePage",
+        "inherits": "BasePage"
+      }
     ]
   },
   {
@@ -226,20 +562,56 @@
       "playwright.sync_api"
     ],
     "classes": [
-      "ListPage"
+      {
+        "name": "ListPage",
+        "bases": [
+          "BasePage"
+        ],
+        "methods": [
+          {
+            "name": "assert_loaded",
+            "async": false
+          },
+          {
+            "name": "search",
+            "async": false
+          },
+          {
+            "name": "clear_search",
+            "async": false
+          }
+        ]
+      }
     ],
     "functions": [
-      "assert_loaded",
-      "clear_search",
-      "search"
+      {
+        "name": "assert_loaded",
+        "async": false
+      },
+      {
+        "name": "search",
+        "async": false
+      },
+      {
+        "name": "clear_search",
+        "async": false
+      }
+    ],
+    "calls": [
+      "expect",
+      "fill",
+      "locator",
+      "nth",
+      "press",
+      "to_be_visible",
+      "to_have_title"
+    ],
+    "inheritance": [
+      {
+        "class": "ListPage",
+        "inherits": "BasePage"
+      }
     ]
-  },
-  {
-    "file": "tests/customers/__init__.py",
-    "module": "tests.customers.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
   },
   {
     "file": "tests/customers/test_customers.py",
@@ -251,10 +623,33 @@
     ],
     "classes": [],
     "functions": [
-      "test_customer_add_form_required_validation_without_submit",
-      "test_customer_list_search_and_status_filter",
-      "test_customer_status_tabs_are_available"
-    ]
+      {
+        "name": "test_customer_list_search_and_status_filter",
+        "async": false
+      },
+      {
+        "name": "test_customer_add_form_required_validation_without_submit",
+        "async": false
+      },
+      {
+        "name": "test_customer_status_tabs_are_available",
+        "async": false
+      }
+    ],
+    "calls": [
+      "UsersPage",
+      "assert_add_form",
+      "assert_list_loaded",
+      "click",
+      "expect",
+      "get_by_role",
+      "get_by_text",
+      "open_add",
+      "open_list",
+      "search",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/smoke/test_navigation.py",
@@ -267,16 +662,31 @@
     ],
     "classes": [],
     "functions": [
-      "test_dashboard_loads",
-      "test_major_module_route_loads"
-    ]
-  },
-  {
-    "file": "tests/smoke/__init__.py",
-    "module": "tests.smoke.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "test_dashboard_loads",
+        "async": false
+      },
+      {
+        "name": "test_major_module_route_loads",
+        "async": false
+      }
+    ],
+    "calls": [
+      "compile",
+      "escape",
+      "expect",
+      "get_by_role",
+      "get_by_text",
+      "goto",
+      "items",
+      "locator",
+      "parametrize",
+      "split",
+      "to_be_visible",
+      "to_have_title",
+      "to_have_url"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/vendors/test_vendors.py",
@@ -288,23 +698,29 @@
     ],
     "classes": [],
     "functions": [
-      "test_vendor_add_form_required_validation_without_submit",
-      "test_vendor_list_search_and_filter"
-    ]
-  },
-  {
-    "file": "tests/vendors/__init__.py",
-    "module": "tests.vendors.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
-  },
-  {
-    "file": "tests/invoices/__init__.py",
-    "module": "tests.invoices.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "test_vendor_list_search_and_filter",
+        "async": false
+      },
+      {
+        "name": "test_vendor_add_form_required_validation_without_submit",
+        "async": false
+      }
+    ],
+    "calls": [
+      "UsersPage",
+      "assert_add_form",
+      "assert_list_loaded",
+      "click",
+      "expect",
+      "get_by_role",
+      "get_by_text",
+      "open_add",
+      "open_list",
+      "search",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/invoices/test_invoices.py",
@@ -317,17 +733,31 @@
     ],
     "classes": [],
     "functions": [
-      "test_invoice_line_calculation",
-      "test_invoice_listing_search_and_filters",
-      "test_invoice_table_exposes_business_columns"
-    ]
-  },
-  {
-    "file": "tests/ledgers/__init__.py",
-    "module": "tests.ledgers.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "test_invoice_listing_search_and_filters",
+        "async": false
+      },
+      {
+        "name": "test_invoice_table_exposes_business_columns",
+        "async": false
+      },
+      {
+        "name": "test_invoice_line_calculation",
+        "async": false
+      }
+    ],
+    "calls": [
+      "ModulePage",
+      "count",
+      "expect",
+      "get_by_role",
+      "line_total",
+      "locator",
+      "open_and_assert",
+      "search_if_available",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/ledgers/test_ledgers.py",
@@ -341,10 +771,38 @@
     ],
     "classes": [],
     "functions": [
-      "test_ledger_closing_calculation",
-      "test_receivables_ledger_search_filters_and_balance_columns",
-      "test_receivables_visible_balance_due_is_mathematically_consistent"
-    ]
+      {
+        "name": "test_receivables_ledger_search_filters_and_balance_columns",
+        "async": false
+      },
+      {
+        "name": "test_receivables_visible_balance_due_is_mathematically_consistent",
+        "async": false
+      },
+      {
+        "name": "test_ledger_closing_calculation",
+        "async": false
+      }
+    ],
+    "calls": [
+      "Decimal",
+      "ModulePage",
+      "count",
+      "expect",
+      "get_by_role",
+      "inner_text",
+      "ledger_closing",
+      "locator",
+      "min",
+      "money",
+      "nth",
+      "open_and_assert",
+      "range",
+      "search_if_available",
+      "split",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/exports/test_exports.py",
@@ -356,22 +814,22 @@
     ],
     "classes": [],
     "functions": [
-      "test_export_surfaces_are_discoverable_without_downloading"
-    ]
-  },
-  {
-    "file": "tests/exports/__init__.py",
-    "module": "tests.exports.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
-  },
-  {
-    "file": "tests/transactions/__init__.py",
-    "module": "tests.transactions.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "test_export_surfaces_are_discoverable_without_downloading",
+        "async": false
+      }
+    ],
+    "calls": [
+      "ModulePage",
+      "count",
+      "expect",
+      "get_by_role",
+      "locator",
+      "open_and_assert",
+      "parametrize",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/transactions/test_transactions.py",
@@ -383,16 +841,24 @@
     ],
     "classes": [],
     "functions": [
-      "test_accounts_transactions_search_and_filters",
-      "test_customer_and_vendor_payment_pages_are_available"
-    ]
-  },
-  {
-    "file": "tests/notes/__init__.py",
-    "module": "tests.notes.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "test_accounts_transactions_search_and_filters",
+        "async": false
+      },
+      {
+        "name": "test_customer_and_vendor_payment_pages_are_available",
+        "async": false
+      }
+    ],
+    "calls": [
+      "ModulePage",
+      "expect",
+      "locator",
+      "open_and_assert",
+      "search_if_available",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/notes/test_notes.py",
@@ -404,8 +870,21 @@
     ],
     "classes": [],
     "functions": [
-      "test_note_listing_search_and_filters"
-    ]
+      {
+        "name": "test_note_listing_search_and_filters",
+        "async": false
+      }
+    ],
+    "calls": [
+      "ModulePage",
+      "expect",
+      "locator",
+      "open_and_assert",
+      "parametrize",
+      "search_if_available",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/purchase_orders/test_purchase_orders.py",
@@ -417,24 +896,35 @@
     ],
     "classes": [],
     "functions": [
-      "test_create_po_required_fields_are_exposed_without_submit",
-      "test_purchase_orders_listing_and_pagination",
-      "test_purchase_orders_search_is_read_only"
-    ]
-  },
-  {
-    "file": "tests/purchase_orders/__init__.py",
-    "module": "tests.purchase_orders.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
-  },
-  {
-    "file": "tests/authentication/__init__.py",
-    "module": "tests.authentication.__init__",
-    "imports": [],
-    "classes": [],
-    "functions": []
+      {
+        "name": "test_purchase_orders_listing_and_pagination",
+        "async": false
+      },
+      {
+        "name": "test_purchase_orders_search_is_read_only",
+        "async": false
+      },
+      {
+        "name": "test_create_po_required_fields_are_exposed_without_submit",
+        "async": false
+      }
+    ],
+    "calls": [
+      "PurchaseOrdersPage",
+      "assert_loaded",
+      "clear_search",
+      "expect",
+      "get_by_role",
+      "get_by_text",
+      "locator",
+      "open",
+      "open_create_form",
+      "required_form_labels",
+      "search",
+      "to_be_disabled",
+      "to_be_visible"
+    ],
+    "inheritance": []
   },
   {
     "file": "tests/authentication/test_authentication.py",
@@ -447,9 +937,35 @@
     ],
     "classes": [],
     "functions": [
-      "test_invalid_phone_validation",
-      "test_logout",
-      "test_valid_login_and_session_reuse"
-    ]
+      {
+        "name": "test_valid_login_and_session_reuse",
+        "async": false
+      },
+      {
+        "name": "test_invalid_phone_validation",
+        "async": false
+      },
+      {
+        "name": "test_logout",
+        "async": false
+      }
+    ],
+    "calls": [
+      "LoginPage",
+      "authenticate",
+      "click",
+      "expect",
+      "fill",
+      "get",
+      "get_by_role",
+      "get_by_text",
+      "goto",
+      "not_to_have_title",
+      "skip",
+      "storage_state",
+      "to_be_visible",
+      "to_have_url"
+    ],
+    "inheritance": []
   }
 ]
