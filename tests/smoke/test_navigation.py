@@ -55,28 +55,31 @@ IDENTITIES = {
 @pytest.mark.smoke
 def test_dashboard_loads(authenticated_page):
     authenticated_page.goto("/home", wait_until="domcontentloaded")
-    expect(authenticated_page).to_have_url(re.compile(re.escape(settings.base_url) + r"/home/?$"))
-    expect(authenticated_page).to_have_title("Poshn - Home")
-    expect(authenticated_page.locator("main")).to_be_visible()
-    expect(authenticated_page.get_by_role("button", name="Create RFQ")).to_be_visible()
+    expect(authenticated_page).to_have_url(re.compile(re.escape(settings.base_url) + r"/home/?$"), timeout=settings.timeout_ms)
+    expect(authenticated_page).to_have_title("Poshn - Home", timeout=settings.timeout_ms)
+    expect(authenticated_page.locator("main")).to_be_visible(timeout=settings.timeout_ms)
+    expect(authenticated_page.get_by_role("button", name="Create RFQ")).to_be_visible(timeout=settings.timeout_ms)
 
 
 @pytest.mark.smoke
 @pytest.mark.parametrize("name,path", MODULES.items())
 def test_major_module_route_loads(authenticated_page, name, path):
     authenticated_page.goto(path, wait_until="domcontentloaded")
-    expect(authenticated_page).to_have_url(re.compile(re.escape(settings.base_url) + re.escape(path.split('#')[0]) + r"/?(?:#.*)?$"))
+    expect(authenticated_page).to_have_url(
+        re.compile(re.escape(settings.base_url) + re.escape(path.split('#')[0]) + r"/?(?:#.*)?$"),
+        timeout=settings.timeout_ms,
+    )
     if name == "Inbox":
         # Inbox updates its document title asynchronously; this assertion auto-waits
         # for the meaningful loaded state rather than accepting the transient title.
-        expect(authenticated_page).to_have_title("Poshn - Inbox")
+        expect(authenticated_page).to_have_title("Poshn - Inbox", timeout=settings.timeout_ms)
         main = authenticated_page.locator("main")
-        expect(main.get_by_text("Inbox", exact=True).first).to_be_visible()
-        expect(main.locator('input[placeholder="Search name, phone or message"]:visible')).to_be_visible()
-        expect(main.get_by_text("All", exact=True).first).to_be_visible()
-        expect(main.get_by_text(re.compile(r"^Unread(?: \(\d+\))?$"))).to_be_visible()
-        expect(main.get_by_text("No Chat Selected", exact=True)).to_be_visible()
+        expect(main.get_by_text("Inbox", exact=True).first).to_be_visible(timeout=settings.timeout_ms)
+        expect(main.locator('input[placeholder="Search name, phone or message"]:visible')).to_be_visible(timeout=settings.timeout_ms)
+        expect(main.get_by_text("All", exact=True).first).to_be_visible(timeout=settings.timeout_ms)
+        expect(main.get_by_text(re.compile(r"^Unread(?: \(\d+\))?$"))).to_be_visible(timeout=settings.timeout_ms)
+        expect(main.get_by_text("No Chat Selected", exact=True)).to_be_visible(timeout=settings.timeout_ms)
         return
-    expect(authenticated_page).to_have_title(re.compile(r"^Poshn - .+"))
-    expect(authenticated_page.locator("main")).to_be_visible()
-    expect(authenticated_page.locator("main").get_by_text(IDENTITIES[name], exact=False).first).to_be_visible()
+    expect(authenticated_page).to_have_title(re.compile(r"^Poshn - .+"), timeout=settings.timeout_ms)
+    expect(authenticated_page.locator("main")).to_be_visible(timeout=settings.timeout_ms)
+    expect(authenticated_page.locator("main").get_by_text(IDENTITIES[name], exact=False).first).to_be_visible(timeout=settings.timeout_ms)

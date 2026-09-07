@@ -18,7 +18,9 @@ class Settings:
     test_product: str = os.getenv("NUCLEUS_TEST_PRODUCT", "")
     timeout_ms: int = int(os.getenv("PLAYWRIGHT_TIMEOUT_MS", "30000"))
     headless: bool = os.getenv("HEADLESS", "true").lower() not in {"0", "false", "no"}
+    browser_args: tuple[str, ...] = tuple(
+        arg for arg in os.getenv("PLAYWRIGHT_BROWSER_ARGS", "").split(",") if arg
+    )
 
 
 settings = Settings()
-

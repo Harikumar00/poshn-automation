@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import pytest
-from playwright.sync_api import Browser, BrowserContext, Page, Playwright, TimeoutError, sync_playwright
+from playwright.sync_api import Browser, BrowserContext, Page, Playwright, TimeoutError, expect, sync_playwright
 
 from config.settings import ROOT, settings
 from pages.login_page import LoginPage
@@ -18,7 +18,10 @@ def playwright() -> Playwright:
 
 @pytest.fixture(scope="session")
 def browser(playwright: Playwright) -> Browser:
-    browser = playwright.chromium.launch(headless=settings.headless)
+    browser = playwright.chromium.launch(
+        headless=settings.headless,
+        args=settings.browser_args,
+    )
     yield browser
     browser.close()
 
@@ -80,21 +83,22 @@ def authenticated_page(context: BrowserContext) -> Page:
     page = context.new_page()
     page.goto("/home", wait_until="domcontentloaded")
     continue_button = page.get_by_role("button", name="Continue")
-    if not AUTH_STATE.exists():
-        try:
-            continue_button.wait_for(state="visible", timeout=min(settings.timeout_ms, 10000))
-        except TimeoutError:
-            pass
-    if "login" in page.title().lower() or continue_button.count():
+    try:
+        continue_button.wait_for(state="visible", timeout=min(settings.timeout_ms, 10000))
+        needs_login = True
+    except TimeoutError:
+        needs_login = "login" in page.title().lower()
+
+    if needs_login:
         if not settings.test_phone or not settings.test_otp:
             pytest.skip("Authentication state absent; set NUCLEUS_TEST_PHONE and NUCLEUS_TEST_OTP securely")
         login = LoginPage(page)
         login.authenticate(settings.test_phone, settings.test_otp)
-        page.wait_for_function(
-            "() => !document.title.toLowerCase().includes('login')",
-            timeout=settings.timeout_ms,
-        )
+        expect(page).not_to_have_title("Poshn - Login", timeout=settings.timeout_ms)
         AUTH_STATE.parent.mkdir(parents=True, exist_ok=True)
         context.storage_state(path=str(AUTH_STATE))
+    # Do not hand a page to a test while the authenticated shell is still
+    # rendering. This also makes header controls (including Log Out) stable.
+    expect(page.locator("main")).to_be_visible(timeout=settings.timeout_ms)
     yield page
     page.close()

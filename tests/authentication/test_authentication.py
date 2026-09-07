@@ -28,6 +28,8 @@ def test_invalid_phone_validation(unauthenticated_page):
 
 @pytest.mark.auth
 def test_logout(authenticated_page):
-    authenticated_page.get_by_role("button", name="Log Out").click()
+    logout = authenticated_page.get_by_role("button", name="Log Out")
+    expect(logout).to_be_visible()
+    logout.click()
     authenticated_page.get_by_role("button", name="Yes").click()
     expect(authenticated_page).to_have_url(f"{settings.base_url}/")
