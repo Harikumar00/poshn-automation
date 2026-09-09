@@ -21,6 +21,27 @@ pytest -m smoke
 pytest
 ```
 
+## MongoDB validation discovery
+
+MongoDB checks are isolated under the `mongo` marker and use only metadata
+operations (`ping`, `list_collection_names`, and collection `options()`).
+Configure a dedicated read-only account locally in `.env`:
+
+```bash
+MONGODB_URI=<READ_ONLY_MONGODB_URI>
+MONGODB_DATABASE=<DATABASE_NAME>
+```
+
+Run the first-phase discovery with:
+
+```bash
+pytest -m mongo tests/mongo -q
+```
+
+The sanitized reports are written to `reports/mongodb_validation_discovery.md`
+and `reports/mongodb_validation_discovery.json`. No documents are queried or
+modified, and `.env` is ignored by Git.
+
 The framework saves authenticated storage state under `auth/.auth.json` only when authentication is needed. Reports are written to `reports/`.
 
 See [docs/application-map.md](docs/application-map.md), [docs/test-strategy.md](docs/test-strategy.md), and [docs/automation-status.md](docs/automation-status.md).
