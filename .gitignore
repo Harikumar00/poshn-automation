@@ -10,3 +10,4 @@ __pycache__/
 .playwright/
 
 .playwright-mcp/
+.DS_Store
