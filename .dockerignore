@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.git
+.github
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.playwright-mcp
+auth/*.json
+reports
+test-results
