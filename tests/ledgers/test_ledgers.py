@@ -1,3 +1,4 @@
+import re
 from decimal import Decimal
 import pytest
 from playwright.sync_api import expect
@@ -8,15 +9,26 @@ from utils.calculations import ledger_closing, money
 
 @pytest.mark.regression
 def test_receivables_ledger_search_filters_and_balance_columns(authenticated_page):
-    page = ModulePage(authenticated_page, "/accounts/receivables", "Poshn - Receivables")
-    page.open_and_assert(); page.search_if_available()
+    page = ModulePage(authenticated_page, "/accounts/receivables", "Poshn - Receivables", breadcrumbs=["Accounts", "Receivables"])
+    page.open_and_assert()
+
+    # Verify exact URL and document title confirm we are on Receivables page
+    expect(authenticated_page).to_have_url(re.compile(r".*/accounts/receivables/?$"))
+    expect(authenticated_page).to_have_title("Poshn - Receivables")
+    expect(authenticated_page.locator("main").get_by_text("Receivables", exact=True).first).to_be_visible()
+
+    page.search_if_available()
     for header in ["Invoice#", "Customer", "Amount", "Due Date", "Status"]:
-        expect(authenticated_page.get_by_role("columnheader", name=header)).to_be_visible()
+        expect(
+            authenticated_page.get_by_role("columnheader", name=re.compile(re.escape(header), re.IGNORECASE)).first
+        ).to_be_visible()
 
 
 @pytest.mark.regression
 def test_receivables_visible_balance_due_is_mathematically_consistent(authenticated_page):
-    page = ModulePage(authenticated_page, "/accounts/receivables", "Poshn - Receivables"); page.open_and_assert()
+    page = ModulePage(authenticated_page, "/accounts/receivables", "Poshn - Receivables", breadcrumbs=["Accounts", "Receivables"])
+    page.open_and_assert()
+    expect(authenticated_page).to_have_title("Poshn - Receivables")
     expect(
         authenticated_page.get_by_text("Balance due:", exact=False).first
     ).to_be_visible(timeout=settings.timeout_ms)

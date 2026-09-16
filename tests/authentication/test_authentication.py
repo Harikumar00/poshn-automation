@@ -1,3 +1,4 @@
+import re
 import pytest
 from playwright.sync_api import expect
 
@@ -12,7 +13,8 @@ def test_valid_login_and_session_reuse(unauthenticated_page, unauthenticated_con
     # Start this case unauthenticated even when a reusable storage state exists.
     unauthenticated_page.goto("/", wait_until="domcontentloaded")
     LoginPage(unauthenticated_page).authenticate(settings.test_phone, settings.test_otp)
-    expect(unauthenticated_page).not_to_have_title("Poshn - Login")
+    expect(unauthenticated_page).not_to_have_title("Poshn - Login", timeout=settings.timeout_ms)
+    expect(unauthenticated_page.locator("main")).to_be_visible(timeout=settings.timeout_ms)
     state = unauthenticated_context.storage_state()
     assert state.get("cookies") is not None
 
@@ -33,3 +35,4 @@ def test_logout(authenticated_page):
     logout.click()
     authenticated_page.get_by_role("button", name="Yes").click()
     expect(authenticated_page).to_have_url(f"{settings.base_url}/")
+    expect(authenticated_page).to_have_title("Poshn - Login", timeout=settings.timeout_ms)

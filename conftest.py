@@ -81,7 +81,13 @@ def unauthenticated_page(unauthenticated_context: BrowserContext) -> Page:
 @pytest.fixture()
 def authenticated_page(context: BrowserContext) -> Page:
     page = context.new_page()
-    page.goto("/home", wait_until="domcontentloaded")
+    for attempt in range(2):
+        try:
+            page.goto("/home", wait_until="domcontentloaded", timeout=settings.timeout_ms)
+            break
+        except TimeoutError:
+            if attempt == 1:
+                raise
     continue_button = page.get_by_role("button", name="Continue")
     try:
         continue_button.wait_for(state="visible", timeout=min(settings.timeout_ms, 10000))
