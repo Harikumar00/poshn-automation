@@ -197,7 +197,7 @@ def main():
 
     print()
     print("=" * 60)
-    print("POSN CODE GRAPH")
+    print("POSHN CODE GRAPH")
     print("=" * 60)
     print(f"Python files indexed : {len(graph)}")
     print(f"Classes indexed      : {total_classes}")

@@ -326,7 +326,7 @@ def main():
 
     print()
     print("=" * 60)
-    print("POSN CODE GRAPH SEARCH")
+    print("POSHN CODE GRAPH SEARCH")
     print("=" * 60)
     print(f"Query: {query}")
     print()

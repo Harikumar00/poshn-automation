@@ -29,7 +29,7 @@ class ReadOnlyMongoClient:
             serverSelectionTimeoutMS=timeout_ms,
             connectTimeoutMS=timeout_ms,
             socketTimeoutMS=timeout_ms,
-            appname="posn-automation-read-only-validation",
+            appname="poshn-automation-read-only-validation",
         )
         self.database_name = database_name
         self._database = self._client[database_name]

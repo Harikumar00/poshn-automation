@@ -190,7 +190,7 @@ def main():
 
     print()
     print("=" * 70)
-    print("POSN AI CONTEXT")
+    print("POSHN AI CONTEXT")
     print("=" * 70)
     print()
 
