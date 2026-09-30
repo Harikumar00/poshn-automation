@@ -40,6 +40,7 @@ class PurchaseOrdersPage(ListPage):
         owner: str = "kam_kiran",
         file_path: Path | str | None = None,
         customer_search: str | None = None,
+        items: list[dict[str, str]] | None = None,
     ) -> dict:
         """Creates a new Purchase Order via the UI drawer and submits it."""
         if po_number is None:
@@ -92,25 +93,31 @@ class PurchaseOrdersPage(ListPage):
         self.page.locator(".q-menu .q-item").first.click()
         self.page.wait_for_timeout(500)
 
-        # 5. Add Line Item via ItemForm drawer
-        drawer.get_by_role("button", name="Add Items to PO").click(force=True)
-        self.page.wait_for_timeout(1000)
+        # 5. Add Line Item(s) via ItemForm drawer
+        items_to_add = items if items else [{"product": product, "rate": rate, "quantity": quantity}]
+        for itm in items_to_add:
+            drawer.get_by_role("button", name="Add Items to PO").click(force=True)
+            self.page.wait_for_timeout(1000)
 
-        item_drawer = self.page.locator(".q-drawer.q-drawer--right:visible").last
-        prod_inp = item_drawer.locator("input[placeholder='Select Product']")
-        prod_inp.click(force=True)
-        prod_inp.fill(product)
-        self.page.wait_for_timeout(1000)
-        self.page.locator(".q-menu .q-item").first.click()
-        self.page.wait_for_timeout(500)
+            item_drawer = self.page.locator(".q-drawer.q-drawer--right:visible").last
+            prod_inp = item_drawer.locator("input[placeholder='Select Product']")
+            prod_inp.click(force=True)
+            prod_inp.fill(itm["product"])
+            self.page.wait_for_timeout(1200)
+            target_item = self.page.locator(".q-menu .q-item").filter(has_text=re.compile(re.escape(itm["product"]), re.I)).first
+            if target_item.count() > 0:
+                target_item.click()
+            else:
+                self.page.locator(".q-menu .q-item").first.click()
+            self.page.wait_for_timeout(500)
 
-        item_drawer.locator("input[placeholder='Enter rate']").fill(rate)
-        item_drawer.locator("input[placeholder='Enter value']").first.fill(quantity)
+            item_drawer.locator("input[placeholder='Enter rate']").fill(str(itm.get("rate", rate)))
+            item_drawer.locator("input[placeholder='Enter value']").first.fill(str(itm.get("quantity", quantity)))
 
-        add_btn = item_drawer.get_by_role("button", name="Add")
-        expect(add_btn).to_be_enabled()
-        add_btn.click(force=True)
-        self.page.wait_for_timeout(1000)
+            add_btn = item_drawer.get_by_role("button", name="Add")
+            expect(add_btn).to_be_enabled()
+            add_btn.click(force=True)
+            self.page.wait_for_timeout(1000)
 
         # 6. Upload Proof Document
         file_inp = drawer.locator("input[type='file']")
@@ -139,6 +146,7 @@ class PurchaseOrdersPage(ListPage):
             "product": product,
             "rate": rate,
             "quantity": quantity,
+            "items": items_to_add,
         }
 
     def open_po_details(self, po_number: str) -> None:
@@ -164,6 +172,7 @@ class PurchaseOrdersPage(ListPage):
         pb_number: str | None = None,
         vehicle_number: str = "MH12AB1234",
         vendor_search: str | None = None,
+        items: list[dict[str, str]] | None = None,
     ) -> dict:
         """Records a Purchase Bill against the current Purchase Order."""
         if pb_number is None:
@@ -208,18 +217,23 @@ class PurchaseOrdersPage(ListPage):
         self.page.wait_for_timeout(500)
 
         # 6. Update line item rate & quantity
-        data_row = pb_drawer.locator("tbody tr").nth(1)
-        edit_btn = data_row.locator("button, .q-btn").first
-        edit_btn.click(force=True)
-        self.page.wait_for_timeout(1000)
+        items_to_update = items if items else [{"rate": rate, "quantity": quantity}]
+        data_rows = pb_drawer.locator("tbody tr")
+        row_count = data_rows.count()
+        for idx, itm in enumerate(items_to_update):
+            target_row = data_rows.nth(idx + 1) if row_count > idx + 1 else data_rows.nth(idx)
+            edit_btn = target_row.locator("button, .q-btn").first
+            if edit_btn.is_visible():
+                edit_btn.click(force=True)
+                self.page.wait_for_timeout(1000)
 
-        item_drawer = self.page.locator(".q-drawer.q-drawer--right:visible").last
-        item_drawer.locator("input[placeholder='Enter rate']").fill(rate)
-        item_drawer.locator("input[placeholder='Enter value']").first.fill(quantity)
+                item_drawer = self.page.locator(".q-drawer.q-drawer--right:visible").last
+                item_drawer.locator("input[placeholder='Enter rate']").fill(str(itm.get("rate", rate)))
+                item_drawer.locator("input[placeholder='Enter value']").first.fill(str(itm.get("quantity", quantity)))
 
-        save_btn = item_drawer.get_by_role("button", name="Save").or_(item_drawer.get_by_role("button", name="Add"))
-        save_btn.click(force=True)
-        self.page.wait_for_timeout(1000)
+                save_btn = item_drawer.get_by_role("button", name="Save").or_(item_drawer.get_by_role("button", name="Add"))
+                save_btn.click(force=True)
+                self.page.wait_for_timeout(1000)
 
         # 7. Submit Purchase Bill
         submit_btn = pb_drawer.get_by_role("button", name="Submit")

@@ -13,22 +13,36 @@ def trade_data():
     """Shared test data for the PO -> Bill -> Invoice -> Accounts Approval lifecycle."""
     ts = str(int(time.time()))
     return {
-        "customer": "Merabo Labs Private Limited",
-        "customer_search": "06AAMCM0523D1ZW",
-        "vendor": "Payables Vendor",
-        "vendor_search": "07AAUFG7095F1ZT",
+        "customer": "Bajaj Holdings And Investment Limited",
+        "customer_search": "27AAACB3370K1ZP",
+        "vendor": "Reliance Industries Limited",
+        "vendor_search": "AAACR5055K",
+        "items": [
+            {
+                "product": "Aashirvaad atta 10kg*3",
+                "po_rate": "250",
+                "pb_rate": "200",
+                "quantity": "1000",
+            },
+            {
+                "product": "Amul choco crunch tricone 120ml",
+                "po_rate": "250",
+                "pb_rate": "200",
+                "quantity": "1000",
+            },
+        ],
         "product": "Aashirvaad atta 10kg*3",
-        "po_number": f"PO-MERABO-{ts}",
-        "pb_number": f"PB-PAY-{ts}",
-        "invoice_number": f"INV-MERABO-{ts}",
-        "pod_number": f"POD-MERABO-{ts}",
-        "cn_number": f"CN-MERABO-{ts}",
-        "dn_number": f"DN-PAY-{ts}",
+        "po_number": f"PO-BAJAJ-REL-{ts}",
+        "pb_number": f"PB-BAJAJ-REL-{ts}",
+        "invoice_number": f"INV-BAJAJ-REL-{ts}",
+        "pod_number": f"POD-BAJAJ-REL-{ts}",
+        "cn_number": f"CN-BAJAJ-REL-{ts}",
+        "dn_number": f"DN-BAJAJ-REL-{ts}",
         "po_rate": "250",
         "pb_rate": "200",
-        "quantity": "10",
-        "cn_quantity": "1",
-        "dn_quantity": "1",
+        "quantity": "1000",
+        "cn_quantity": "10",
+        "dn_quantity": "10",
         "vehicle_number": "MH12AB1234",
     }
 
@@ -36,18 +50,23 @@ def trade_data():
 
 @pytest.mark.regression
 def test_create_purchase_order(authenticated_page: Page, trade_data: dict):
-    """Verify creating a Purchase Order for Merabo Labs with item Aashirvaad atta 10kg*3."""
+    """Verify creating a Purchase Order for Bajaj Holdings with both line items."""
     po_page = PurchaseOrdersPage(authenticated_page)
     po_page.open(po_page.path)
     po_page.verify_page()
 
     created = po_page.create_purchase_order(
         customer=trade_data["customer"],
-        product=trade_data["product"],
-        rate=trade_data["po_rate"],
-        quantity=trade_data["quantity"],
         po_number=trade_data["po_number"],
         customer_search=trade_data["customer_search"],
+        items=[
+            {
+                "product": item["product"],
+                "rate": item["po_rate"],
+                "quantity": item["quantity"],
+            }
+            for item in trade_data["items"]
+        ],
     )
 
     assert created["po_number"] == trade_data["po_number"]
@@ -63,7 +82,7 @@ def test_create_purchase_order(authenticated_page: Page, trade_data: dict):
 
 @pytest.mark.regression
 def test_create_and_link_purchase_bill(authenticated_page: Page, trade_data: dict):
-    """Verify opening the PO detail and recording a Purchase Bill with Payables Vendor."""
+    """Verify opening the PO detail and recording a Purchase Bill with Reliance Industries Limited."""
     po_page = PurchaseOrdersPage(authenticated_page)
     po_page.open(po_page.path)
     po_page.verify_page()
@@ -75,14 +94,19 @@ def test_create_and_link_purchase_bill(authenticated_page: Page, trade_data: dic
     expect(authenticated_page.get_by_role("button", name="Record Entry")).to_be_visible()
     expect(authenticated_page.get_by_role("button", name="Request Invoice")).to_be_visible()
 
-    # Record Purchase Bill against PO
+    # Record Purchase Bill against PO with both items
     created_pb = po_page.record_entry_add_purchase_bill(
         vendor=trade_data["vendor"],
-        rate=trade_data["pb_rate"],
-        quantity=trade_data["quantity"],
         pb_number=trade_data["pb_number"],
         vehicle_number=trade_data["vehicle_number"],
         vendor_search=trade_data["vendor_search"],
+        items=[
+            {
+                "rate": item["pb_rate"],
+                "quantity": item["quantity"],
+            }
+            for item in trade_data["items"]
+        ],
     )
     assert created_pb["pb_number"] == trade_data["pb_number"]
 

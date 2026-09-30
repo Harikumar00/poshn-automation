@@ -32,12 +32,24 @@ trade_data = {
     "customer_search": "27AAACB3370K1ZP",
     "vendor": "Reliance Industries Limited",
     "vendor_search": "AAACR5055K",
-    "product": "Aashirvaad atta 10kg*3",
+    "items": [
+        {
+            "product": "Aashirvaad atta 10kg*3",
+            "search": "Aashirvaad",
+            "po_rate": "250",
+            "pb_rate": "200",
+            "quantity": "1000",
+        },
+        {
+            "product": "Amul choco crunch tricone 120ml",
+            "search": "Amul choco crunch",
+            "po_rate": "250",
+            "pb_rate": "200",
+            "quantity": "1000",
+        },
+    ],
     "po_number": f"PO-BAJAJ-REL-{ts}",
     "pb_number": f"PB-BAJAJ-REL-{ts}",
-    "po_rate": "250",
-    "pb_rate": "200",
-    "quantity": "1000",
     "vehicle_number": "MH12AB1234",
 }
 
@@ -46,7 +58,8 @@ print(f"• PO Number: {trade_data['po_number']}")
 print(f"• PB Number: {trade_data['pb_number']}")
 print(f"• Customer:  {trade_data['customer']} ({trade_data['customer_search']})")
 print(f"• Vendor:    {trade_data['vendor']} ({trade_data['vendor_search']})")
-print(f"• Product:   {trade_data['product']} | Qty: {trade_data['quantity']}")
+for idx, itm in enumerate(trade_data["items"]):
+    print(f"• Product {idx+1}: {itm['product']} | Qty: {itm['quantity']} | PO: ₹{itm['po_rate']} | PB: ₹{itm['pb_rate']}")
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
@@ -125,28 +138,29 @@ with sync_playwright() as p:
         page.locator(".q-menu .q-item").nth(1).click()
     page.wait_for_timeout(600)
 
-    # 5. Add Line Item via ItemForm drawer
-    print(f"  Adding line item: {trade_data['product']} x {trade_data['quantity']} @ ₹{trade_data['po_rate']}...")
-    drawer.get_by_role("button", name="Add Items to PO").click(force=True)
-    page.wait_for_timeout(1200)
+    # 5. Add Line Items via ItemForm drawer
+    for itm in trade_data["items"]:
+        print(f"  Adding line item: {itm['product']} x {itm['quantity']} @ ₹{itm['po_rate']}...")
+        drawer.get_by_role("button", name="Add Items to PO").click(force=True)
+        page.wait_for_timeout(1200)
 
-    item_drawer = page.locator(".q-drawer.q-drawer--right:visible").last
-    prod_inp = item_drawer.locator("input[placeholder='Select Product']")
-    prod_inp.click(force=True)
-    prod_inp.type("Aashirvaad", delay=80)
-    page.wait_for_timeout(1500)
-    prod_item = page.locator(".q-menu .q-item").filter(has_text="Aashirvaad atta 10kg*3").first
-    expect(prod_item).to_be_visible(timeout=10000)
-    prod_item.click()
-    page.wait_for_timeout(500)
+        item_drawer = page.locator(".q-drawer.q-drawer--right:visible").last
+        prod_inp = item_drawer.locator("input[placeholder='Select Product']")
+        prod_inp.click(force=True)
+        prod_inp.type(itm["search"], delay=80)
+        page.wait_for_timeout(1500)
+        prod_item = page.locator(".q-menu .q-item").filter(has_text=itm["product"]).first
+        expect(prod_item).to_be_visible(timeout=10000)
+        prod_item.click()
+        page.wait_for_timeout(500)
 
-    item_drawer.locator("input[placeholder='Enter rate']").fill(trade_data["po_rate"])
-    item_drawer.locator("input[placeholder='Enter value']").first.fill(trade_data["quantity"])
+        item_drawer.locator("input[placeholder='Enter rate']").fill(itm["po_rate"])
+        item_drawer.locator("input[placeholder='Enter value']").first.fill(itm["quantity"])
 
-    add_btn = item_drawer.get_by_role("button", name="Add")
-    expect(add_btn).to_be_enabled()
-    add_btn.click(force=True)
-    page.wait_for_timeout(1000)
+        add_btn = item_drawer.get_by_role("button", name="Add")
+        expect(add_btn).to_be_enabled()
+        add_btn.click(force=True)
+        page.wait_for_timeout(1000)
 
     # 6. Upload Proof Document
     file_inp = drawer.locator("input[type='file']")
@@ -219,19 +233,24 @@ with sync_playwright() as p:
     page.locator(".q-menu .q-item").first.click()
     page.wait_for_timeout(600)
 
-    # 6. Update line item rate & quantity
-    data_row = pb_drawer.locator("tbody tr").nth(1)
-    edit_btn = data_row.locator("button, .q-btn").first
-    edit_btn.click(force=True)
-    page.wait_for_timeout(1000)
+    # 6. Update line item rates & quantities
+    data_rows = pb_drawer.locator("tbody tr")
+    row_count = data_rows.count()
+    for idx, itm in enumerate(trade_data["items"]):
+        print(f"  Updating PB line item {idx + 1}: {itm['product']} x {itm['quantity']} @ ₹{itm['pb_rate']}...")
+        target_row = data_rows.nth(idx + 1) if row_count > idx + 1 else data_rows.nth(idx)
+        edit_btn = target_row.locator("button, .q-btn").first
+        if edit_btn.is_visible():
+            edit_btn.click(force=True)
+            page.wait_for_timeout(1000)
 
-    pb_item_drawer = page.locator(".q-drawer.q-drawer--right:visible").last
-    pb_item_drawer.locator("input[placeholder='Enter rate']").fill(trade_data["pb_rate"])
-    pb_item_drawer.locator("input[placeholder='Enter value']").first.fill(trade_data["quantity"])
+            pb_item_drawer = page.locator(".q-drawer.q-drawer--right:visible").last
+            pb_item_drawer.locator("input[placeholder='Enter rate']").fill(itm["pb_rate"])
+            pb_item_drawer.locator("input[placeholder='Enter value']").first.fill(itm["quantity"])
 
-    save_btn = pb_item_drawer.get_by_role("button", name="Save").or_(pb_item_drawer.get_by_role("button", name="Add"))
-    save_btn.click(force=True)
-    page.wait_for_timeout(1000)
+            save_btn = pb_item_drawer.get_by_role("button", name="Save").or_(pb_item_drawer.get_by_role("button", name="Add"))
+            save_btn.click(force=True)
+            page.wait_for_timeout(1000)
 
     # 7. Submit Purchase Bill
     submit_pb_btn = pb_drawer.get_by_role("button", name="Submit")
