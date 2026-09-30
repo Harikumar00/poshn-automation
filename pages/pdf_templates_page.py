@@ -4,7 +4,10 @@ from playwright.sync_api import Locator, Page, expect
 from config.settings import settings
 
 
-class PDFTemplatesPage:
+from pages.base_page import BasePage
+
+
+class PDFTemplatesPage(BasePage):
     """Page Object for Utility -> PDF Templates page, Add Drawer, and Designer Canvas."""
 
     ROUTE = "/utility/pdf-templates"
@@ -21,7 +24,7 @@ class PDFTemplatesPage:
     ]
 
     def __init__(self, page: Page):
-        self.page = page
+        super().__init__(page)
         self.search_input = page.locator("input[placeholder*='Search' i], input[type='search']").first
         self.add_template_button = page.get_by_role("button", name=re.compile(r"\+?\s*Add Template", re.IGNORECASE)).first
         self.table = page.locator("table, .q-table").first
@@ -31,16 +34,13 @@ class PDFTemplatesPage:
 
     def navigate(self) -> None:
         """Navigate to PDF Templates page."""
-        self.page.goto(
-            f"{settings.base_url.rstrip('/')}{self.ROUTE}",
-            wait_until="domcontentloaded",
-        )
+        self.open(f"{settings.base_url.rstrip('/')}{self.ROUTE}")
         self.page.wait_for_timeout(1000)
 
     def assert_page_identity(self) -> None:
         """Verify URL path, title, and page header identity."""
-        expect(self.page).to_have_url(re.compile(r".*/utility/pdf-templates/?$"))
-        expect(self.page).to_have_title(self.TITLE)
+        self.assert_url(re.compile(r".*/utility/pdf-templates/?$"))
+        self.assert_title(self.TITLE)
         main = self.page.locator("main")
         expect(main.get_by_text("PDF Templates", exact=False).first).to_be_visible()
 

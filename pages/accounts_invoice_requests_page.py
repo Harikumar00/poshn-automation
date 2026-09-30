@@ -3,9 +3,8 @@ import re
 import time
 from playwright.sync_api import Locator, Page, expect
 
+from config.constants import DEFAULT_FIXTURE_DOC
 from pages.list_page import ListPage
-
-DEFAULT_FIXTURE_DOC = Path(__file__).resolve().parent.parent / "tests" / "fixtures" / "sample_document.pdf"
 
 
 class AccountsInvoiceRequestsPage(ListPage):

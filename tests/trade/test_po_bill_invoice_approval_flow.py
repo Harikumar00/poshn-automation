@@ -2,6 +2,7 @@ import time
 import pytest
 from playwright.sync_api import Page, expect
 
+from config.settings import settings
 from pages.purchase_orders_page import PurchaseOrdersPage
 from pages.accounts_invoice_requests_page import AccountsInvoiceRequestsPage
 from pages.invoices_page import InvoicesPage
@@ -13,25 +14,25 @@ def trade_data():
     """Shared test data for the PO -> Bill -> Invoice -> Accounts Approval lifecycle."""
     ts = str(int(time.time()))
     return {
-        "customer": "Bajaj Holdings And Investment Limited",
+        "customer": settings.test_customer,
         "customer_search": "27AAACB3370K1ZP",
-        "vendor": "Reliance Industries Limited",
+        "vendor": settings.test_vendor,
         "vendor_search": "AAACR5055K",
         "items": [
             {
-                "product": "Aashirvaad atta 10kg*3",
+                "product": settings.test_product,
                 "po_rate": "250",
                 "pb_rate": "200",
-                "quantity": "1000",
+                "quantity": settings.test_quantity,
             },
             {
-                "product": "Amul choco crunch tricone 120ml",
+                "product": settings.test_product_2,
                 "po_rate": "250",
                 "pb_rate": "200",
-                "quantity": "1000",
+                "quantity": settings.test_quantity,
             },
         ],
-        "product": "Aashirvaad atta 10kg*3",
+        "product": settings.test_product,
         "po_number": f"PO-BAJAJ-REL-{ts}",
         "pb_number": f"PB-BAJAJ-REL-{ts}",
         "invoice_number": f"INV-BAJAJ-REL-{ts}",
@@ -40,7 +41,7 @@ def trade_data():
         "dn_number": f"DN-BAJAJ-REL-{ts}",
         "po_rate": "250",
         "pb_rate": "200",
-        "quantity": "1000",
+        "quantity": settings.test_quantity,
         "cn_quantity": "10",
         "dn_quantity": "10",
         "vehicle_number": "MH12AB1234",

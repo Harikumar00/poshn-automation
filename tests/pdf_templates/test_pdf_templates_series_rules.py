@@ -25,7 +25,7 @@ def test_tc_sr_02_dot_hash_padding_numbers():
 def test_tc_sr_03_valid_combined_series_rules():
     """TC-SR-03: Combined series formulas (INV-, INV-10, INV-.YYYY.-.{branch}.-.MM.-.####)."""
     valid_rules = ["INV-", "INV-10", "INV-.YYYY.-.MM.-.####"]
-    pattern = re.compile(r"^[A-Za-z0-9\-\.\{\}]+$")
+    pattern = re.compile(r"^[A-Za-z0-9\-\.\{\}#]+$")
     for rule in valid_rules:
         assert pattern.match(rule)
 
