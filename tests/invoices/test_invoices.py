@@ -1,3 +1,4 @@
+from decimal import Decimal
 import re
 import pytest
 from playwright.sync_api import expect
@@ -39,6 +40,4 @@ def test_invoice_table_exposes_business_columns(authenticated_page):
 
 
 def test_invoice_line_calculation():
-    assert line_total(2, "100.00", discount=10, tax=18) == line_total(1, "100.00", discount=10, tax=18) * 2
-
-
+    assert line_total("2", "100.00", discount="10", tax="18") == line_total("1", "100.00", discount="10", tax="18") * Decimal("2")

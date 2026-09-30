@@ -12,4 +12,3 @@ class Navigation:
 
     def visible_labels(self) -> list[str]:
         return [x.strip() for x in self.page.locator("aside a, aside button").all_inner_texts() if x.strip()]
-

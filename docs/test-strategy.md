@@ -8,4 +8,3 @@ The suite uses Python Playwright with pytest and Page Object Model.
 - Tests use role, label, placeholder, URL, and stable `data-test` selectors. No arbitrary sleeps are used in framework code.
 - Destructive/financial workflows are intentionally gated until isolated test data and cleanup contracts are approved.
 - HTML and JUnit reports, plus pytest failure output, are written under `reports/`.
-

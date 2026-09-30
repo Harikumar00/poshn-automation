@@ -26,4 +26,3 @@ def test_note_listing_search_and_filters(authenticated_page, path, title, breadc
 
     page.search_if_available()
     expect(main).to_be_visible()
-

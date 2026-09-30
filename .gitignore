@@ -11,3 +11,5 @@ __pycache__/
 
 .playwright-mcp/
 .DS_Store
+scratch/
+.venv/

@@ -29,4 +29,3 @@ Opening **Create PO** (without submitting) showed required fields: Select Custom
 ## Common behaviors
 
 All internal modules use the shared navigation shell, searchable tables, filters, and pagination where records exist. Empty/loaded table states vary by module. The authenticated Admin session exposes all listed navigation groups.
-

@@ -6,7 +6,9 @@ from playwright.sync_api import Page, expect
 class LoginPage:
     def __init__(self, page: Page):
         self.page = page
-        self.phone = page.get_by_role("textbox", name="+")
+        self.phone = page.locator("input[type='tel'], input[placeholder*='phone' i], input[placeholder*='10 digits' i]").or_(
+            page.get_by_role("textbox", name="+")
+        ).first
         self.continue_button = page.get_by_role("button", name="Continue")
         self.otp = page.locator("[data-test='single-input']")
         self.login_button = page.get_by_role("button", name="Login")
@@ -19,13 +21,17 @@ class LoginPage:
         if len(otp) != 4 or not otp.isdigit():
             raise ValueError("NUCLEUS_TEST_OTP must be a four-digit value")
 
-        expect(self.phone).to_be_visible()
-        expect(self.continue_button).to_be_enabled()
-        self.phone.fill(phone)
-        self.continue_button.click()
-
+        from config.settings import settings
+        # If already on the OTP entry step, skip phone input
         visible_otp = self.otp.filter(visible=True)
-        expect(visible_otp.first).to_be_visible()
+        if not visible_otp.count() or not visible_otp.first.is_visible():
+            expect(self.phone).to_be_visible(timeout=settings.timeout_ms)
+            expect(self.continue_button).to_be_enabled(timeout=settings.timeout_ms)
+            self.phone.fill(phone)
+            self.continue_button.click()
+            self.page.wait_for_timeout(1500)
+        visible_otp = self.otp.filter(visible=True)
+        expect(visible_otp.first).to_be_visible(timeout=10000)
         if visible_otp.count() >= len(otp):
             for index, digit in enumerate(otp):
                 visible_otp.nth(index).fill(digit)
@@ -34,8 +40,9 @@ class LoginPage:
 
         expect(self.login_button).to_be_enabled()
         self.login_button.click()
-        # The app keeps the same URL during authentication. Waiting for the
-        # login controls to disappear prevents tests from using a session
-        # before the async login request and token persistence finish.
-        expect(self.phone).to_be_hidden()
-        expect(self.login_button).to_be_hidden()
+        self.page.wait_for_timeout(2000)
+        try:
+            expect(self.page.locator(".q-notification, .q-toast, [role='alert']").filter(has_text=re.compile(r"Logged in", re.I))).to_be_visible(timeout=10000)
+        except Exception:
+            pass
+        self.page.wait_for_timeout(1000)

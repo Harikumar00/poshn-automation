@@ -27,4 +27,4 @@ def test_vendor_add_form_required_validation_without_submit(authenticated_page):
     users.assert_add_form()
     users.page.get_by_role("button", name="Save & Next").click()
     expect(users.page.get_by_text("Contact Name *", exact=True)).to_be_visible()
-
+    users.close_drawer()

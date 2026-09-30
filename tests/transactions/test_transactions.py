@@ -42,4 +42,3 @@ def test_customer_and_vendor_payment_pages_are_available(authenticated_page):
         expect(authenticated_page).to_have_title(title)
         for token in breadcrumbs:
             expect(authenticated_page.locator("main").get_by_text(token, exact=False).first).to_be_visible()
-

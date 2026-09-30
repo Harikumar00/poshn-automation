@@ -73,8 +73,68 @@ class ReadOnlyMongoClient:
             structures.append({path: sorted(set(types)) for path, types in structure.items()})
         return structures
 
+    def find_party_ledger_records_read_only(
+        self,
+        party_name: str,
+        limit: int = 50,
+    ) -> list[dict[str, str]]:
+        """Strictly read-only query retrieving ledger / transaction records for a party.
+
+        Exclusively performs bounded find() operations. Does not alter or mutate any collection.
+        All extracted field values are returned strictly as strings.
+        """
+        results: list[dict[str, str]] = []
+        col_names = self.list_collection_names()
+
+        # 1. Search in Ledgers collection if present
+        if "Ledgers" in col_names:
+            cursor = self._database["Ledgers"].find(
+                {
+                    "$or": [
+                        {"party_name": {"$regex": party_name, "$options": "i"}},
+                        {"vendor_name": {"$regex": party_name, "$options": "i"}},
+                        {"buyer_name": {"$regex": party_name, "$options": "i"}},
+                        {"seller_name": {"$regex": party_name, "$options": "i"}},
+                    ]
+                },
+                limit=limit,
+            )
+            for doc in cursor:
+                results.append({
+                    "id": str(doc.get("_id")),
+                    "voucher_number": str(doc.get("voucher_number") or doc.get("number") or ""),
+                    "voucher_type": str(doc.get("voucher_type") or doc.get("type") or ""),
+                    "debit": str(doc.get("debit") or "0"),
+                    "credit": str(doc.get("credit") or "0"),
+                    "balance": str(doc.get("balance") or "0"),
+                })
+
+        # 2. If no direct Ledgers records, check source Bills / DebitNotes (read-only)
+        if not results and "Bills" in col_names:
+            cursor = self._database["Bills"].find(
+                {
+                    "$or": [
+                        {"seller_info.name": {"$regex": party_name, "$options": "i"}},
+                        {"seller_info.trade_name": {"$regex": party_name, "$options": "i"}},
+                    ]
+                },
+                limit=limit,
+            )
+            for doc in cursor:
+                results.append({
+                    "id": str(doc.get("_id")),
+                    "voucher_number": str(doc.get("number") or doc.get("internal_number") or ""),
+                    "voucher_type": "Purchase Bill",
+                    "debit": "0",
+                    "credit": str(doc.get("total_amount") or "0"),
+                    "balance": str(doc.get("total_amount") or "0"),
+                })
+
+        return results
+
     def close(self) -> None:
         self._client.close()
+
 
 
 def create_read_only_client() -> ReadOnlyMongoClient:

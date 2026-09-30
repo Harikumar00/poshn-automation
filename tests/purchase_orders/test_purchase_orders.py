@@ -35,3 +35,5 @@ def test_create_po_required_fields_are_exposed_without_submit(authenticated_page
         expect(page.page.get_by_text(label, exact=True)).to_be_visible()
     expect(page.page.get_by_role("button", name="Submit")).to_be_disabled()
     expect(page.page.get_by_text("At least one item is required.", exact=False)).to_be_visible()
+    page.page.keyboard.press("Escape")
+    page.page.wait_for_timeout(500)

@@ -21,6 +21,7 @@ class Settings:
     browser_args: tuple[str, ...] = tuple(
         arg for arg in os.getenv("PLAYWRIGHT_BROWSER_ARGS", "").split(",") if arg
     )
+    access_token: str | None = os.getenv("NUCLEUS_ACCESS_TOKEN", None)
 
 
 settings = Settings()
