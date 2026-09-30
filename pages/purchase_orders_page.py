@@ -375,10 +375,11 @@ class PurchaseOrdersPage(ListPage):
     def request_credit_note(
         self,
         invoice_or_bill_number: str,
-        product_name: str,
-        quantity: str = "1",
+        product_name: str = "Aashirvaad atta 10kg*3",
+        quantity: str = "10",
         against: str = "invoice",
         cn_type: str = "Returns",
+        items: list[dict[str, str]] | None = None,
     ) -> dict:
         """Requests a Credit Note against an Invoice or Purchase Bill from the PO detail page."""
         # 1. Navigate to Bills & Invoices -> Credit Notes
@@ -416,30 +417,37 @@ class PurchaseOrdersPage(ListPage):
                 self.page.wait_for_timeout(500)
 
         # 5. Add items to Credit Note
-        add_items_btn = drawer.get_by_role("button", name="Add items to Credit Note")
-        expect(add_items_btn).to_be_visible(timeout=10000)
-        add_items_btn.click()
-        self.page.wait_for_timeout(1500)
+        items_to_add = items if items else [{"product": product_name, "quantity": quantity}]
+        for itm in items_to_add:
+            add_items_btn = drawer.get_by_role("button", name="Add items to Credit Note")
+            expect(add_items_btn).to_be_visible(timeout=10000)
+            add_items_btn.click()
+            self.page.wait_for_timeout(1500)
 
-        item_drawer = self.page.locator(".q-drawer.q-drawer--right:visible").last
+            item_drawer = self.page.locator(".q-drawer.q-drawer--right:visible").last
 
-        # Select Product
-        prod_inp = item_drawer.locator("input[placeholder*='Select Product']").first
-        prod_inp.click(force=True)
-        self.page.wait_for_timeout(500)
-        self.page.locator(".q-menu .q-item").filter(has_text=product_name).first.click()
-        self.page.wait_for_timeout(500)
+            # Select Product
+            prod_inp = item_drawer.locator("input[placeholder*='Select Product']").first
+            prod_inp.click(force=True)
+            self.page.wait_for_timeout(500)
+            p_name = itm.get("product") or itm.get("name") or product_name
+            target = self.page.locator(".q-menu .q-item").filter(has_text=re.compile(re.escape(p_name), re.I)).first
+            if target.count() > 0:
+                target.click()
+            else:
+                self.page.locator(".q-menu .q-item").first.click()
+            self.page.wait_for_timeout(500)
 
-        # Quantity
-        qty_inp = item_drawer.locator("input[placeholder='Enter value']").first
-        qty_inp.fill(quantity)
-        self.page.wait_for_timeout(500)
+            # Quantity
+            qty_inp = item_drawer.locator("input[placeholder='Enter value']").first
+            qty_inp.fill(str(itm.get("quantity", quantity)))
+            self.page.wait_for_timeout(500)
 
-        # Click Add in item drawer
-        add_btn = item_drawer.get_by_role("button", name="Add")
-        expect(add_btn).to_be_enabled()
-        add_btn.click(force=True)
-        self.page.wait_for_timeout(1500)
+            # Click Add in item drawer
+            add_btn = item_drawer.get_by_role("button", name="Add")
+            expect(add_btn).to_be_enabled()
+            add_btn.click(force=True)
+            self.page.wait_for_timeout(1500)
 
         # 6. Submit Credit Note Request
         submit_btn = drawer.get_by_role("button", name="Submit")
@@ -457,10 +465,11 @@ class PurchaseOrdersPage(ListPage):
     def request_debit_note(
         self,
         bill_or_invoice_number: str,
-        product_name: str,
-        quantity: str = "1",
+        product_name: str = "Aashirvaad atta 10kg*3",
+        quantity: str = "10",
         against: str = "bill",
         dn_type: str = "Returns",
+        items: list[dict[str, str]] | None = None,
     ) -> dict:
         """Requests a Debit Note against a Purchase Bill or Invoice from the PO detail page."""
         # 1. Navigate to Bills & Invoices -> Debit Notes
@@ -498,30 +507,37 @@ class PurchaseOrdersPage(ListPage):
                 self.page.wait_for_timeout(500)
 
         # 5. Add items to Debit Note
-        add_items_btn = drawer.get_by_role("button", name="Add items to Debit Note")
-        expect(add_items_btn).to_be_visible(timeout=10000)
-        add_items_btn.click()
-        self.page.wait_for_timeout(1500)
+        items_to_add = items if items else [{"product": product_name, "quantity": quantity}]
+        for itm in items_to_add:
+            add_items_btn = drawer.get_by_role("button", name="Add items to Debit Note")
+            expect(add_items_btn).to_be_visible(timeout=10000)
+            add_items_btn.click()
+            self.page.wait_for_timeout(1500)
 
-        item_drawer = self.page.locator(".q-drawer.q-drawer--right:visible").last
+            item_drawer = self.page.locator(".q-drawer.q-drawer--right:visible").last
 
-        # Select Product
-        prod_inp = item_drawer.locator("input[placeholder*='Select Product']").first
-        prod_inp.click(force=True)
-        self.page.wait_for_timeout(500)
-        self.page.locator(".q-menu .q-item").filter(has_text=product_name).first.click()
-        self.page.wait_for_timeout(500)
+            # Select Product
+            prod_inp = item_drawer.locator("input[placeholder*='Select Product']").first
+            prod_inp.click(force=True)
+            self.page.wait_for_timeout(500)
+            p_name = itm.get("product") or itm.get("name") or product_name
+            target = self.page.locator(".q-menu .q-item").filter(has_text=re.compile(re.escape(p_name), re.I)).first
+            if target.count() > 0:
+                target.click()
+            else:
+                self.page.locator(".q-menu .q-item").first.click()
+            self.page.wait_for_timeout(500)
 
-        # Quantity
-        qty_inp = item_drawer.locator("input[placeholder='Enter value']").first
-        qty_inp.fill(quantity)
-        self.page.wait_for_timeout(500)
+            # Quantity
+            qty_inp = item_drawer.locator("input[placeholder='Enter value']").first
+            qty_inp.fill(str(itm.get("quantity", quantity)))
+            self.page.wait_for_timeout(500)
 
-        # Click Add in item drawer
-        add_btn = item_drawer.get_by_role("button", name="Add")
-        expect(add_btn).to_be_enabled()
-        add_btn.click(force=True)
-        self.page.wait_for_timeout(1500)
+            # Click Add in item drawer
+            add_btn = item_drawer.get_by_role("button", name="Add")
+            expect(add_btn).to_be_enabled()
+            add_btn.click(force=True)
+            self.page.wait_for_timeout(1500)
 
         # 6. Submit Debit Note Request
         submit_btn = drawer.get_by_role("button", name="Submit")

@@ -195,12 +195,14 @@ def test_request_and_approve_credit_note_on_invoice(authenticated_page: Page, tr
     po_page = PurchaseOrdersPage(authenticated_page)
     po_page.open_po_details(trade_data["po_number"])
 
-    # 1. Request Credit Note against Invoice
+    # 1. Request Credit Note against Invoice with both products
     po_page.request_credit_note(
         invoice_or_bill_number=trade_data["invoice_number"],
-        product_name=trade_data["product"],
-        quantity=trade_data["cn_quantity"],
         against="invoice",
+        items=[
+            {"product": item["product"], "quantity": trade_data["cn_quantity"]}
+            for item in trade_data["items"]
+        ],
     )
     authenticated_page.wait_for_timeout(2000)
 
@@ -229,12 +231,14 @@ def test_request_and_approve_debit_note_on_purchase_bill(authenticated_page: Pag
     po_page = PurchaseOrdersPage(authenticated_page)
     po_page.open_po_details(trade_data["po_number"])
 
-    # 1. Request Debit Note against Purchase Bill
+    # 1. Request Debit Note against Purchase Bill with both products
     po_page.request_debit_note(
         bill_or_invoice_number=trade_data["pb_number"],
-        product_name=trade_data["product"],
-        quantity=trade_data["dn_quantity"],
         against="bill",
+        items=[
+            {"product": item["product"], "quantity": trade_data["dn_quantity"]}
+            for item in trade_data["items"]
+        ],
     )
     authenticated_page.wait_for_timeout(2000)
 
